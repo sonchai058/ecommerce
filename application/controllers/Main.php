@@ -8,7 +8,7 @@ class Main extends CI_Controller {
 		parent::__construct();
 		$this->load->database();
 		$this->load->helper(array('url', 'form', 'general', 'file', 'html', 'asset'));
-		$this->load->library(array('session', 'encrypt', 'cart', 'grocery_CRUD', 'form_validation', 'email'));
+		$this->load->library(array('session', 'encryption', 'cart', 'grocery_CRUD', 'form_validation', 'email'));
 		$this->load->model(array('admin_model', 'common_model', 'useful_model', 'webinfo_model', 'files_model'));
 
 		$this->load->library(
