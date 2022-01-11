@@ -1,1 +1,3 @@
-system/cache_session/*
+.DS_Store
+
+application/system/cache_session/*
