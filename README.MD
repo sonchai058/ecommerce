@@ -23,3 +23,5 @@ yYC6VFy7pryQs58o
 https://www.facebook.com/estherthailandofficial
 
 LInk QR Code เข้า Lineค่ะ
+พี่ส่งรูปผลิตภัณฑ์ รูปposter วีดีโอการผลิต ไปละค่ะ
+https://drive.google.com/drive/folders/1LApZLBobPT01yJFSafWBsmExdCMeGyfD
