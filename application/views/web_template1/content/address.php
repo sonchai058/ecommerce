@@ -3,20 +3,20 @@
 	// dieArray(unserialize($site['WD_Address']));
 	$WD_Address = array();
 	if ($site['WD_Address'] !== '' && $this->serialized_model->is_serialized($site['WD_Address']) === true)
-		$site['WD_Address'] = unserialize(preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $site['WD_Address']));
+		$site['WD_Address'] = unserialize(@preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $site['WD_Address']));
     
 	$WD_Tel = array();
 	if ($site['WD_Tel'] !== '' && $this->serialized_model->is_serialized($site['WD_Tel']) === true)
-		$site['WD_Tel'] = unserialize(preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $site['WD_Tel']));
+		$site['WD_Tel'] = unserialize(@preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $site['WD_Tel']));
 
 	$WD_Fax = array();
 	if ($site['WD_Fax'] !== '' && $this->serialized_model->is_serialized($site['WD_Fax']) === true)
-		$site['WD_Fax'] = unserialize(preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $site['WD_Fax']));
+		$site['WD_Fax'] = unserialize(@preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $site['WD_Fax']));
 
-	if (sizeof($site['WD_Address']) 		> sizeof($site['WD_Tel']) 			&& sizeof($site['WD_Address']) 	> sizeof($site['WD_Fax'])) $WD_sizeof = sizeof($site['WD_Address']);
-	else 	if (sizeof($site['WD_Tel']) 	> sizeof($site['WD_Address']) 	&& sizeof($site['WD_Tel']) 		> sizeof($site['WD_Fax'])) $WD_sizeof = sizeof($site['WD_Tel']);
-	else 	if (sizeof($site['WD_Fax']) 	> sizeof($site['WD_Address']) 	&& sizeof($site['WD_Fax']) 		> sizeof($site['WD_Tel'])) $WD_sizeof = sizeof($site['WD_Fax']);
-	else 	$WD_sizeof = sizeof($site['WD_Address']);
+	if (@sizeof($site['WD_Address']) 		> @sizeof($site['WD_Tel']) 			&& @sizeof($site['WD_Address']) 	> @sizeof($site['WD_Fax'])) $WD_sizeof = @sizeof($site['WD_Address']);
+	else 	if (@sizeof($site['WD_Tel']) 	> @sizeof($site['WD_Address']) 	&& @sizeof($site['WD_Tel']) 		> @sizeof($site['WD_Fax'])) $WD_sizeof = @sizeof($site['WD_Tel']);
+	else 	if (@sizeof($site['WD_Fax']) 	> @sizeof($site['WD_Address']) 	&& @sizeof($site['WD_Fax']) 		> @sizeof($site['WD_Tel'])) $WD_sizeof = @sizeof($site['WD_Fax']);
+	else 	$WD_sizeof = @sizeof($site['WD_Address']);
 
 	$WD_Addmaps = array(base_url('assets/images/map/luckydoor.jpg'), base_url('assets/images/map/jwood.jpg'));
 	// dieArray($site['WD_Address']);

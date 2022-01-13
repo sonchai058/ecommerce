@@ -17,3 +17,9 @@ https://bootstrap-ecommerce.com/page-templates.html
 
 ecommerce
 yYC6VFy7pryQs58o
+
+ชื่อเว็บไซต์ : tanisha international
+ื่อ โดเมน (ภาษาอังกฤษ) ; www.tanisha.com
+https://www.facebook.com/estherthailandofficial
+
+LInk QR Code เข้า Lineค่ะ
