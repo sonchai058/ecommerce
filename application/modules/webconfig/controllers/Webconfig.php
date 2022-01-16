@@ -31,13 +31,13 @@ class Webconfig extends MX_Controller {
 				'setting'   => array('data_output' => '')
             )
 		);
+
         $this->load->helper(
             array()
         );
         $this->load->libraries(
             array()
         );
-        
         $this->load->model(
             array(
                 'permission_model',
