@@ -7,6 +7,7 @@
 			$this->ci=&get_instance();
 		}
 		public function get_ci() {
+			//$this->ci->load->library('session');
 			return $this->ci;
 		}
 	}

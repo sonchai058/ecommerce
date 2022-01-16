@@ -1,3 +1,4 @@
 .DS_Store
 
 application/system/cache_session/*
+system/cache_session/*

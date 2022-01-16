@@ -17,7 +17,7 @@
         public function getLoginEncrypt($user_id = '', $user_pass = '') {
             $row = $this->common_model->get_where_custom('member', 'M_Username', $this->db->escape_str($user_id));
             if (count($row) > 0) {
-                $pass = $this->encrypt->decode($row[0]['M_Password']);
+                $pass = $this->encryption->decrypt($row[0]['M_Password']);
                 if ($this->db->escape_str($user_pass) == $pass) return $row;
             }
             else return array();
@@ -26,7 +26,7 @@
         public function getLoginEncryptAdmin($user_id = '', $user_pass = '') {
             $row = $this->common_model->get_where_custom('admin', 'M_Username', $this->db->escape_str($user_id));
             if (count($row) > 0) {
-                $pass = $this->encrypt->decode($row[0]['M_Password']);
+                $pass = $this->encryption->decrypt($row[0]['M_Password']);
                 if ($this->db->escape_str($user_pass) == $pass) return $row;
             }
             else return array();
