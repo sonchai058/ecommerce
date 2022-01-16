@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'sjhost.sytes.net:33066',
 	'username' => 'ecommerce',
 	'password' => 'yYC6VFy7pryQs58o',
 	'database' => 'ecommerce',

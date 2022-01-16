@@ -34,6 +34,8 @@ class Control extends CI_Controller {
 			)
 		);
 
+		//dieFont($this->encrypt->encode("1144"));
+
 		$this->product_type_model->productTypeDailyUpdate();
 		
 	}
