@@ -79,9 +79,9 @@
 				<div class="home-adr _notranslate notranslate">
 				<div class="adr-1">
 					<p>
-						Lucky door Trading Co., Ltd.<br>
+						Tanisha door Trading Co., Ltd.<br>
 						125/250 Moo 3 Rattanathibet Road Tambon Sai-Ma Amphoe Mueang Nonthaburi.
-						<a class="help" href="<?php echo base_url('assets/images/map/luckydoor.jpg'); ?>" target="_blank">>> Click to view the map.</a>
+						<a class="help" href="<?php echo base_url('assets/images/map/Tanisha.jpg'); ?>" target="_blank">>> Click to view the map.</a>
 					</p>
 					<p>
 						Phone: (029) 776-3224 &nbsp; Fax: (029) 776-323.
@@ -101,10 +101,10 @@
 				<div>
 					<img class="lineQRC" width="165" style="float: left;" src="<?php echo base_url("assets/images/lcd-line-qrc.jpg") ?>">
 					<div class="contact_info" style="float: left;margin-top: 20px;">
-						<span style="font-size: 19px;font-weight: bold;">Line ID :</span> <span>luckydoortrading</span><br>
+						<span style="font-size: 19px;font-weight: bold;">Line ID :</span> <span>Tanishatrading</span><br>
 						<span style="font-size: 19px;font-weight: bold;">Facebook :</span> <a target="_blank" class="help" href="https://www.facebook.com/lucykydoor.trading">Lucykydoor Trading</a><br>
 						<span style="font-size: 19px;font-weight: bold;">Call center :</span> <span>086-3564454</span><br>
-						<a target="_blank" class="help" href="http://www.luckydoor.co.th/">www.luckydoor.co.th</a>
+						<a target="_blank" class="help" href="http://www.Tanisha.co.th/">www.Tanisha.co.th</a>
 					</div>
 				</div>
 			</div>
@@ -138,7 +138,7 @@ if (count($site) 	> 0) {
 	var latLngLenght 	= 0;
 
 	var WD_markname 	= ['บริษัท ลักกี้ดอร์ เทรดดิ้ง จำกัด', 'บริษัท เจ. วู๊ด อุตสาหกรรม จำกัด'];
-	var WD_Addmaps 		= ['luckydoor.jpg', 'jwood.jpg'];
+	var WD_Addmaps 		= ['Tanisha.jpg', 'jwood.jpg'];
 
 	var WD_Address 		= [];
 	var WD_Tel 			= [];
