@@ -1,6 +1,6 @@
 <main>
     <section>
-        <ul class="bxslider"> <?php
+        <ul class="bxslider"> <?php #1440x450
             // $image_slider = $this->common_model->getTableOrder('image_slider', 'IS_Order', 'ASC');
             $image_slider = $this->common_model->get_where_custom_order('image_slider', 'IS_Allow', '1', 'IS_Order', 'ASC');
             if (count($image_slider) > 0) {
