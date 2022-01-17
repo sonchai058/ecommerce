@@ -8,7 +8,7 @@
 			<div class="small-12 medium-expand columns">
 				<div class="wrapper-h2p-title">
 					<h2 class="text-title">วิธีการชำระเงิน</h2>
-					<h4>Luckydoor มีวิธีการชำระเงินแบบใดบ้าง</h4>
+					<h4>Tanisha มีวิธีการชำระเงินแบบใดบ้าง</h4>
 				</div>
 				<h4><i class="fa fa-angle-double-right"></i> บริการรับชำระด้วยบัตรเครดิตออนไลน์ (PAYSBUY Direct)</h4>
 				<ol class="h2p-list">
