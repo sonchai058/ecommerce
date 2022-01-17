@@ -19,6 +19,21 @@
         </ul>
     </section>
 
+
+    <section class="wrap-vision">
+        <div class="row row-vision">
+               <div class="small-12 medium-12 columns">
+                   <div class="animation-element slide-left">
+                   <video width="320" height="240" controls autoplay>
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                    </video>
+                   </div>
+               </div>
+            </div>
+    </section>
+
     <section class="wrap-vision">
         <div class="row row-vision">
                <div class="small-12 medium-5 columns">
