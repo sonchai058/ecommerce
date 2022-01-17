@@ -5,12 +5,12 @@
             $image_slider = $this->common_model->get_where_custom_order('image_slider', 'IS_Allow', '1', 'IS_Order', 'ASC');
             if (count($image_slider) > 0) {
                 foreach ($image_slider as $key => $value) { ?>
-                    <li><a href="#"><img src="<?php echo base_url('assets/images/slide/'.$value['IS_Img']); ?>"></a></li>
+                    <li><a href="#"><img src="<?php echo base_url('assets/images/newslide/'.$value['IS_Img']); ?>"></a></li>
                     <?php
                 }
             }
             else { ?>
-                <li><a href="#"><img src="<?php echo base_url('assets/images/slide/slide-1.jpg'); ?>"></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/newslide/1.jpg'); ?>"></a></li>
                 <?php
             } ?>
             <!-- <li><a href="#"><img src="<?php echo base_url('assets/images/slide/slide-2.jpg'); ?>" height="450"></a></li>
