@@ -12,7 +12,7 @@
 			</ul>
 		</div>
 		<div class="small-6 medium-6 large-3 columns">
-			<h3>Luckydoor</h3>
+			<h3>Tanisha</h3>
 			<hr class="hr-title-2">
 			<ul class="footer-widget">
 				<li><a href="<?php echo base_url('aboutus'); ?>" 			title="เกี่ยวกับ">เกี่ยวกับ</a></li>
@@ -56,7 +56,7 @@
 					<p>
 						Lucky door Trading Co., Ltd.<br>
 						125/250 Moo 3 Rattanathibet Road Tambon Sai-Ma Amphoe Mueang Nonthaburi.
-						<a class="help" href="<?php echo base_url('assets/images/map/luckydoor.jpg'); ?>" target="_blank">>> Click to view the map.</a>
+						<a class="help" href="<?php echo base_url('assets/images/logo.jpg'); ?>" target="_blank">>> Click to view the map.</a>
 					</p>
 					<p>
 						Phone: (029) 776-3224 &nbsp; Fax: (029) 776-323.

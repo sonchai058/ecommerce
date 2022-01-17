@@ -94,16 +94,16 @@
 						<a class="help" href="<?php echo base_url('assets/images/map/jwood.jpg'); ?>" target="_blank">>> Click to view the map.</a>
 					</p>
 					<p>
-						Phone: (053) 433-224 &nbsp; Fax: (053) 433-223.
+						Phone: (099) 367 4224 &nbsp; Fax: -
 					</p>
 				</div>
 			</div>
 				<div>
-					<img class="lineQRC" width="165" style="float: left;" src="<?php echo base_url("assets/images/lcd-line-qrc.jpg") ?>">
+					<img class="lineQRC" width="165" style="float: left;" src="<?php echo base_url("assets/images/line.png") ?>">
 					<div class="contact_info" style="float: left;margin-top: 20px;">
 						<span style="font-size: 19px;font-weight: bold;">Line ID :</span> <span>Tanishatrading</span><br>
-						<span style="font-size: 19px;font-weight: bold;">Facebook :</span> <a target="_blank" class="help" href="https://www.facebook.com/lucykydoor.trading">Lucykydoor Trading</a><br>
-						<span style="font-size: 19px;font-weight: bold;">Call center :</span> <span>086-3564454</span><br>
+						<span style="font-size: 19px;font-weight: bold;">Facebook :</span> <a target="_blank" class="help" href="https://www.facebook.com/estherthailandofficial">Tanisha Trading</a><br>
+						<span style="font-size: 19px;font-weight: bold;">Call center :</span> <span>099 367 4224</span><br>
 						<a target="_blank" class="help" href="http://www.Tanisha.co.th/">www.Tanisha.co.th</a>
 					</div>
 				</div>
