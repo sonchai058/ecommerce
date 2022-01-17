@@ -29,12 +29,12 @@
                <div class="small-12 medium-7 columns">
                    <div class="animation-element slide-right">
                        <div class="vision-text _dotranslate">
-                            <h2>ทำไมต้องเป็น <span class="green">Lucky door</span></h2>
-                            <p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้น จึงทำให้โลกเรามีการพัฒนาวัสดุที่ทดแทนไม้ขึ้นมาแต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Lucky door</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p>
+                            <h2>ทำไมต้องเป็น <span class="green">Tanisha</span></h2>
+                            <p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้น จึงทำให้โลกเรามีการพัฒนาวัสดุที่ทดแทนไม้ขึ้นมาแต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p>
                         </div>
                         <div class="vision-text _notranslate notranslate">
-                            <h2>Why <span class="green">Lucky door?</span></h2>
-                            <p>In the past, when the term “door” was mentioned, people would think about wooden doors with 4, 5, 8 panels or carved teak wood doors. However, to answer the calls from various environmental care campaigns nowadays, we develop wood replacement materials. The materials give the exact feel of wood, but provide no flaws the wood posses. Lucky door uses these materials to mix up with the wood and produces doors that can be used for both interior and exterior area. The doors perfectly fit the requirements in terms of the beautiful pattern and color, while they also provide the natural feel. They’re also environmentally friendly and good for the earth.</p>
+                            <h2>Why <span class="green">Tanisha?</span></h2>
+                            <p>In the past, when the term “door” was mentioned, people would think about wooden doors with 4, 5, 8 panels or carved teak wood doors. However, to answer the calls from various environmental care campaigns nowadays, we develop wood replacement materials. The materials give the exact feel of wood, but provide no flaws the wood posses. Tanisha uses these materials to mix up with the wood and produces doors that can be used for both interior and exterior area. The doors perfectly fit the requirements in terms of the beautiful pattern and color, while they also provide the natural feel. They’re also environmentally friendly and good for the earth.</p>
                         </div>
                     </div>
                 </div>
@@ -238,7 +238,7 @@
     <section>
         <div class="collection-wrapper-head">
             <div class="title-home">
-                <h1 class="text-title-home">Lucky Door Collection</h1>
+                <h1 class="text-title-home">Tanisha Collection</h1>
                 <hr class="hr-title-1 hr-width-2">
                 <!-- <h4>KNOW MORE ABOUT OUR LATEST COLLECTION</h4> -->
                 <h4><blockquote><cite><span>Know more about our latest collection.</span></cite></blockquote></h4>
@@ -275,7 +275,7 @@
                         <div class="collection-title">
                             <h2 class="text-green">Modern <span class="sub-title-1">Outdoors</span></h2>
                             <div class="divider"></div>
-                            <!-- <p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Lucky door</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
+                            <!-- <p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
                             <div class="_dotranslate">
                                <p>เป็นประตูที่ใช้ในพื้นที่ที่มีความชื้นและมีโอกาศโดนฝนและโดนแดด</p>
                             </div>
@@ -321,7 +321,7 @@
                         <div class="collection-title">
                             <h2 class="notranslate text-green">Modern<span class="sub-title-1">Indoors</span></h2>
                             <div class="divider-reverse"></div>
-                             <!--<p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Lucky door</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
+                             <!--<p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
                             <div class="_dotranslate">
                                 <p>เป็นประตูที่ใช้สำหรับภายใน ทนความชื้นได้ในระดับหนึ่งไม่เหมาะกับสภาพที่ชื้นตลอดเวลาหรือมีแดด</p>
                             </div>
