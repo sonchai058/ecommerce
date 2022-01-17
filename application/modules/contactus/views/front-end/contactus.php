@@ -71,7 +71,7 @@
 			</div>
 			<div class="small-12 medium-6 columns">
 				<div class="img-contact">
-					<img src="<?php echo base_url('assets/images/logo/logo-3.png'); ?>" alt="">
+					<img src="<?php echo base_url('assets/images/logo.png'); ?>" alt="">
 				</div>
 				<div class="home-adr _dotranslate">
 					<?php $this->template->load('content/address'); ?>
