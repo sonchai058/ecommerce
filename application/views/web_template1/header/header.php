@@ -89,7 +89,7 @@
 							<ul class="dropdown menu">
 								<li class="menu-text">
 									<a href="<?php echo base_url(''); ?>" class="brand">
-										<img src="<?php echo base_url('assets/images/logo.png'); ?>" alt="<?php echo $site['WD_Name']; ?>"> <?php echo $site['WD_Name']; ?>
+										<img src="<?php echo base_url('assets/images/logo.jpg'); ?>" alt="<?php echo $site['WD_Name']; ?>"> <?php echo $site['WD_Name']; ?>
 									</a>
 								</li>
 								<li><a href="<?php echo base_url('product'); ?>" title="สินค้า">สินค้า</a></li>
