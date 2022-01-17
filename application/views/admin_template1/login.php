@@ -32,7 +32,7 @@
                 <div class="title_login">
                     <ul class="wrap_name">
                         <li><?php echo $site['WD_Name'];    ?></li>
-                        <li><?php echo $site['WD_EnName'];  ?></li>
+                        <li style="font-size: 17px;"><?php echo $site['WD_EnName'];  ?></li>
                     </ul>
                 </div>
                 <table class="table_data">
