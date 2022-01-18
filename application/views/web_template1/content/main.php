@@ -19,7 +19,7 @@
         </ul>
     </section>
 
-
+            <!--
     <section class="wrap-vision">
         <div class="row row-vision">
                <div class="small-12 medium-12 columns">
@@ -33,6 +33,7 @@
                </div>
             </div>
     </section>
+        -->
 
     <section class="wrap-vision">
         <div class="row row-vision">
