@@ -569,7 +569,6 @@ class Cart extends MX_Controller {
                 $this->common_model->insert('order', $data);
 
                 $OD_ID = rowArray($this->common_model->custom_query(" SELECT * FROM `order` ORDER BY `OD_ID` DESC LIMIT 1 "));
-                dieArray($OD_ID);
                 if (count($OD_ID) > 0) {
                     $OD_Code    = array('OD_Code' => 'PO'.str_pad($OD_ID['OD_ID'], 6, "0", STR_PAD_LEFT));
                     $OD_Cond    = "OD_ID = '".$OD_ID['OD_ID']."'";
