@@ -107,3 +107,9 @@ Database:	tanishai_ecommerce
 Host:	localhost
 Username:	tanishai_ecommerce
 Password:	yYC6VFy7pryQs58o
+
+
+Username:	admin@tanisha-international.com
+Password:	tanisha
+POP/IMAP Server:	mail.tanisha-international.com
+SMTP Server:	mail.tanisha-international.com port 587
