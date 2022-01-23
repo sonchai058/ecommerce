@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'sjhost.sytes.net:33066',
-	'username' => 'ecommerce',
+	'hostname' => 'localhost',
+	'username' => 'tanishai_ecommerce',
 	'password' => 'yYC6VFy7pryQs58o',
-	'database' => 'ecommerce',
+	'database' => 'tanishai_ecommerce',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

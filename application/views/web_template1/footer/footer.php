@@ -54,28 +54,28 @@
 			<div class="home-adr _notranslate notranslate">
 				<div class="adr-1">
 					<p>
-						Lucky door Trading Co., Ltd.<br>
-						125/250 Moo 3 Rattanathibet Road Tambon Sai-Ma Amphoe Mueang Nonthaburi.
+						Tanisha Co., Ltd.<br>
+						Bangkok Thailand.
 						<a class="help" href="<?php echo base_url('assets/images/logo.jpg'); ?>" target="_blank">>> Click to view the map.</a>
 					</p>
 					<p>
-						Phone: (029) 776-3224 &nbsp; Fax: (029) 776-323.
+						Phone: 099 367 4224 &nbsp; Fax: -.
 					</p>
 				</div>
 				<div class="adr-2">
 					<p>
-						J. Wood Industry Co., Ltd.<br>
-						61 Moo 4 Tambon Buakkhang, Sankamphaeng district, Chiangmai
+					Tanisha Co., Ltd.<br>
+					Bangkok Thailand
 						<a class="help" href="<?php echo base_url('assets/images/map/jwood.jpg'); ?>" target="_blank">>> Click to view the map.</a>
 					</p>
 					<p>
-						Phone: (053) 433-224 &nbsp; Fax: (053) 433-223.
+						Phone: 099 367 4224 &nbsp; Fax: -.
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="footer-copyright">
-		<h5>COPYRIGHT © 2015 BY <?php echo strtoupper($site['WD_EnName']); ?> ALL RIGHT RESERVED. POWERD BY <a class="footer-url" href="https://www.facebook.com/ServiceTechnologyConsultant" target="_blank">SERVICE TECHNOLOGY CONSULTANT</a></h5>
+		<h5>COPYRIGHT © 2022 BY <?php echo strtoupper($site['WD_EnName']); ?> ALL RIGHT RESERVED. POWERD BY <a class="footer-url" href="#jsoftcloud" target="_blank">Jsoftcloud</a></h5>
 	</div>
 </footer>

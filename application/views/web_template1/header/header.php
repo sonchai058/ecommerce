@@ -55,7 +55,10 @@
 							   } elseif ($_COOKIE['googtrans'] == '/en/my') {
 							      $icon = 'Malaysia.png';
 							      $lang = 'Malay';
-							   } else {
+							   } elseif ($_COOKIE['googtrans'] == '/en/mm') {
+								$icon = 'Myanmar.png';
+								$lang = 'Myanmar';
+							 } else {
 							      $icon = 'th.png';
 							      $lang = 'English';
 							   }
@@ -74,6 +77,7 @@
 						<li><a id="th" href="javascript:void(0)" onclick="translator('zh-TW')"><img src="<?php echo base_url('assets/images/flag/China.png')?>" alt="" title="China"> จีน</a></li>
 						<li><a id="th" href="javascript:void(0)" onclick="translator('vi')"><img src="<?php echo base_url('assets/images/flag/Viet Nam.png')?>" alt="" title="Viet Nam"> เวียดนาม</a></li>
 						<li><a id="th" href="javascript:void(0)" onclick="translator('my')"><img src="<?php echo base_url('assets/images/flag/Malaysia.png')?>" alt="" title="Malaysia"> มาเลเซีย</a></li>
+						<li><a id="th" href="javascript:void(0)" onclick="translator('mm')"><img src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="M"> พม่า</a></li>
 			    	</ul>
 			  	</li>
 			</ul>
@@ -93,6 +97,7 @@
 									</a>
 								</li>
 								<li><a href="<?php echo base_url('product'); ?>" title="สินค้า">สินค้า</a></li>
+								<li><a href="#" title="สินค้า">เซลเพจ</a></li>
 								<li><a href="<?php echo base_url('howto'); ?>" title="วิธีชำระเงิน">วิธีชำระเงิน</a></li>
 								<li><a href="<?php echo base_url('aboutus'); ?>" title="เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
 								<li><a href="<?php echo base_url('contactus'); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>
@@ -158,7 +163,10 @@
 										      } elseif ($_COOKIE['googtrans'] == '/en/my') {
 										         $icon = 'Malaysia.png';
 										         $lang = 'Malay';
-										      } else {
+										      }elseif ($_COOKIE['googtrans'] == '/en/mm') {
+												$icon = 'mm.png';
+												$lang = 'Myanmar';
+											 } else {
 										         $icon = 'th.png';
 										         $lang = 'English';
 										      }
@@ -223,6 +231,7 @@
 		<ul class="menu vertical off-canvas-list">
 			<li><h3>เมนูหลัก</h3></li>
 			<li><a href="<?php echo base_url('product'); ?>">สินค้า</a></li>
+			<li><a href="#">เซลเพจ</a></li>
 			<li><a href="<?php echo base_url('cart'); ?>">รถเข็น</a></li>
 			<li><a href="<?php echo base_url('member/history'); ?>">สถานะการสั่งซื้อ</a></li>
 			<li><a href="<?php echo base_url('howto'); ?>">วิธีชำระเงิน</a></li>

@@ -104,7 +104,7 @@
 	  //   });
 
       		function googleTranslateElementInit() {
-        		new google.translate.TranslateElement({pageLanguage: 'th', includedLanguages: 'en,th,id,zh-TW,vi,my', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+        		new google.translate.TranslateElement({pageLanguage: 'th', includedLanguages: 'en,th,id,zh-TW,vi,my,mm', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
       		}
 		</script>
 

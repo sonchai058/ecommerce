@@ -32,7 +32,7 @@
  * @license     https://github.com/scoumbourdis/grocery-crud/blob/master/license-grocery-crud.txt
  * @link		http://www.grocerycrud.com/documentation
  */
-class grocery_CRUD_Field_Types
+class Grocery_CRUD_Field_Types
 {
 	/**
 	 * Gets the field types of the main table.
@@ -471,19 +471,19 @@ class grocery_CRUD_Field_Types
  * @version    	1.5.2
  * @link		http://www.grocerycrud.com/documentation
  */
-class grocery_CRUD_Model_Driver extends grocery_CRUD_Field_Types
+class Grocery_CRUD_Model_Driver extends grocery_CRUD_Field_Types
 {
 	/**
-	 * @var grocery_CRUD_Model
+	 * @var Grocery_CRUD_Model
 	 */
 	public $basic_model = null;
 
 	protected function set_default_Model()
 	{
 		$ci = &get_instance();
-		$ci->load->model('grocery_CRUD_Model');
+		$ci->load->model('Grocery_CRUD_Model');
 
-		$this->basic_model = new grocery_CRUD_Model();
+		$this->basic_model = new Grocery_CRUD_Model();
 	}
 
 	protected function get_total_results()
@@ -536,7 +536,7 @@ class grocery_CRUD_Model_Driver extends grocery_CRUD_Field_Types
 	public function set_model($model_name)
 	{
 		$ci = &get_instance();
-		$ci->load->model('grocery_CRUD_Model');
+		$ci->load->model('Grocery_CRUD_Model');
 
 		$ci->load->model($model_name);
 
@@ -1519,7 +1519,7 @@ class grocery_CRUD_Model_Driver extends grocery_CRUD_Field_Types
  * @author     	John Skoumbourdis <scoumbourdisj@gmail.com>
  * @version    	1.5.2
  */
-class grocery_CRUD_Layout extends grocery_CRUD_Model_Driver
+class grocery_CRUD_Layout extends Grocery_CRUD_Model_Driver
 {
 	private $theme_path 				= null;
 	private $views_as_string			= '';
