@@ -43,13 +43,13 @@
 								$lang = 'Myanmar';
 							 }
 							echo '<img width="16" src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
-						   	echo "เปลี่ยนภาษา&nbsp";
+						   	echo "Language&nbsp";
 						?>
 					</a>
 
 			   	 <ul class="translation-links menu mb_menu">
-						<li><a id="th" href="javascript:void(0)" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> ไทย</a></li>
-						<li><a id="th" href="javascript:void(0)" onclick="/*translator('mm')*/"><img width="16" src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="M"> พม่า</a></li>
+						<li><a id="th" href="?language=thai" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> Thai</a></li>
+						<li><a id="th" href="?language=myanmar" onclick="/*translator('mm')*/"><img width="16" src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="Myanmar"> Myanmar</a></li>
 			    	</ul>
 			  	</li>
 			</ul>
@@ -123,14 +123,14 @@
 												$lang = 'Myanmar';
 											 }
 										    echo '<img width="16" src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
-										    echo "เปลี่ยนภาษา&nbsp";
+										    echo "Language&nbsp";
 										?>
 
 										</a>
 									   
 									    <ul class="translation-links menu">
-          								<li><a id="th" href="javascript:void(0)" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> ไทย</a></li>
-          								<li><a id="th" href="javascript:void(0)" onclick="/*translator('mm')*/"><img width="16" src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="Malaysia"> พม่า</a></li>
+          								<li><a id="th" href="?language=thai" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> Thai</a></li>
+          								<li><a id="th" href="?language=myanmar" onclick="/*translator('mm')*/"><img width="16" src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="Malaysia"> Myanmar</a></li>
 									    </ul>
 									  </li>
 									</ul>

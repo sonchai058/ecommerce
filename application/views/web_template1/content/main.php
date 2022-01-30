@@ -46,7 +46,8 @@
                    <div class="slide-right">
                        <div class="vision-text _dotranslate">
                             <h2>ทำไมต้องเป็น <span class="green">Tanisha</span></h2>
-                            <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ</p>
+                            <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ ประกอบกิจการจำหน่าย นำเข้า ส่งออก ผลิตภัณฑ์เสริมอาหาร อาหารบำรุงสุขภาพสินค้าอุปโภค บริโภค
+หมวดธุรกิจ : ร้านขายปลีกสินค้าทางเภสัชภัณฑ์และเวชภัณฑ์</p>
                         </div>
                         <div class="vision-text _notranslate notranslate">
                             <h2>အဘယ်ကြောင့်နည်း။ <span class="green">Tanisha?</span></h2>
