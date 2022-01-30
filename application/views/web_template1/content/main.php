@@ -38,12 +38,12 @@
     <section class="wrap-vision">
         <div class="row row-vision">
                <div class="small-12 medium-5 columns">
-                   <div class="animation-element slide-left">
+                   <div class="slide-left">
                        <img class="image-center vision-image" src="<?php echo base_url('assets/images/vision/img-vision.JPG'); ?>">
                    </div>
                </div>
                <div class="small-12 medium-7 columns">
-                   <div class="animation-element slide-right">
+                   <div class="slide-right">
                        <div class="vision-text _dotranslate">
                             <h2>ทำไมต้องเป็น <span class="green">Tanisha</span></h2>
                             <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ</p>
