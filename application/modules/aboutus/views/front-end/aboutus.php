@@ -13,16 +13,11 @@
 				<br>
 				<h4 class="text-bk"><bold>Tanisha Vision</bold></h4>
 				<div class="_dotranslate">
-					<p>ทรัพยากรธรรมชาติบนโลกนี้มีอยู่อย่างจำกัด แต่ความต้องการของมนุษย์มีไม่จำกัดนั้นเป็นเรื่องที่สวนทางกันเสมอ เพราะฉะนั้นทุกสิ่งทุกอย่างที่มีอยู่บนโลกนี้ มนุษย์จะต้องใช้อย่างประหยัด คุ้มค่าที่สุด และเกิดประโยชน์สูงสุดในศตวรรษต่อไป</p>
-					<br>
-					<p>ด้วยเหตุนี้ จึงเป็นที่มาของนวัตกรรมการผลิตสินค้าในนามว่า <bold>"Tanisha"</bold> ที่เน้นใช้อย่างคุ้มค่าและมีรสนิยมสินค้าที่ผลิตออกมาจะตอบสนองความต้องการของผู้สร้างและผู้อยู่เป็นหลัก กล่าวคือ สินค้าจะต้องแก้ปัญหาให้กับวิศวกรและผู้ออกแบบที่ประสบปัญหาอยู่ในปัจจุบัน ในขณะเดียวกันจะต้องมีรูปแบบที่ดีราคาที่แข่งขันได้ เพื่อใช้ในการทำตลาดของผู้พัฒนาอสังหาริมทรัพย์เป็นต้น</p>
-					<br>
-					<p>ดังนั้นเราจึงกล้ารับประกันผลิตภัณฑ์ที่ผลิตภายใต้แบรนด์ <bold>"Tanisha"</bold> ว่ามีทั้งคุณภาพดีไซน์และราคาที่แข่งขันได้</p>
+					<p>ประกอบกิจการจำหน่าย นำเข้า ส่งออก ผลิตภัณฑ์เสริมอาหาร อาหารบำรุงสุขภาพสินค้าอุปโภค บริโภคหมวดธุรกิจ : ร้านขายปลีกสินค้าทางเภสัชภัณฑ์และเวชภัณฑ์</p>
 				</div>
+				<br/>
 				<div class="_notranslate notranslate">
-					<p>The finite resources available on earth are insufficient while human wants and needs are unlimited. This is always the big controversy. To enter the new century, human therefore needs to use every resource in the most economic way to make sure they’re spent beneficially and worthy.</p>
-					<br>
-					<p>Realizing so, we provide new innovation of productions under the brand name “Tanisha: The brand emphasizes on using up the resources economically, worthy and tastefully. All the products are preeminently produced to fit the needs of the constructors and the residences. It can be said that the products aim to help the designers and engineers who are facing the problems in the present time. Additionally, the products are built in perfect form with competitive price to make sure the real estate developers can use the products in marketing. We dare to guarantee that our products under the brand name “Tanisha” provide not only quality and design, but also competitive price.</p>
+					<p>စားသောက်ကုန် ဖြည့်စွက်စာများ ရောင်းချခြင်း၊ တင်သွင်းခြင်း၊ တင်ပို့ခြင်းလုပ်ငန်း။ ကျန်းမာရေးနှင့် ညီညွတ်သော အစားအစာ၊ လူသုံးကုန်ပစ္စည်းများ လုပ်ငန်းစားသုံးမှု- ဆေးဆိုင်နှင့် ဆေးပစ္စည်းလက်လီစတိုး</p>
 				</div>
 				<br>
 				<h4 class="text-bk"><bold>ประสบการณ์การช้อปปิ้งที่สะดวกสบายบนเว็บไซต์</bold></h4>

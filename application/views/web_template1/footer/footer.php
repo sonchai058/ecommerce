@@ -26,13 +26,15 @@
 			<h3>วิธีชำระเงิน</h3>
 			<hr class="hr-title-2">
 			<ul class="pay-icon">
+<!--
 				<li><a href="#"><img src="<?php echo base_url('assets/images/payment/visa-1@2x.png'); ?>" alt="visa"></a></li>
 				<li><a href="#"><img src="<?php echo base_url('assets/images/payment/mastercard@2x.png'); ?>" alt="mastercard"></a></li>
 				<li><a href="#"><img src="<?php echo base_url('assets/images/payment/maestro@2x.png'); ?>" alt="maestro"></a></li>
 				<li><a href="#"><img src="<?php echo base_url('assets/images/payment/paypal@2x.png'); ?>" alt="paypal"></a></li>
 				<li><a href="#"><img src="<?php echo base_url('assets/images/payment/JCB_Cards.png'); ?>" alt="JCB"></a></li>
-				<li><a href="#"><img src="<?php echo base_url('assets/images/bank/32x32/scb1.png'); ?>" alt="SCB"></a></li>
-				<li><a href="#"><img src="<?php echo base_url('assets/images/bank/32x32/tmb1.png'); ?>" alt="TMB"></a></li>
+-->
+				<li><a href="#"><img width="128" src="<?php echo base_url('assets/images/bank/32x32/kbank-icon-png-2-Transparent-Images.png'); ?>" alt="KBANK"></a></li>
+				<!--<li><a href="#"><img src="<?php echo base_url('assets/images/bank/32x32/tmb1.png'); ?>" alt="TMB"></a></li>-->
 			</ul>
 		</div>
 	</div>
@@ -44,7 +46,7 @@
 				<!-- <li><a target="_blank" href="http://www.homeworks.co.th"><img src="<?php echo base_url('assets/images/partner/homeworks.png'); ?>" alt="homeworks"></a></li> -->
 				<!-- <li><a target="_blank" href="http://www.globalhouse.co.th"><img src="<?php echo base_url('assets/images/partner/globalhouse.png'); ?>" alt="globalhouse"></a></li> -->
 				<!-- <li><a target="_blank" href="http://www.thaiwatsadu.com"><img src="<?php echo base_url('assets/images/partner/thaiwatsadu.png'); ?>" alt="thaiwatsadu"></a></li> -->
-				<li><a target="_blank" href="http://www.homepro.co.th/"><img src="<?php echo base_url('assets/images/partner/homepro.png'); ?>" alt="homepro"></a></li>
+				<li><a target="_blank" href="#"><img width="128" src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="Esther Thailand"></a></li>
 			</ul>
 		</div>
 		<div class="small-12 medium-6 large-4 large-offset-2 columns">
@@ -54,14 +56,17 @@
 			<div class="home-adr _notranslate notranslate">
 				<div class="adr-1">
 					<p>
-						Tanisha Co., Ltd.<br>
-						Bangkok Thailand.
-						<a class="help" href="<?php echo base_url('assets/images/logo.jpg'); ?>" target="_blank">>> Click to view the map.</a>
+						บริษัท ธนิชา อินเตอร์เนชั่นแนล จำกัด.<br>
+						สำนักงานใหญ่ : เลขที่ 86/13 ถนนเสาหิน ซอย.18 ตำบลหนองหอย อำเภอเมือง จังหวัดเชียงใหม่ 50000 <br>
+						Tax ID : 0505564012718<br/>
+						Tanisha.inter@gmail.com
+						<a class="help" href="#" target="_blank">>> Click to view the map.</a>
 					</p>
 					<p>
-						Phone: 099 367 4224 &nbsp; Fax: -.
+						Phone: 099-367-4224 &nbsp; Fax: -
 					</p>
 				</div>
+				<!--
 				<div class="adr-2">
 					<p>
 					Tanisha Co., Ltd.<br>
@@ -72,6 +77,7 @@
 						Phone: 099 367 4224 &nbsp; Fax: -.
 					</p>
 				</div>
+				-->
 			</div>
 		</div>
 	</div>

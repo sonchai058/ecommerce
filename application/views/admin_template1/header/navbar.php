@@ -28,6 +28,10 @@
                 <a href="<?php echo base_url('statistic/control_statistic/total_sales'); ?>"    title="รายงาน / สถิติ"><div class="nav-menu-icon6"></div></a>
             	<a href="<?php echo base_url('statistic/control_statistic/total_sales'); ?>"    title="รายงาน / สถิติ">รายงาน / สถิติ</a>
             </li>
+            <li <?php if (uri_seg(1) == 'salepage') { ?>        class="active" <?php } ?>>
+                <a href="<?php echo base_url('salepage/control_salepage/salepage_management'); ?>"          title="Salepage"><div class="nav-menu-icon4"></div></a>
+                <a href="<?php echo base_url('salepage/control_salepage/salepage_management'); ?>"          title="Salepage">Salepage</a>
+            </li>
             <li <?php if (uri_seg(1) == 'webconfig') { ?>   class="active" <?php } ?>>
                 <a href="<?php echo base_url('webconfig/index/edit'); ?>" title="ตั้งค่าระบบ"><div class="nav-menu-icon7"></div></a>
             	<a href="<?php echo base_url('webconfig/index/edit'); ?>" title="ตั้งค่าระบบ">ตั้งค่าระบบ</a>

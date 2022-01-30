@@ -6,6 +6,7 @@
 			<?php $this->load->view('front-end/sidebar'); ?>
 
 			<div class="small-12 medium-expand columns">
+				<!--
 				<div class="wrapper-h2p-title">
 					<h2 class="text-title">วิธีการชำระเงิน</h2>
 					<h4>Tanisha มีวิธีการชำระเงินแบบใดบ้าง</h4>
@@ -15,6 +16,7 @@
 					<li><a  target="_blank" href="https://www.paysbuy.com/help-detail-40.aspx"><i class="fa fa-dot-circle-o"></i> ตัวอย่างการชำระเงินผ่านบัตรเครดิต</a></li>
 				</ol>
 				<br>
+-->
 
 <!-- 				<h4><i class="fa fa-angle-double-right"></i> บริการรับชำระด้วยเงินสดที่เคาน์เตอร์ / ตู้ ATM</h4>
 					<ol class="h2p-list">
@@ -26,9 +28,9 @@
 				<h4><i class="fa fa-angle-double-right"></i> บริการรับชำระด้วยบัญชีธนาคารออนไลน์</h4>
 				<ol class="h2p-list">
 					<!-- <li><a target="_blank" href="http://www.scb.co.th/th/personal-banking/bill-payment-top-up/bill-payment"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/SCB-2.png');?>" alt="SCB"> ตัวอย่างการชำระเงินผ่านบัญชีธนาคารไทยพาณิชย์</a></li> -->
-					<li><a href="#bill-scb" class="myModal"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/SCB-2.png');?>" alt="SCB"> การชำระเงินผ่านบัญชีธนาคารไทยพาณิชย์</a></li>
+					<li><a href="#bill-scb" class="myModal"><img width="128" class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/kbank-icon-png-2-Transparent-Images.png');?>" alt="SCB"> การชำระเงินผ่านบัญชีธนาคารกสิกรไทย</a></li>
 					<!-- <li><a target="_blank" href="https://www.tmbbank.com/howto/e-banking/pay-bill.php"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/TMB.png');?>" alt="TMB"> ตัวอย่างการชำระเงินผ่านบัญชีธนาคารทหารไทย</a></li> -->
-					<li><a href="#bill-tmb" class="myModal"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/TMB.png');?>" alt="TMB"> การชำระเงินผ่านบัญชีธนาคารทหารไทย</a></li>
+					<!--<li><a href="#bill-tmb" class="myModal"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/TMB.png');?>" alt="TMB"> การชำระเงินผ่านบัญชีธนาคารทหารไทย</a></li>-->
 					<!-- <li><a href="#!"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/KRUNGSRI-2.png');?>" alt="KRUNGSRI"> ตัวอย่างการชำระเงินผ่านบัญชีธนาคารกรุงศรีฯ</a></li> -->
 					<!-- <li><a href="#!"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/BANGKOK-2.png');?>" alt="BANGKOK"> ตัวอย่างการชำระเงินผ่านบัญชีธนาคารกรุงเทพ</a></li> -->
 				</ol>		
@@ -37,18 +39,11 @@
 
 				<div style="display:none">
 					<div id="bill-scb">
-						<h3>การชำระเงินผ่านบัญชีธนาคารไทยพาณิชย์</h3>
+						<h3>การชำระเงินผ่านบัญชีธนาคารกสิกรไทย</h3>
 						<hr>
-						<span style="font-weight: bold;font-size: 19px;">ชื่อบัญชี : </span>บจก. สินเพิ่มพูนค้าไม้<br>
-						<span style="font-weight: bold;font-size: 19px;">เลขที่บัญชี : </span>468-0-03134-4<br>
-						<span style="font-weight: bold;font-size: 19px;">Merchant ID : </span>0910986010<br>
-					</div>
-					<div id="bill-tmb">
-						<h3>การชำระเงินผ่านบัญชีธนาคารทหารไทย</h3>
-						<hr>
-						<!-- <span style="font-weight: bold;font-size: 19px;">ชื่อบัญชี : </span>บจก. สินเพิ่มพูนค้าไม้<br> -->
-						<!-- <span style="font-weight: bold;font-size: 19px;">เลขที่บัญชี : </span>468-0-03134-4<br> -->
-						<span style="font-weight: bold;font-size: 19px;">Merchant ID : </span>110326527<br>
+						<span style="font-weight: bold;font-size: 19px;">ธนาคาร : </span>กสิกรไทย<br>
+						<span style="font-weight: bold;font-size: 19px;">ชื่อบัญชี : </span>บจก.ธนิชา อินเตอร์เนชั่นแนล<br>
+						<span style="font-weight: bold;font-size: 19px;">เลขที่บัญชี : </span>107-3-97034-9<br>
 					</div>
 				</div>
 				

@@ -79,14 +79,15 @@
 				<div class="home-adr _notranslate notranslate">
 				<div class="adr-1">
 					<p>
-						Tanisha door Trading Co., Ltd.<br>
-						125/250 Moo 3 Rattanathibet Road Tambon Sai-Ma Amphoe Mueang Nonthaburi.
+						บริษัท ธนิชา อินเตอร์เนชั่นแนล จำกัด.<br>
+						สำนักงานใหญ่ : เลขที่ 86/13 ถนนเสาหิน ซอย.18 ตำบลหนองหอย อำเภอเมือง จังหวัดเชียงใหม่ 50000.
 						<a class="help" href="<?php echo base_url('assets/images/map/Tanisha.jpg'); ?>" target="_blank">>> Click to view the map.</a>
 					</p>
 					<p>
-						Phone: (029) 776-3224 &nbsp; Fax: (029) 776-323.
+						Phone: (099) 367-4224 &nbsp; Fax: -
 					</p>
 				</div>
+				<!--
 				<div class="adr-2">
 					<p>
 						J. Wood Industry Co., Ltd.<br>
@@ -97,14 +98,15 @@
 						Phone: (099) 367 4224 &nbsp; Fax: -
 					</p>
 				</div>
+				-->
 			</div>
 				<div>
 					<img class="lineQRC" width="165" style="float: left;" src="<?php echo base_url("assets/images/line.png") ?>">
 					<div class="contact_info" style="float: left;margin-top: 20px;">
 						<span style="font-size: 19px;font-weight: bold;">Line ID :</span> <span>Tanishatrading</span><br>
-						<span style="font-size: 19px;font-weight: bold;">Facebook :</span> <a target="_blank" class="help" href="https://www.facebook.com/estherthailandofficial">Tanisha Trading</a><br>
+						<span style="font-size: 19px;font-weight: bold;">Facebook :</span> <a target="_blank" class="help" href="https://www.facebook.com/estherthailandofficial">Link</a><br>
 						<span style="font-size: 19px;font-weight: bold;">Call center :</span> <span>099 367 4224</span><br>
-						<a target="_blank" class="help" href="http://www.Tanisha.co.th/">www.Tanisha.co.th</a>
+						<a target="_blank" class="help" href="https://tanisha-international.com/">www.tanisha-international.com</a>
 					</div>
 				</div>
 			</div>

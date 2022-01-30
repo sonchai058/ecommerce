@@ -9,7 +9,7 @@
 				<h2 class="text-title">วิธีการซื้อสินค้า</h2>
 				<div class="transport-wrapper">
 					<h4><i class="fa fa-angle-double-right"></i> ฉันจะทำรายการสั่งซื้อได้อย่างไร ?</h4>
-					<img src="<?php echo base_url('assets/images/howto/how-to-buy.jpg'); ?>" alt="howtopay">
+					<img src="<?php echo base_url('assets/images/howto/how-to-buy.png'); ?>" alt="howtopay">
 					<br>
 					<h4><i class="fa fa-angle-double-right"></i> ฉันทำการสั่งซื้อและมีการแจ้งยืนยันการสั่งซื้อเรียบร้อยแล้ว ฉันต้องทำอะไรต่อไป ?</h4>
 					<p>การยืนยันคำสั่งซื้อจะถูกส่งถึงคุูณทาง อีเมล และ SMS หลังจากที่คุณสั่งซื้อสินค้าเป็นที่เรียบร้อยแล้ว ทางเราจะส่งอีเมล และ SMS อีกเมื่อสินค้าของคุณมีการเปลี่ยนแปลงสถานะ คุณสามารถตรวจสอบสถานะคำสั่งสื้อของคุณได้ <a href="<?php echo base_url('member/transfercustom'); ?>" class="link">คลิกที่นี่</a></p>

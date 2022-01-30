@@ -36,48 +36,20 @@
 				<li>
 					<a href="#"><!-- <img src="<?php echo base_url('assets/images/flag/th.png');?>" alt=""> -->
 						<?php 
-							if (isset($_COOKIE['googtrans'])) {
-							   if ($_COOKIE['googtrans'] == '/en/en') { 
-							      $icon = 'en.png';
-							      $lang = 'English';
-							   } elseif ($_COOKIE['googtrans'] == '/en/th') {
-							      $icon = 'th.png';
-							      $lang = 'Thai';
-							   } elseif ($_COOKIE['googtrans'] == '/en/id') {
-							      $icon = 'Indonesia.png';
-							      $lang = 'indonesian';
-							   } elseif ($_COOKIE['googtrans'] == '/en/zh-TW') {
-							      $icon = 'China.png';
-							      $lang = 'chinese';
-							   } elseif ($_COOKIE['googtrans'] == '/en/vi') {
-							      $icon = 'Viet Nam.png';
-							      $lang = 'vietnamese';
-							   } elseif ($_COOKIE['googtrans'] == '/en/my') {
-							      $icon = 'Malaysia.png';
-							      $lang = 'Malay';
-							   } elseif ($_COOKIE['googtrans'] == '/en/mm') {
+							$icon = 'th.png';
+							$lang = 'Thai';
+							if (@$_COOKIE['googtrans'] == '/en/mm') {
 								$icon = 'Myanmar.png';
 								$lang = 'Myanmar';
-							 } else {
-							      $icon = 'th.png';
-							      $lang = 'English';
-							   }
-							   echo '<img src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
-						   } else {
-						      $_COOKIE['googtrans'] = '';
-						      echo '<img src="'.base_url('assets/images/flag/th.png').'" alt="">';
-						   }
-						   echo "เปลี่ยนภาษา&nbsp";
+							 }
+							echo '<img width="16" src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
+						   	echo "เปลี่ยนภาษา&nbsp";
 						?>
 					</a>
 
 			   	 <ul class="translation-links menu mb_menu">
-			    		<li><a id="en" href="javascript:void(0)" onclick="translator('en')"><img src="<?php echo base_url('assets/images/flag/en.png')?>" alt="" title="English"> อังกฤษ</a></li>
-						<li><a id="th" href="javascript:void(0)" onclick="translator('th')"><img src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> ไทย</a></li>
-						<li><a id="th" href="javascript:void(0)" onclick="translator('zh-TW')"><img src="<?php echo base_url('assets/images/flag/China.png')?>" alt="" title="China"> จีน</a></li>
-						<li><a id="th" href="javascript:void(0)" onclick="translator('vi')"><img src="<?php echo base_url('assets/images/flag/Viet Nam.png')?>" alt="" title="Viet Nam"> เวียดนาม</a></li>
-						<li><a id="th" href="javascript:void(0)" onclick="translator('my')"><img src="<?php echo base_url('assets/images/flag/Malaysia.png')?>" alt="" title="Malaysia"> มาเลเซีย</a></li>
-						<li><a id="th" href="javascript:void(0)" onclick="translator('mm')"><img src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="M"> พม่า</a></li>
+						<li><a id="th" href="javascript:void(0)" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> ไทย</a></li>
+						<li><a id="th" href="javascript:void(0)" onclick="/*translator('mm')*/"><img width="16" src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="M"> พม่า</a></li>
 			    	</ul>
 			  	</li>
 			</ul>
@@ -93,11 +65,11 @@
 							<ul class="dropdown menu">
 								<li class="menu-text">
 									<a href="<?php echo base_url(''); ?>" class="brand">
-										<img src="<?php echo base_url('assets/images/logo.png'); ?>" alt="<?php echo $site['WD_Name']; ?>"> <?php echo $site['WD_Name']; ?>
+										<img src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="<?php echo $site['WD_Name']; ?>"> <?php echo $site['WD_Name']; ?>
 									</a>
 								</li>
 								<li><a href="<?php echo base_url('product'); ?>" title="สินค้า">สินค้า</a></li>
-								<li><a href="#" title="สินค้า">เซลเพจ</a></li>
+								<li><a href="<?php echo base_url('salepage'); ?>" title="สินค้า">เซลเพจ</a></li>
 								<li><a href="<?php echo base_url('howto'); ?>" title="วิธีชำระเงิน">วิธีชำระเงิน</a></li>
 								<li><a href="<?php echo base_url('aboutus'); ?>" title="เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
 								<li><a href="<?php echo base_url('contactus'); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>
@@ -144,48 +116,21 @@
 										<li>
 									   <a href="#"><!-- <img src="<?php echo base_url('assets/images/flag/th.png');?>" alt=""> -->
 									   <?php 
-										   if (isset($_COOKIE['googtrans'])) {
-										      if ($_COOKIE['googtrans'] == '/en/en') { 
-										         $icon = 'en.png';
-										         $lang = 'English';
-										      } elseif ($_COOKIE['googtrans'] == '/en/th') {
-										         $icon = 'th.png';
-										         $lang = 'Thai';
-										      } elseif ($_COOKIE['googtrans'] == '/en/id') {
-										         $icon = 'Indonesia.png';
-										         $lang = 'indonesian';
-										      } elseif ($_COOKIE['googtrans'] == '/en/zh-TW') {
-										         $icon = 'China.png';
-										         $lang = 'chinese';
-										      } elseif ($_COOKIE['googtrans'] == '/en/vi') {
-										         $icon = 'Viet Nam.png';
-										         $lang = 'vietnamese';
-										      } elseif ($_COOKIE['googtrans'] == '/en/my') {
-										         $icon = 'Malaysia.png';
-										         $lang = 'Malay';
-										      }elseif ($_COOKIE['googtrans'] == '/en/mm') {
+									   		$icon = 'th.png';
+											$lang = 'Thai';
+										   if ($_COOKIE['googtrans'] == '/en/mm') {
 												$icon = 'mm.png';
 												$lang = 'Myanmar';
-											 } else {
-										         $icon = 'th.png';
-										         $lang = 'English';
-										      }
-										         echo '<img src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
-										      } else {
-										         $_COOKIE['googtrans'] = '';
-										            echo '<img src="'.base_url('assets/images/flag/th.png').'" alt="">';
-										      }
-										      echo "เปลี่ยนภาษา&nbsp";
+											 }
+										    echo '<img width="16" src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
+										    echo "เปลี่ยนภาษา&nbsp";
 										?>
 
 										</a>
 									   
 									    <ul class="translation-links menu">
-									    	<li><a id="en" href="javascript:void(0)" onclick="translator('en')"><img src="<?php echo base_url('assets/images/flag/en.png')?>" alt="" title="English"> อังกฤษ</a></li>
-          								<li><a id="th" href="javascript:void(0)" onclick="translator('th')"><img src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> ไทย</a></li>
-          								<li><a id="th" href="javascript:void(0)" onclick="translator('zh-TW')"><img src="<?php echo base_url('assets/images/flag/China.png')?>" alt="" title="China"> จีน</a></li>
-          								<li><a id="th" href="javascript:void(0)" onclick="translator('vi')"><img src="<?php echo base_url('assets/images/flag/Viet Nam.png')?>" alt="" title="Viet Nam"> เวียดนาม</a></li>
-          								<li><a id="th" href="javascript:void(0)" onclick="translator('my')"><img src="<?php echo base_url('assets/images/flag/Malaysia.png')?>" alt="" title="Malaysia"> มาเลเซีย</a></li>
+          								<li><a id="th" href="javascript:void(0)" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> ไทย</a></li>
+          								<li><a id="th" href="javascript:void(0)" onclick="/*translator('mm')*/"><img width="16" src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="Malaysia"> พม่า</a></li>
 									    </ul>
 									  </li>
 									</ul>

@@ -39,18 +39,18 @@
         <div class="row row-vision">
                <div class="small-12 medium-5 columns">
                    <div class="animation-element slide-left">
-                       <img class="image-center vision-image" src="<?php echo base_url('assets/images/vision/img-vision.png'); ?>">
+                       <img class="image-center vision-image" src="<?php echo base_url('assets/images/vision/img-vision.JPG'); ?>">
                    </div>
                </div>
                <div class="small-12 medium-7 columns">
                    <div class="animation-element slide-right">
                        <div class="vision-text _dotranslate">
                             <h2>ทำไมต้องเป็น <span class="green">Tanisha</span></h2>
-                            <p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้น จึงทำให้โลกเรามีการพัฒนาวัสดุที่ทดแทนไม้ขึ้นมาแต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p>
+                            <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ</p>
                         </div>
                         <div class="vision-text _notranslate notranslate">
-                            <h2>Why <span class="green">Tanisha?</span></h2>
-                            <p>In the past, when the term “door” was mentioned, people would think about wooden doors with 4, 5, 8 panels or carved teak wood doors. However, to answer the calls from various environmental care campaigns nowadays, we develop wood replacement materials. The materials give the exact feel of wood, but provide no flaws the wood posses. Tanisha uses these materials to mix up with the wood and produces doors that can be used for both interior and exterior area. The doors perfectly fit the requirements in terms of the beautiful pattern and color, while they also provide the natural feel. They’re also environmentally friendly and good for the earth.</p>
+                            <h2>အဘယ်ကြောင့်နည်း။ <span class="green">Tanisha?</span></h2>
+                            <p>အစားအသောက်ဖြည့်စွက်စာ ESTHER (သောက်ခြင်း) သည် ကျန်းမာရေးပြဿနာရှိသော အမျိုးသမီးများ၏ လိုအပ်ချက်များကို ဖြည့်ဆည်းပေးသည်။</p>
                         </div>
                     </div>
                 </div>
@@ -268,35 +268,35 @@
                     <div class="collection-list">
                         <div class="collection-item-1">
                             <div class="collection-item-img">
-                                <img src="<?php echo base_url('assets/images/products/showcase/CF-0002.7.png'); ?>" alt="CF-0002.7">
+                                <img src="<?php echo base_url('assets/images/products/showcase/sh1.png'); ?>" alt="">
                             </div>
-                            <div class="item-model"><small>( CF-0002.7 )</small></div>
+                            <div class="item-model"><small>( CF-0001 )</small></div>
                         </div>
                         <div class="collection-item-1">
                             <div class="collection-item-img">
-                                <img src="<?php echo base_url('assets/images/products/showcase/CF-0008.9.png'); ?>" alt="CF-0008.9">
+                                <img src="<?php echo base_url('assets/images/products/showcase/sh0.png'); ?>" alt="">
                             </div>
-                            <div class="item-model"><small>( CF-0008.9 )</small></div>
+                            <div class="item-model"><small>( CF-0001 )</small></div>
                         </div>
                         <div class="collection-item-1">
                             <div class="collection-item-img">
-                               <img src="<?php echo base_url('assets/images/products/showcase/CPB-0012.1.png'); ?>" alt="CPB-0012.1">
+                               <img src="<?php echo base_url('assets/images/products/showcase/sh1.png'); ?>" alt="">
                             </div>
-                            <div class="item-model"><small>( CFB-0012.1 )</small></div>
+                            <div class="item-model"><small>( CF-0001 )</small></div>
                         </div>
                     </div>
                 </div>
                 <div class="small-12 medium-expand columns">
                     <div class="collection-intro">
                         <div class="collection-title">
-                            <h2 class="text-green">Modern <span class="sub-title-1">Outdoors</span></h2>
+                            <h2 class="text-green">Esther <span class="sub-title-1">Dietary Supplement Product</span></h2>
                             <div class="divider"></div>
                             <!-- <p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
                             <div class="_dotranslate">
-                               <p>เป็นประตูที่ใช้ในพื้นที่ที่มีความชื้นและมีโอกาศโดนฝนและโดนแดด</p>
+                               <p>ครบจบในซอง ช่วย</p>
                             </div>
                             <div class="_notranslate notranslate">
-                                <p>The door is for external use. Primary moisture resistent for high numidity or sunlight area use.</p>
+                                <p>ช่วยชะลอให้เซลล์่อ่อนเยาว์ 30 ปีขึ้นไปต้องลอง ชงดื่มวันละ 1 ซอง บอกลาวัยทอง ปรับสมดุลฮอร์โมน 1 เดือนรู้เรื่อง</p>
                             </div>
                             
 
@@ -312,38 +312,44 @@
             <div class="row row-collection">
                 <div class="column order-1 medium-order-2 small-12 medium-expand">
                         <div class="collection-list">
+                        <div class="collection-item-img">
+                            <img src="<?php echo base_url('assets/images/products/showcase/sh1.JPG'); ?>" alt="MDP-W-0003.3">
+                        </div>
+                        
+                            <!--
                             <div class="collection-item-1">
                                 <div class="collection-item-img">
                                     <img src="<?php echo base_url('assets/images/products/showcase/MDP-W-0003.3.png'); ?>" alt="MDP-W-0003.3">
                                 </div>
-                                <div class="item-model"><small>( MDP-W-0003.3 )</small></div>
+                                <div class="item-model"><small>( MDP-W-0001 )</small></div>
                             </div>
                             <div class="collection-item-1">
                                 <div class="collection-item-img">
                                     <img src="<?php echo base_url('assets/images/products/showcase/MDP-G-0011.3.png'); ?>" alt="MDP-G-0011.3">
                                 </div>
-                                <div class="item-model"><small>( MDP-B-0011.3 )</small></div>
+                                <div class="item-model"><small>( MDP-W-001 )</small></div>
                             </div>
                             <div class="collection-item-1">
                                 <div class="collection-item-img">
                                     <img src="<?php echo base_url('assets/images/products/showcase/MDP-G-0003.4.png'); ?>" alt="MDP-G-0003.4">
                                 </div>
-                                <div class="item-model"><small>( MDP-G-0003.4 )</small></div>
+                                <div class="item-model"><small>( MDP-W-001 )</small></div>
                             </div>
+                            -->
                         </div>
                 </div>
                 <div class="column order-2 medium-order-1 small-12 medium-expand">
                     <div class="collection-intro collection-reverse">
                         <div class="collection-title">
-                            <h2 class="notranslate text-green">Modern<span class="sub-title-1">Indoors</span></h2>
+                            <h2 class="notranslate text-green">EAT<span class="sub-title-1">NO SUGAR</span></h2>
                             <div class="divider-reverse"></div>
                              <!--<p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
                             <div class="_dotranslate">
-                                <p>เป็นประตูที่ใช้สำหรับภายใน ทนความชื้นได้ในระดับหนึ่งไม่เหมาะกับสภาพที่ชื้นตลอดเวลาหรือมีแดด</p>
+                                <p>ใสแบบเพียวๆ คอลลาเจน และดงกุยนำเข้า ไม่มีแป้ง ไม่มีกลิ่นคาว</p>
                             </div>
                             
                             <div class="_notranslate notranslate">
-                                <p>The door is for internal use. Primary moisture resistent not for high numidity or sunlight area use.</p>
+                                <p>ကြည်လင်သန့်ရှင်းသော ကော်လာဂျင်နှင့် တင်သွင်းထားသော Dong Quai တို့ဖြစ်သည်။ အမှုန့်မရှိ၊ ငါးအနံ့မရှိ၊</p>
                             </div>
                         </div>
                         <div class="collection-more">
@@ -357,21 +363,22 @@
             <div class="row row-collection">
                 <div class="small-12 medium-expand columns">
                     <div class="collection-list">
-                        <div class="collection-item-2"><img src="<?php echo base_url('assets/images/products/stair/IMG_0054.jpg'); ?>" alt="Lucky Stair" width="450"></div>
+                        <div class="collection-item-2"><img src="<?php echo base_url('assets/images/products/stair/sh3.JPG'); ?>" alt="Lucky Stair" width="450"></div>
                     </div>
                 </div>
                 <div class="small-12 medium-expand columns">
                     <div class="collection-intro">
                         <div class="collection-title">
-                            <h2 class="text-green">Lucky<span class="sub-title-2"> Stairs</span></h2>
+                            <h2 class="text-green">DIETARY<span class="sub-title-2"> SUPPLEMENT PRODUCT</span></h2>
                             <div class="divider-2"></div>
                             <div class="_dotranslate">
-                                <p>ในอดีตที่ผ่านมา ประเทศไทยได้ชื่อว่าเป็นประเทศที่ร่ำรวยไม้ก็ว่าได้ เราคุ้นเคยกับการใช้ทรัพยากรไม้ แบบฟุ่มเฟื่อยเพราะเราหามาง่าย แต่ในปัจจุบัน "ไม้" เป็นสิ่งที่มีค่าและหายาก ยิ่งถ้าเป็นไม้ที่มีราคาแพง เช่น ไม้สัก, ไม้มะค่า, ไม้พยุง, ไม้ชิงชัน เป็นต้น ด้วยเหตุผลเหล่านี้ <bold>"Lucky Stair"</bold> จึงได้สร้างผลิตภัณฑ์สำหรับทำบันได โดยผ่านขบวนการผลิตต่างๆ ให้ได้มาซึ่งความสวยงาม คงทน และได้อารมณ์ของคำว่าไม้ ในชั้นบันไดที่มีชื่อว่า <bold>"Lucky Stair"</bold> ไม่บิด ไม่งอ ทนต่อความชื้นและแมลงต่างๆ</p>
+                                <p>เนียนนุ่ม ลดอาการปวดประจำเดือน <bold>"DIETARY"</bold> ลดริ้วรอย <bold>"SUPLEMENT PRODUCT"</bold> ผิวไส</p>
                                 <br>
-                                <img src="<?php echo base_url('assets/images/products/stair/sw-core.png'); ?>" alt="" width="200">
+                                <img src="<?php echo base_url('assets/images/products/stair/sh4.JPG'); ?>" alt="" width="200">
                                 <br>
-                                <div class="text-green ico-mid"><bold><i class="fa fa-caret-right"></i> Sandwich Core</bold></div>
-                                <p>เป็นการนำไม้แผ่นบางๆหนาประมาณ 8 mm. มาเรียงซ้อนกันโดยใช้กาวชนิดพิเศษทนต่อความร้อนและความชื้นมาเป็นตัวยึดให้ไม้แต่ละชั้นติดอยู่ด้วยกันในการวางไม้แต่ละชิ้นจะถูกเรียงสลับขวางซ้อนกันเพื่อไม่ให้ไม้นั้นบิดงอได้ มีความแข็งแรง คงสภาพได้ยาวนาน</p>
+                                <div class="text-green ico-mid"><bold><i class="fa fa-caret-right"></i> Product</bold></div>
+                                <p>ครบจบในซอง ช่วย ช่วยชะลอให้เซลล์่อ่อนเยาว์ 30 ปีขึ้นไปต้องลอง ชงดื่มวันละ 1 ซอง บอกลาวัยทอง ปรับสมดุลฮอร์โมน 1 เดือนรู้เรื่อง</p>
+<!--
                                 <br>
                                 <img src="<?php echo base_url('assets/images/products/stair/sw-core2.png'); ?>" alt="" width="200">
                                 <br>
@@ -390,6 +397,7 @@
                                 <br>
                                 <div class="text-green ico-mid"><bold><i class="fa fa-caret-right"></i> Finger-Joint Core</bold></div>
                                 <p>Finger –Joint core is made with 30 mm. wood. Pieces of wood are laid in lines to the desired width. Then, the glue is used to fix the pieces together one by one on the side. The product is supported by the wooden core at the back, in order to prevent from bending.</p>
+-->
                             </div>
                         </div>
                         <br><br>

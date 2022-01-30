@@ -27,7 +27,7 @@
 		                                    <label for="OD_Code" class="middle label-login">เลขที่ใบสั่งซื้อ: </label>
 		                                </div>
 		                                <div class="small-8 medium-9 columns">
-		                                    <label class="middle label-account"><input type="text" name="OD_Code"></label>
+		                                    <label class="middle label-account"><input value="<?php echo @$_GET['code'];?>" type="text" name="OD_Code"></label>
 		                                	<a href="#" role="button" class="btn-login" id="btn-transfercheck">ค้นหา</a>
 		                                </div>
 		                            </div>

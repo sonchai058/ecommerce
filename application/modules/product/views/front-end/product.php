@@ -9,9 +9,12 @@
             <div class="columns">
                 <div class="wrapper-product-title">
                     <h2>สินค้าของ Tanisha</h2>
-                    <p>นวัตกรรมการผลิตสินค้าในนามว่า "Lucky" ที่เน้นใช้อย่างประหยัดคุ้มค่าและมีรสนิยมสินค้าที่ผลิตออกมาจะตอบสนองตามความต้องการของผู้สร้างและผู้อยู่เป็นหลัก</p>
-                    <p>ดังนี้เราจึงกล้ารับประกันผลิตภัณฑ์ที่ผลิตภายใต้แบรนด์ "Lucky" ว่ามีทั้งคุณภาพดีไซน์และราคาที่แข่งขันได้</p>
-                </div> <?php
+                    <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ</p>
+                </div>
+                <div style="width:100%">
+                    <input type="text" placeholder="ค้นหาสินค้า..." class="form-control" style="font-size: 20px;padding: 20px;margin-top: 10px;">
+                </div>
+                <?php
                 echo form_input(array('type' => 'hidden', 'id' => 'current_page'));
                 echo form_input(array('type' => 'hidden', 'id' => 'show_per_page')); ?>
                 <div class="row row-product" id="row_product"> <?php

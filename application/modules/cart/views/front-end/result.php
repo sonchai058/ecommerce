@@ -3,6 +3,18 @@
         $this->template->load('header/breadcrumb');
         $grand_total = 0;
     ?>
+
+<?php
+/*
+require_once(APPPATH."libraries/lib/PromptPayQR.php");
+$PromptPayQR = new PromptPayQR(); // new object
+$PromptPayQR->size = 5; // Set QR code size to 8
+$PromptPayQR->id = '0505564012718'; // PromptPay ID
+$PromptPayQR->amount = 200; // Set amount (not necessary)
+$qr = '<img src="' . $PromptPayQR->generate() . '" />';
+*/
+?>
+
     <section>
     <style>
 		.email-order-list	{ width: 100%; 					}
@@ -16,9 +28,19 @@
 			<h4>การสั่งซื้อเสร็จสิ้น</h4>
 			<p>
 				<b>โอนเงินเข้าบัญชีธนาคาร</b><br>
-				ธนาคาร ไทยพาณิชย์, เลขที่บัญชี: 468-0-03134-4 , ชื่อบัญชี: บจก. สินเพิ่มพูนค้าไม้, สาขา: บิ๊กซี หางดง2<br>
+				ธนาคาร กสิกรไทย : 107-3-97034-9 , ชื่อบัญชี: บจก.ธนิชา อินเตอร์เนชั่นแนล<br>
 			</p>
-			<p>แจ้งโอนเงิน <a href="http://luckydoor.co.th/member/transfercustom" target="_blank">คลิกที่นี่</a></p>
+			<!--
+			<p>
+				<b>Promtpay</b> : 0505564012718<br>
+			</p>
+			-->
+			<p>
+				<?php
+					echo "<img src='".base_url('assets/images/pp.png')."'/>";
+				?>
+			</p>
+			<p>แจ้งโอนเงิน <a href="<?php echo site_url('member/transfercustom?code='.$order['OD_Code']);?>" target="_blank"><u>คลิกที่นี่</u></a></p>
 			<br>
 			<h4>รายละเอียด</h4>
 			<p>

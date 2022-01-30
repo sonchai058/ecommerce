@@ -61,7 +61,7 @@ class Bank extends MX_Controller {
         $breadcrumb = $this->breadcrumb_model->breadcrumb($navi_props['path'], $navi_props['name'], $title);
 
         $data = array(
-            'content_view'  => $content_view
+            'content_view'  => $content_view,
             'title'         => $title,
             'breadcrumb'    => $breadcrumb,
         );
