@@ -11,8 +11,13 @@
                     <h2>สินค้าของ Tanisha</h2>
                     <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ</p>
                 </div>
-                <div style="width:100%">
-                    <input type="text" placeholder="ค้นหาสินค้า..." class="form-control" style="font-size: 20px;padding: 20px;margin-top: 10px;">
+                <div class="row row-product" style="width:100%">
+                    <div class="small-10 medium-10 large-10 columns">
+                        <input id="search" type="text" placeholder="ค้นหาสินค้า..." class="form-control" style="font-size: 20px;padding: 20px;margin-top: 10px;" value="<?php echo @$_GET['search'];?>">
+                    </div>
+                    <div class="small-2 medium-2 large-2 columns" style="padding-top:10px">
+                        <button onclick="window.location.replace('?search='+$('#search').val())" type="button" class="btn-buy-now" style="width:100%;font-weight:bold">ค้นหา</button>
+                    </div>
                 </div>
                 <?php
                 echo form_input(array('type' => 'hidden', 'id' => 'current_page'));
@@ -48,17 +53,18 @@
                                         </div>
                                     </div>
                                     <div class="product-price">
+                                    <h5 class="product-title-2 text-green"><?php echo $value['P_Title']; ?></h5>
                                         <h5 class="product-title-2 text-green"><a href="<?php echo base_url('product/detail/'.$value['P_ID']); ?>"><?php echo $value['P_IDCode']; ?></a></h5>
                                         <h4> <?php
                                             if (count($product_promotion_query) > 0)
                                                 echo '฿'.number_format($product_promotion_query['PP_Price'], 2, '.', ',');
                                             else if (count($product_stock_query) > 0)
-                                                echo '฿'.number_format($product_stock_query['PS_Price'], 2, '.', ','); ?>
+                                                echo '฿'.number_format(@$product_stock_query['PS_Price'], 2, '.', ','); ?>
                                         </h4>
                                         <!-- <h5>
                                             <span class="price-sale"><?php if (count($product_promotion_query) > 0 && count($product_stock_query) > 0) echo '฿'.number_format($product_stock_query['PS_Price'], 2, '.', ','); ?></span><?php
                                             if (count($product_promotion_query) > 0 && count($product_stock_query) > 0) { ?>
-                                                <span class="price-per-sale"><?php echo number_format(((1 - ($product_promotion_query['PP_Price'] / $product_stock_query['PS_Price'])) * 100), 0, '.', ',').'%'; ?></span> <?php
+                                                <span class="price-per-sale"><?php echo number_format(((1 - (@$product_promotion_query['PP_Price'] / @$product_stock_query['PS_Price'])) * 100), 0, '.', ',').'%'; ?></span> <?php
                                             } ?>
                                         </h5> -->
                                         <h5 class="text-red">

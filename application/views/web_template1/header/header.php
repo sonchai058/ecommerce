@@ -1,3 +1,6 @@
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="qygm9FWt"></script>
+
 <?php
 	$site = $this->webinfo_model->getOnceWebMain();
 	$gq = 0;
@@ -38,9 +41,9 @@
 						<?php 
 							$icon = 'th.png';
 							$lang = 'Thai';
-							if (@$_COOKIE['googtrans'] == '/en/mm') {
-								$icon = 'Myanmar.png';
-								$lang = 'Myanmar';
+							if (@$_COOKIE['googtrans'] == '/en/en') {
+								$icon = 'en.png';
+								$lang = 'en';
 							 }
 							echo '<img width="16" src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
 						   	echo "Language&nbsp";
@@ -49,7 +52,7 @@
 
 			   	 <ul class="translation-links menu mb_menu">
 						<li><a id="th" href="?language=thai" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> Thai</a></li>
-						<li><a id="th" href="?language=myanmar" onclick="/*translator('mm')*/"><img width="16" src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="Myanmar"> Myanmar</a></li>
+						<li><a id="th" href="?language=en" onclick="/*translator('en')*/"><img width="16" src="<?php echo base_url('assets/images/flag/en.png')?>" alt="" title="en"> Englist</a></li>
 			    	</ul>
 			  	</li>
 			</ul>
@@ -68,11 +71,19 @@
 										<img src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="<?php echo $site['WD_Name']; ?>"> <?php echo $site['WD_Name']; ?>
 									</a>
 								</li>
-								<li><a href="<?php echo base_url('product'); ?>" title="สินค้า">สินค้า</a></li>
-								<li><a href="<?php echo base_url('salepage'); ?>" title="สินค้า">เซลเพจ</a></li>
-								<li><a href="<?php echo base_url('howto'); ?>" title="วิธีชำระเงิน">วิธีชำระเงิน</a></li>
-								<li><a href="<?php echo base_url('aboutus'); ?>" title="เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
-								<li><a href="<?php echo base_url('contactus'); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>
+								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+									<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="สินค้า">สินค้า</a></li>
+									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="สินค้า">เซลเพจ</a></li>
+									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="วิธีชำระเงิน">วิธีชำระเงิน</a></li>
+									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
+									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>
+								<?php }else{?>
+									<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="สินค้า">Product</a></li>
+									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="สินค้า">Salepage</a></li>
+									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="วิธีชำระเงิน">How to Pay</a></li>
+									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="เกี่ยวกับเรา">About US</a></li>
+									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">Contact</a></li>
+								<?php }?>
 							</ul>
 						</div>
 					</div>
@@ -80,29 +91,47 @@
 						<div class="top-bar-right">
 							<ul class="menu"> <?php
 								if (get_session('C_ID') != '') {
-									$member_data = rowArray($this->common_model->get_where_custom('member', 'M_ID', get_session('C_ID')));
+									$member_data = rowArray($this->coenon_model->get_where_custom('member', 'M_ID', get_session('C_ID')));
 									if ($member_data !== '') { ?>
 										<li><a href="#" title="<?php echo $member_data['M_flName']; ?>" id="member-history"><i class="fa fa-user"></i><?php echo $member_data['M_flName']; ?></a></li> <?php
 									}
 									else { ?>
-										<li><a href="#" title="สถานะการสั่งซื้อ" id="member-history"><i class="fa fa-truck"></i>สถานะการสั่งซื้อ</a></li> <?php
+										<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+										<li><a href="#" title="สถานะการสั่งซื้อ" id="member-history"><i class="fa fa-truck"></i>สถานะการสั่งซื้อ</a></li> 
+										<?php }else{?>
+											<li><a href="#" title="အမိန့်အခြေအနေ" id="member-history"><i class="fa fa-truck"></i>Order</a></li> 
+										<?php }
 									}
 								}
 								else { ?>
-									<li><a href="<?php echo base_url('member/transfercustom'); ?>" title="แจ้งโอนเงิน" id="member-transfer"><i class="fa fa-exchange"></i>แจ้งโอนเงิน</a></li> <?php
+									<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+									<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="แจ้งโอนเงิน" id="member-transfer"><i class="fa fa-exchange"></i>แจ้งโอนเงิน</a></li> 
+									<?php }else{?>
+										<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="transfer money" id="member-transfer"><i class="fa fa-exchange"></i>Transfer money</a></li> 
+										<?php
+									}
 								} ?>
 								<li> <?php
 									if (get_session('C_ID') == '') { ?>
-										<a href="#" title="เข้าสู่ระบบ" data-toggle="reveal-login" id="login-reveal"><i class="fa fa-sign-in"></i>เข้าสู่ระบบ</a> <?php
+										<!--<a href="#" title="เข้าสู่ระบบ" data-toggle="reveal-login" id="login-reveal"><i class="fa fa-sign-in"></i>เข้าสู่ระบบ</a>--> <?php
 									}
 									else {
 										echo form_open('member/logout', array('id' => 'form-logout')); ?>
-											<a href="#" title="ลงชื่อออก" id="btn-logout"><i class="fa fa-sign-out"></i> ออกจากระบบ</a> <?php
+										<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+											<a href="#" title="ลงชื่อออก" id="btn-logout"><i class="fa fa-sign-out"></i> ออกจากระบบ</a>
+											<?php }else{?>
+												<a href="#" title="ลงชื่อออก" id="btn-logout"><i class="fa fa-sign-out"></i> Logout</a>
+											<?php }
 											echo form_hidden('current_url', current_url());
 										echo form_close();
 									} ?>
 								</li>
-								<li><a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>รถเข็น <?php if ($this->cart->contents()) echo '<span class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
+								<li>
+								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>	
+									<a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>รถเข็น <?php if ($this->cart->contents()) echo '<span class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
+								<?php }else{?>
+									<a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>Cart <?php if ($this->cart->contents()) echo '<span class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
+									<?php }?>
 								<!-- <li> <?php
 									echo form_open('product', array('id' => 'form-productsearch')); ?>
 										<input type="search" placeholder="ค้นหาสินค้า..." id="product_search_input" name="product_search_input"> <?php
@@ -118,9 +147,9 @@
 									   <?php 
 									   		$icon = 'th.png';
 											$lang = 'Thai';
-										   if ($_COOKIE['googtrans'] == '/en/mm') {
-												$icon = 'mm.png';
-												$lang = 'Myanmar';
+										   if (@$_COOKIE['googtrans'] == '/en/en') {
+												$icon = 'en.png';
+												$lang = 'en';
 											 }
 										    echo '<img width="16" src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
 										    echo "Language&nbsp";
@@ -130,7 +159,7 @@
 									   
 									    <ul class="translation-links menu">
           								<li><a id="th" href="?language=thai" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> Thai</a></li>
-          								<li><a id="th" href="?language=myanmar" onclick="/*translator('mm')*/"><img width="16" src="<?php echo base_url('assets/images/flag/mm.png')?>" alt="" title="Malaysia"> Myanmar</a></li>
+          								<li><a id="th" href="?language=en" onclick="/*translator('en')*/"><img width="16" src="<?php echo base_url('assets/images/flag/en.png')?>" alt="" title="Malaysia"> Englist</a></li>
 									    </ul>
 									  </li>
 									</ul>
@@ -174,17 +203,18 @@
 			<span aria-hidden="true">×</span>
 		</button>
 		<ul class="menu vertical off-canvas-list">
+		<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 			<li><h3>เมนูหลัก</h3></li>
-			<li><a href="<?php echo base_url('product'); ?>">สินค้า</a></li>
-			<li><a href="#">เซลเพจ</a></li>
-			<li><a href="<?php echo base_url('cart'); ?>">รถเข็น</a></li>
-			<li><a href="<?php echo base_url('member/history'); ?>">สถานะการสั่งซื้อ</a></li>
-			<li><a href="<?php echo base_url('howto'); ?>">วิธีชำระเงิน</a></li>
-			<li><a href="<?php echo base_url('aboutus'); ?>">เกี่ยวกับเรา</a></li>
-			<li><a href="<?php echo base_url('contactus'); ?>">ติดต่อเรา</a></li>
+			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>">สินค้า</a></li>
+			<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>">เซลเพจ</a></li>
+			<li><a href="<?php echo base_url('cart'.'?language='.@$_GET['language']); ?>">รถเข็น</a></li>
+			<li><a href="<?php echo base_url('member/history'.'?language='.@$_GET['language']); ?>">สถานะการสั่งซื้อ</a></li>
+			<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>">วิธีชำระเงิน</a></li>
+			<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>">เกี่ยวกับเรา</a></li>
+			<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>">ติดต่อเรา</a></li>
 			<li> <?php
 				if (get_session('C_ID') == '') { ?>
-					<a href="<?php echo base_url('member/login'); ?>">ลงชื่อเข้าใช้</a> <?php
+					<a href="<?php echo base_url('member/login'.'?language='.@$_GET['language']); ?>">ลงชื่อเข้าใช้</a> <?php
 				}
 				else {
 					echo form_open('member/logout', array('id' => 'form-logout-res'));
@@ -193,6 +223,27 @@
 					<a href="#" id="btn-logout-res">ลงชื่อออก</a> <?php
 				} ?>
 			</li>
+		<?php }else{?>
+			<li><h3>Menu</h3></li>
+			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>">Product</a></li>
+			<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>">Salepage</a></li>
+			<li><a href="<?php echo base_url('cart'.'?language='.@$_GET['language']); ?>">Cart</a></li>
+			<li><a href="<?php echo base_url('member/history'.'?language='.@$_GET['language']); ?>">สถานะการสั่งซื้อ</a></li>
+			<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>">How to Pay</a></li>
+			<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>">About US</a></li>
+			<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>">Contact</a></li>
+			<li> <?php
+				if (get_session('C_ID') == '') { ?>
+					<a href="<?php echo base_url('member/login'.'?language='.@$_GET['language']); ?>">Login</a> <?php
+				}
+				else {
+					echo form_open('member/logout', array('id' => 'form-logout-res'));
+						echo form_hidden('current_url', current_url());
+					echo form_close(); ?>
+					<a href="#" id="btn-logout-res">Logout</a> <?php
+				} ?>
+			</li>
+		<?php }?>
 		</ul>
 	</aside>
 

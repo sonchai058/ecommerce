@@ -97,19 +97,19 @@
 				<br>
 				<div class="price-product">
 					<h2 class="product-price-view"> <?php
-						if ($product_stock['PS_Price'] != 0 && !empty($product_price['PP_Price']) && $product_price['PP_Price'] != 0) {
-							if ($product_price['PP_Price'] != '' || $product_price['PP_Price'] != 0)
-								echo '฿'.number_format($product_price['PP_Price'], 2, '.', ',');
+						if (@$product_stock['PS_Price'] != 0 && !empty(@$product_price['PP_Price']) && @$product_price['PP_Price'] != 0) {
+							if (@$product_price['PP_Price'] != '' || @$product_price['PP_Price'] != 0)
+								echo '฿'.number_format(@$product_price['PP_Price'], 2, '.', ',');
 						}
-						else if ($product_stock['PS_Price'] != 0 && (empty($product_price['PP_Price']) || $product_price['PP_Price'] == 0)) {
-							if ($product_stock['PS_Price'] != '' || $product_price['PP_Price'] != 0)
-								echo '฿'.number_format($product_stock['PS_Price'], 2, '.', ',');
+						else if (@$product_stock['PS_Price'] != 0 && (empty(@$product_price['PP_Price']) || @$product_price['PP_Price'] == 0)) {
+							if (@$product_stock['PS_Price'] != '' || @$product_price['PP_Price'] != 0)
+								echo '฿'.number_format(@$product_stock['PS_Price'], 2, '.', ',');
 						}
 						else
 							echo '฿'.number_format(0, 2, '.', ','); ?>
 					</h2> <?php
-					if ($product_stock['PS_Price'] != 0 && !empty($product_price['PP_Price']) && $product_price['PP_Price'] != 0) { ?>
-						<h4 class="price-sale">ราคาปกติ <?php echo '฿'.number_format($product_stock['PS_Price'], 2, '.', ','); ?></h4> <?php
+					if (@$product_stock['PS_Price'] != 0 && !empty(@$product_price['PP_Price']) && @$product_price['PP_Price'] != 0) { ?>
+						<h4 class="price-sale">ราคาปกติ <?php echo '฿'.number_format(@$product_stock['PS_Price'], 2, '.', ','); ?></h4> <?php
 					} ?>
 				</div> <?php
 				if (!empty($product_stock['PS_Amount']) && $product_stock['PS_Amount'] > 0) { ?>
@@ -118,8 +118,8 @@
 				else { ?>
 					<h5 class="text-red"><i class="fa fa-times"></i> สินค้าหมด</h5> <?php
 				} ?>
-				<input class="product-prp" id="prp" name="prp" type="hidden" value="<?php if (!empty($product_price['PP_Price']) && $product_price['PP_Price'] != 0) echo number_format($product_price['PP_Price'], 2, '.', ''); else echo number_format(0, 2, '.', ''); ?>">
-				<input class="product-prs" id="prs" name="prs" type="hidden" value="<?php if (!empty($product_price['PS_Price']) && $product_stock['PS_Price'] != 0) echo number_format($product_stock['PS_Price'], 2, '.', ''); else echo number_format(0, 2, '.', ''); ?>">
+				<input class="product-prp" id="prp" name="prp" type="hidden" value="<?php if (!empty(@$product_price['PP_Price']) && @$product_price['PP_Price'] != 0) echo number_format(@$product_price['PP_Price'], 2, '.', ''); else echo number_format(0, 2, '.', ''); ?>">
+				<input class="product-prs" id="prs" name="prs" type="hidden" value="<?php if (!empty(@$product_price['PS_Price']) && @$product_stock['PS_Price'] != 0) echo number_format(@$product_stock['PS_Price'], 2, '.', ''); else echo number_format(0, 2, '.', ''); ?>">
 				<input class="product-qty" id="qty" name="qty" type="number" value="1" min="1">
 				<a href="#" class="button btn-product" id="btn_cart_add">เพิ่มสินค้าในตะกร้า</a>
 				<!-- <div class="wishlist"> -->
@@ -174,6 +174,7 @@
 				</div>
 				
 				<?php if($product_detail['C_ID'] == 1){?>
+					<!--
 				<div class="_notranslate notranslate">
 					<h5><bold>Outdoors:</bold></h5>
 					<p>Is exeternal door made from fiber cement material which cause high humidity resistance. Coloring can be done both painting or spraying.</p>
@@ -217,6 +218,7 @@
 
 
 				</div>
+				-->
 				<?php } ?>
 
 				

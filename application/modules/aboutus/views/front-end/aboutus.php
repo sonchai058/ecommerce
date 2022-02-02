@@ -17,7 +17,7 @@
 				</div>
 				<br/>
 				<div class="_notranslate notranslate">
-					<p>စားသောက်ကုန် ဖြည့်စွက်စာများ ရောင်းချခြင်း၊ တင်သွင်းခြင်း၊ တင်ပို့ခြင်းလုပ်ငန်း။ ကျန်းမာရေးနှင့် ညီညွတ်သော အစားအစာ၊ လူသုံးကုန်ပစ္စည်းများ လုပ်ငန်းစားသုံးမှု- ဆေးဆိုင်နှင့် ဆေးပစ္စည်းလက်လီစတိုး</p>
+					<p>Business selling, importing, exporting food supplements. Healthy food, consumer products Business Consumption : Pharmacy and medical supplies retail store</p>
 				</div>
 				<br>
 				<h4 class="text-bk"><bold>ประสบการณ์การช้อปปิ้งที่สะดวกสบายบนเว็บไซต์</bold></h4>

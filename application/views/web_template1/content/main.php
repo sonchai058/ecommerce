@@ -44,15 +44,22 @@
                </div>
                <div class="small-12 medium-7 columns">
                    <div class="slide-right">
+                       <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                        <div class="vision-text _dotranslate">
                             <h2>ทำไมต้องเป็น <span class="green">Tanisha</span></h2>
                             <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ ประกอบกิจการจำหน่าย นำเข้า ส่งออก ผลิตภัณฑ์เสริมอาหาร อาหารบำรุงสุขภาพสินค้าอุปโภค บริโภค
-หมวดธุรกิจ : ร้านขายปลีกสินค้าทางเภสัชภัณฑ์และเวชภัณฑ์</p>
+หมวดธุรกิจ : ร้านขายปลีกสินค้าทางเภสัชภัณฑ์และเวชภัณฑ์ </p>
+                            <p>ครบจบในซอง ช่วย
+
+ช่วยชะลอให้เซลล์่อ่อนเยาว์ 30 ปีขึ้นไปต้องลอง ชงดื่มวันละ 1 ซอง บอกลาวัยทอง ปรับสมดุลฮอร์โมน 1 เดือนรู้เรื่อง</p>
                         </div>
+                        <?php }else{?>
                         <div class="vision-text _notranslate notranslate">
                             <h2>အဘယ်ကြောင့်နည်း။ <span class="green">Tanisha?</span></h2>
                             <p>အစားအသောက်ဖြည့်စွက်စာ ESTHER (သောက်ခြင်း) သည် ကျန်းမာရေးပြဿနာရှိသော အမျိုးသမီးများ၏ လိုအပ်ချက်များကို ဖြည့်ဆည်းပေးသည်။</p>
                         </div>
+                        <?php }?>
+
                     </div>
                 </div>
             </div>
@@ -81,7 +88,7 @@
                         AND `PP_Allow` = '1'
                         ORDER BY `PP_ID` DESC LIMIT 1   "
                 )); ?>
-                <div class="small-12 medium-6 large-3 columns">
+                <div class="small-12 medium-12 large-12 columns">
                     <div class="product">
                         <div class="product-img"> <?php
                             if ($value['P_Img'] !== '') { ?>
@@ -345,13 +352,15 @@
                             <h2 class="notranslate text-green">EAT<span class="sub-title-1">NO SUGAR</span></h2>
                             <div class="divider-reverse"></div>
                              <!--<p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
-                            <div class="_dotranslate">
+                             <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                             <div class="_dotranslate">
                                 <p>ใสแบบเพียวๆ คอลลาเจน และดงกุยนำเข้า ไม่มีแป้ง ไม่มีกลิ่นคาว</p>
                             </div>
-                            
+                            <?php }else{?>
                             <div class="_notranslate notranslate">
                                 <p>ကြည်လင်သန့်ရှင်းသော ကော်လာဂျင်နှင့် တင်သွင်းထားသော Dong Quai တို့ဖြစ်သည်။ အမှုန့်မရှိ၊ ငါးအနံ့မရှိ၊</p>
                             </div>
+                            <?php }?>
                         </div>
                         <div class="collection-more">
                             <a href="<?php echo base_url('product/category/2'); ?>" class="btn-view-store">ดูเพิ่มเติม</a>

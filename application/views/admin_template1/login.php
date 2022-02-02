@@ -48,7 +48,7 @@
                     <li>
                         <a class="loginSubmit" title="Login">
                             <div class="wrap_item">
-                                <img src="<?php echo base_url('assets/admin/images/login.png');?>"><span>Login</span>
+                                <!--<img src="<?php echo base_url('assets/admin/images/login.png');?>">--><span>Login</span>
                             </div>
                         </a>
                     </li>

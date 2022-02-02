@@ -61,7 +61,7 @@ class Control_salepage extends MX_Controller {
         $this->crud_level_model->crudStateEnabled(/*add*/true,/*view*/false,/*edit*/true,/*del*/true,/*export*/true,/*print*/true);
         $this->delete_action_model->del_action('selepage', 'user_update', 'datetime_update', 'allow', 'id');
 
-        $title = 'ธนาคาร';
+        $title = 'Salepage';
         $crud = new grocery_CRUD();
         $crud->set_language('thai');
         $crud->set_subject($title);
@@ -72,20 +72,20 @@ class Control_salepage extends MX_Controller {
         $crud->display_as('id',               'ไอดี');
         $crud->display_as('name_th',             'หัวข้อภาษาไทย');
         $crud->display_as('text_th',             'ข้อมูลภาษาไทย');
-        $crud->display_as('name_mm',             'หัวข้อภาษาพม่า');
-        $crud->display_as('text_mm',             'ข้อมูลภาษาพม่า');
+        $crud->display_as('name_en',             'หัวข้อภาษาอังกฤษ');
+        $crud->display_as('text_en',             'ข้อมูลภาษาอังกฤษ');
         $crud->display_as('user_add',          'ผู้เพิ่ม');
         $crud->display_as('datetime_add',      'วันเวลาที่เพิ่ม');
         $crud->display_as('user_update',       'ผู้อัพเดท');
         $crud->display_as('datetime_update',   'วันเวลาที่อัปเดท');
         $crud->display_as('allow',            'สถานะ');
 
-        $crud->required_fields('name_th', 'name_mm', 'allow');
+        $crud->required_fields('name_th', 'name_en', 'allow');
 
-        $crud->columns('id','name_th', 'name_mm', 'allow');
+        $crud->columns('id','name_th', 'name_en', 'allow');
 
-        $crud->add_fields('name_th', 'text_th', 'name_mm','text_mm', 'user_add', 'datetime_add', 'user_update', 'datetime_update', 'allow');
-        $crud->edit_fields('name_th', 'text_th', 'name_mm', 'text_mm', 'user_update','datetime_update', 'allow');
+        $crud->add_fields('name_th', 'text_th', 'name_en','text_en', 'user_add', 'datetime_add', 'user_update', 'datetime_update', 'allow');
+        $crud->edit_fields('name_th', 'text_th', 'name_en', 'text_en', 'user_update','datetime_update', 'allow');
 
         $crud->field_type('allow', 'dropdown', array('1' => 'ปกติ', '2' => 'ระงับ', '3' => 'ลบ / บล็อค'));
 

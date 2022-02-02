@@ -229,7 +229,7 @@ html {
     font-family: "TH Krub";
     font-size: 20px;
     height: 100%;
-    background-image: url("../images/bg-back.jpg");
+    background-image: url("../images/bg2.JPG");
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -309,6 +309,7 @@ textarea {
 .wrap_login .table_data {
     margin: 0 auto;
     clear: both;
+    width: 90%;
 }
 
 .wrap_login .table_data td {
@@ -322,6 +323,7 @@ textarea {
 }
 
 .wrap_login .table_data td input {
+    width: 95%;
     height: 30px;
     background-color: #FFF;
     border: 0;
@@ -384,10 +386,11 @@ textarea {
 
 .wrap_login .wrap_data a.loginSubmit .wrap_item span {
     float: left;
-    margin-left: 15px;
-    margin-top: 2px;
+    //margin-left: 15px;
+    //margin-top: 2px;
     font-size: 22px;
-    color: #FFF;
+    color: #f6f6f6;
+    font-weight: bold !important;
 }
 
 .wrap_login .wrap_data a.loginSubmit:hover {
@@ -395,8 +398,8 @@ textarea {
 }
 
 .wrap_login .wrap_data .forgot_link {
-    font-size: 22px;
-    color: #FFF;
+    font-size: 16px;
+    color: #1a1a1a;
     text-decoration: none;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;

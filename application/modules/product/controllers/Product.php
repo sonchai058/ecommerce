@@ -57,19 +57,24 @@ class Product extends MX_Controller {
 	}
 
 	public function index() {
-		if (get_inpost('productsearch')) {
+		$sql = "";
+		if(@$_GET['search']!='') {
+			$sql = " `P_Title` like '%{$_GET['search']}%' AND ";
+		}
+
+		if (get_inpost('productsearch') || @$_GET['search']!='') {
 			$search_string = get_inpost('product_search_input');
 			$product_query = $this->common_model->custom_query(
 				" 	SELECT * FROM `product`
 					LEFT JOIN `category`
 					ON `product`.`C_ID` = `category`.`C_ID`
-					WHERE `P_Allow` != '3'
+					WHERE {$sql} `P_Allow` != '3'
 					AND (`P_Name` LIKE '%$search_string%' OR `C_Name` LIKE '%$search_string%') 	"
 			);
 		}
 		else {
 			$product_query = $this->common_model->custom_query(
-				" SELECT * FROM `product` WHERE `P_Allow` != '3' "
+				" SELECT * FROM `product` WHERE {$sql} `P_Allow` != '3' "
 			);
 		}
 		if (count($product_query) > 0)

@@ -144,12 +144,14 @@
                     </li> <?php
                 }
                 else if (uri_seg(1) == 'member' && uri_seg(2) == 'control_member' &&  uri_seg(3) != 'profile_management' && uri_seg(3) != 'password_management' && uri_seg(3) != 'password_changed') { ?>
+                    <!--
                     <li <?php if (uri_seg(2) == 'control_member'    && uri_seg(3) == 'member_management')           { ?> class="active" <?php } ?>>
                         <a href="<?php echo base_url('member/control_member/member_management'); ?>"            title="สมาชิก">
                             <div class="head-menu-icon head-menu-icon-member1"></div>สมาชิก
                         </a>
                         <div></div>
                     </li>
+                -->
                     <li <?php if (uri_seg(2) == 'control_member'    && uri_seg(3) == 'admin_management')            { ?> class="active" <?php } ?>>
                         <a href="<?php echo base_url('member/control_member/admin_management'); ?>"             title="ผู้ดูแลระบบ">
                             <div class="head-menu-icon head-menu-icon-member2"></div>ผู้ดูแลระบบ

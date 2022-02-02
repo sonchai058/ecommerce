@@ -157,15 +157,15 @@ class Control_cart extends MX_Controller {
         $this->email->to($order_address['OD_Email']);
 
         if ($post_array['OD_Allow'] === '5') {
-            if ($order['OD_Code'] != '' && $order_transfer['B_Name'] != '' && $order_transfer['OT_Payment'] != '' && $order_transfer['OT_DateTimeUpdate'] != '' && $order_transfer['OT_FullSumPrice'] != '') {
+            if (@$order['OD_Code'] != '' && @$order_transfer['B_Name'] != '' && @$order_transfer['OT_Payment'] != '' && @$order_transfer['OT_DateTimeUpdate'] != '' && @$order_transfer['OT_FullSumPrice'] != '') {
                 $OT_Payment = array('1' => 'โอนเงินผ่านธนาคาร', '2' => 'ชำระเงินผ่านบัตรเครดิต', '3' => 'ชำระผ่านเคาน์เตอร์เซอร์วิส', '4' => 'อื่นๆ');
                 $data = array(
-                    'OD_ID'                 => $order['OD_ID'],
-                    'OD_Code'               => $order['OD_Code'],
-                    'B_Name'                => $order_transfer['B_Name'],
-                    'OT_Payment'            => $OT_Payment[$order_transfer['OT_Payment']],
-                    'OT_DateTimeUpdate'     => $order_transfer['OT_DateTimeUpdate'],
-                    'OT_FullSumPrice'       => $order_transfer['OT_FullSumPrice'],
+                    'OD_ID'                 => @$order['OD_ID'],
+                    'OD_Code'               => @$order['OD_Code'],
+                    'B_Name'                => @$order_transfer['B_Name'],
+                    'OT_Payment'            => @$OT_Payment[$order_transfer['OT_Payment']],
+                    'OT_DateTimeUpdate'     => @$order_transfer['OT_DateTimeUpdate'],
+                    'OT_FullSumPrice'       => @$order_transfer['OT_FullSumPrice'],
                     'OD_Allow'              => 'โอนเงินแล้ว',
                     'document_type'         => 'html'
                 );
@@ -233,7 +233,7 @@ class Control_cart extends MX_Controller {
 
     public function date_format_OT_DateTimeAdd($value, $row) {
         $OT_DateTimeAdd = rowArray($this->common_model->get_where_custom('order_transfer', 'OD_ID', $row->OD_ID));
-        return date('d/m/Y', strtotime($OT_DateTimeAdd['OT_DateTimeAdd']));
+        return date('d/m/Y', strtotime(@$OT_DateTimeAdd['OT_DateTimeAdd']));
     }
 
     public function editor_OD_EmsCode($value, $row) {

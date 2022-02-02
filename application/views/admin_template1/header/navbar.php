@@ -20,10 +20,12 @@
                 <a href="<?php echo base_url('bank/control_bank/bank_management'); ?>"          title="รายชื่อธนาคาร"><div class="nav-menu-icon4"></div></a>
                 <a href="<?php echo base_url('bank/control_bank/bank_management'); ?>"          title="รายชื่อธนาคาร">รายชื่อธนาคาร</a>
             </li>
+        <!--
             <li <?php if (uri_seg(1) == 'member') { ?>      class="active" <?php } ?>>
                 <a href="<?php echo base_url('member/control_member/member_management'); ?>"    title="สมาชิก"><div class="nav-menu-icon5"></div></a>
             	<a href="<?php echo base_url('member/control_member/member_management'); ?>"    title="สมาชิก">สมาชิก</a>
             </li>
+        -->
             <li <?php if (uri_seg(1) == 'statistic') { ?>   class="active" <?php } ?>>
                 <a href="<?php echo base_url('statistic/control_statistic/total_sales'); ?>"    title="รายงาน / สถิติ"><div class="nav-menu-icon6"></div></a>
             	<a href="<?php echo base_url('statistic/control_statistic/total_sales'); ?>"    title="รายงาน / สถิติ">รายงาน / สถิติ</a>

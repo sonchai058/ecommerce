@@ -1,6 +1,11 @@
 <?php $site = $this->webinfo_model->getOnceWebMain(); ?>
 <footer class="footer">
 	<div class="row">
+		<div class="small-12 medium-12 large-12 columns text-center">
+			<div class="home-adr _dotranslate">
+				<div class="fb-page" data-href="https://www.facebook.com/estherthailandofficial" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/estherthailandofficial" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/estherthailandofficial">Tanisha</a></blockquote></div>
+			</div>
+		</div>
 		<div class="small-6 medium-6 large-3 columns">
 			<h3>ฝ่ายบริการลูกค้า</h3>
 			<hr class="hr-title-2">
