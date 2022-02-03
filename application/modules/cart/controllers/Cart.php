@@ -149,7 +149,8 @@ class Cart extends MX_Controller {
             'grand_quantity' => $this->grand_quantity(),
             'grand_subtotal' => $this->grand_subtotal(),
             'grand_weight'   => $this->grand_weight(),
-            'grand_wprice'   => $this->grand_wprice(),
+            //'grand_wprice'   => $this->grand_wprice(),
+            'grand_wprice'   => 0,
 		);
         $this->template->load('index_page', $data);
 	}
@@ -176,7 +177,8 @@ class Cart extends MX_Controller {
                 'grand_quantity' => $this->grand_quantity(),
                 'grand_subtotal' => $this->grand_subtotal(),
                 'grand_weight'   => $this->grand_weight(),
-                'grand_wprice'   => $this->grand_wprice(),
+                //'grand_wprice'   => $this->grand_wprice(),
+                'grand_wprice'   => 0,
             );
             $this->template->load('index_page', $data);
         }
@@ -202,7 +204,8 @@ class Cart extends MX_Controller {
                 'grand_quantity' => $this->grand_quantity(),
                 'grand_subtotal' => $this->grand_subtotal(),
                 'grand_weight'   => $this->grand_weight(),
-                'grand_wprice'   => $this->grand_wprice(),
+                //'grand_wprice'   => $this->grand_wprice(),
+                'grand_wprice'   => 0,
             );
             // dieArray($data);
             $this->template->load('index_page', $data);
@@ -228,7 +231,8 @@ class Cart extends MX_Controller {
                 'grand_quantity' => $this->grand_quantity(),
                 'grand_subtotal' => $this->grand_subtotal(),
                 'grand_weight'   => $this->grand_weight(),
-                'grand_wprice'   => $this->grand_wprice(),
+                //'grand_wprice'   => $this->grand_wprice(),
+                'grand_wprice'   => 0,
             );
             $this->template->load('index_page', $data);
         }
@@ -768,7 +772,8 @@ class Cart extends MX_Controller {
             'grand_quantity' => $this->grand_quantity(),
             'grand_subtotal' => $this->grand_subtotal(),
             'grand_weight'   => $this->grand_weight(),
-            'grand_wprice'   => $this->grand_wprice(),
+            //'grand_wprice'   => $this->grand_wprice(),
+            'grand_wprice'   => 0,
         );
         $this->cart->destroy();
         $this->session->unset_userdata('delivery_index');

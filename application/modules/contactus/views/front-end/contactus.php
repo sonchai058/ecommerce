@@ -103,10 +103,12 @@
 				<div>
 					<img class="lineQRC" width="165" style="float: left;" src="<?php echo base_url("assets/images/line.png") ?>">
 					<div class="contact_info" style="float: left;margin-top: 20px;">
-						<span style="font-size: 19px;font-weight: bold;">Line ID :</span> <span><!--<a href="http://line.me/ti/p/~TanishaOfficial">-->Tanisha Official<!--</a>--></span><br>
+						<span style="font-size: 19px;font-weight: bold;">Line ID :</span> <span><a href="https://page.line.me/tanisha">Tanisha Official</a></span> 
+						<a href="https://page.line.me/tanisha"><img width="128" src="<?php echo site_url('assets/images/add-line-icon.png')?>"></a>
+						<br>
 						<span style="font-size: 19px;font-weight: bold;">Facebook :</span> <a target="_blank" class="help" href="https://www.facebook.com/estherthailandofficial">Link</a><br>
 						<span style="font-size: 19px;font-weight: bold;">Call center :</span> <span>099 367 4224</span><br>
-						<span style="font-size: 19px;font-weight: bold;">E-Mail :</span> <span>Tanisha.inter@gmail.com</span><br>
+						<span style="font-size: 19px;font-weight: bold;">E-Mail :</span> <span>tanisha.inter@gmail.com</span><br>
 						<a target="_blank" class="help" href="https://tanisha-international.com/">www.tanisha-international.com</a>
 					</div>
 				</div>

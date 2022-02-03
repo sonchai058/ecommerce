@@ -53,7 +53,6 @@ class Member extends MX_Controller {
 
 		$this->statistic_view_model->getOnceWebMain();
 		$this->product_type_model->productTypeDailyUpdate();
-		
 	}
 
 	public function index() {
@@ -455,9 +454,9 @@ class Member extends MX_Controller {
 				);
 				$config['upload_path'] 		= './assets/uploads/user_uploads_img/';
 				$config['allowed_types'] 	= 'gif|jpg|jpeg|png';
-				$config['max_size']			= '100';
-				$config['max_width']  		= '1024';
-				$config['max_height']  		= '768';
+				//$config['max_size']			= '100';
+				//$config['max_width']  		= '1024';
+				//$config['max_height']  		= '768';
 				$config['encrypt_name']  	= true;
 				$config['remove_spaces']  	= true;
 				$this->load->library('upload', $config);
@@ -479,7 +478,7 @@ class Member extends MX_Controller {
 	}
 
 	public function transfercustom($OD_ID = null) {
-		if (get_session('C_ID') != '') redirect('member', 'refresh');
+		//if (get_session('C_ID') != '') redirect('member', 'refresh');
 
 		$title 			= 'แจ้งโอนเงิน';
 		$content_view 	= 'front-end/transfercustom';
@@ -495,6 +494,7 @@ class Member extends MX_Controller {
 			'title'			=> $title,
 			'breadcrumb'    => $breadcrumb,
 		);
+		//dieArray($_POST);
 		if (get_inpost('transferchecked')) {
 			$OD_Code = get_inpost('OD_Code');
 			$order = $this->common_model->custom_query(
@@ -502,8 +502,10 @@ class Member extends MX_Controller {
 			);
 			if (count($order) > 0) {
 				$order_data = rowArray($order);
+				$arr = array('1'=>'ปกติ','2'=>'ระงับ','3'=>'ลบ/บล็อค','4'=>'รอโอนเงิน','5'=>'โอนเงินแล้ว','6'=>'รอส่งสินค้า','7'=>'ส่งสินค้าแล้ว');
+				$order_data['OD_EmsCode'] = $order_data['OD_EmsCode']==''?'-':$order_data['OD_EmsCode'];
 				if ($order_data['OD_Allow'] === '6' || $order_data['OD_Allow'] === '7' || $order_data['OD_Allow'] === '8')
-					$data['search_error'] = 'ใบสั่งซื้อ '.$OD_Code.' ได้แจ้งโอนเงินไปแล้ว';
+					$data['search_error'] = '<b>ใบสั่งซื้อ</b> '.$OD_Code.' ได้แจ้งโอนเงินไปแล้ว <b>เลขพัสดุ</b> : '.$order_data['OD_EmsCode'] .' <b>สถานะสินค้า</b> : '.@$arr[$order_data['OD_Allow']];
 				else
 					$data['order_data'] = $order_data;
 			}
@@ -535,9 +537,9 @@ class Member extends MX_Controller {
 				);
 				$config['upload_path'] 		= './assets/uploads/user_uploads_img/';
 				$config['allowed_types'] 	= 'gif|jpg|jpeg|png';
-				$config['max_size']			= '100';
-				$config['max_width']  		= '1024';
-				$config['max_height']  		= '768';
+				//$config['max_size']			= '100';
+				//$config['max_width']  		= '1024';
+				//$config['max_height']  		= '768';
 				$config['encrypt_name']  	= true;
 				$config['remove_spaces']  	= true;
 				$this->load->library('upload', $config);

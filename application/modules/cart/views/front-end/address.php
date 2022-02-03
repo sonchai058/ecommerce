@@ -16,7 +16,7 @@
                             'novalidate'    => 'novalidate',
                         );
                         echo form_open('cart/cartOrderAddress', $attributes); ?>
-                            <h4>เลือกการจัดส่ง</h4>
+                            <h4>เลือกการจัดส่ง (ทางร้านจะเลือกจัดส่งให้)</h4>
                             <div class="row">
                                 <!-- <div class="small-4 columns">
                                     <div class="checkout-img-delivery">
@@ -36,7 +36,7 @@
                                 </div> -->
                                 <div class="small-4 columns">
                                     <div class="checkout-img-delivery">
-                                        <img class="thumbnail" src="<?php echo base_url('assets/images/checkout/nim.png'); ?>" alt="NiMExpress">
+                                        <img class="thumbnail" src="<?php echo base_url('assets/images/checkout/th-post.png'); ?>" alt="NiMExpress">
                                     </div>
                                     <div class="text-center checkout-price-delivery">
                                         <h4></h4>
@@ -54,7 +54,7 @@
                             echo form_input(array('type' => 'radio', 'id' => 'packing_fee_special', 'name' => 'packing_fee', 'value' => '100',  'class' => 'packing_fee'));
                             echo 'พิเศษ (+100฿)'; ?>
                             <hr> -->
-                            <h4>ข้อมูลลูกค้า</h4> <?php
+                            <!--<h4>ข้อมูลลูกค้า</h4>--> <?php /*
                             if (get_session('C_ID') != '') {
                                 echo form_input(array('type' => 'radio', 'id' => 'account_address', 'name' => 'account_address', 'value' => 'checked'));
                                 echo 'ใช้ที่อยู่เดียวกับข้อมูลบัญชีผู้ใช้';
@@ -62,9 +62,10 @@
                                 echo form_input(array('type' => 'radio', 'id' => 'deliver_address', 'name' => 'account_address', 'value' => 'uncheck'));
                                 echo 'ระบุข้อมูลที่อยู่ในการจัดส่งใหม่';
                             }
-                            else { ?>
-                                <p>มีบัญชีผู้ใช้แล้วใช่หรือไม่? <a href="#" class="checkout-login" data-toggle="reveal-login">คลิกที่นี่</a> เพื่อเข้าสู่ระบบ</p><br> <?php
-                            }
+                            else { */?>
+                                <!--<p>มีบัญชีผู้ใช้แล้วใช่หรือไม่? <a href="#" class="checkout-login" data-toggle="reveal-login">คลิกที่นี่</a> เพื่อเข้าสู่ระบบ</p><br> --><?php
+                            /*
+                            }*/
                             if (validation_errors()) { ?>
                                 <div data-abide-error class="alert callout">
                                     <p><i class="fi-alert"></i><?php echo form_error('OD_Name'); ?></p>
@@ -214,7 +215,7 @@
     // var delivery_price  = [150.00, 150.00, 150.00];
     // var delivery_types  = ['Thailand Post', 'FedEx', 'NIM Express'];
     // var delivery_ships  = ['จัดส่งในวันถัดไป', 'จัดส่งในวันถัดไป', 'จัดส่งในวันถัดไป'];
-    var delivery_types  = ['NIM Express', ''];
+    var delivery_types  = ['General Express', ''];
     var delivery_ships  = ['จัดส่งในวันถัดไป', ''];
 
     function ajaxRequest(module, field_table, field_key, field_id, field_value, field_name, element_id, element_name) {

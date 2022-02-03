@@ -1,3 +1,8 @@
+<style type="text/css">
+	.off-canvas-wrapper {
+    	background: #fbb09f;
+	}
+</style>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="qygm9FWt"></script>
 
@@ -16,7 +21,11 @@
 		<div class="title-bar-left">
 			<button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
 		</div>
-		<span class="title-bar-title"><?php echo $site['WD_Name']; ?></span>
+		<span class="title-bar-title" style="    text-align: center;
+    width: 100%;
+    display: block;
+    height: 0px;
+}"><?php echo $site['WD_Name']; ?></span>
 		<div class="title-bar-right">
 			<style type="text/css">
 				.mb_tran a{
@@ -52,13 +61,20 @@
 
 			   	 <ul class="translation-links menu mb_menu">
 						<li><a id="th" href="?language=thai" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> Thai</a></li>
-						<li><a id="th" href="?language=en" onclick="/*translator('en')*/"><img width="16" src="<?php echo base_url('assets/images/flag/en.png')?>" alt="" title="en"> Englist</a></li>
+						<li><a id="th" href="?language=en" onclick="/*translator('en')*/"><img width="16" src="<?php echo base_url('assets/images/flag/en.png')?>" alt="" title="en"> English</a></li>
 			    	</ul>
 			  	</li>
 			</ul>
 		</div>
 	</div>
-
+	<style type="text/css">
+			.menu li {
+				//padding:0 !important;
+			}
+			.menu li a {
+				font-size:20px !important;
+			}
+		</style>
 	<nav data-sticky-container>
 		<div data-sticky data-anchor="exampleId" data-sticky-on="large" style="width:100%;">
 			<div class="nav" id="mobile-menu">
@@ -66,9 +82,9 @@
 					<div class="columns">
 						<div class="top-bar-left">
 							<ul class="dropdown menu">
-								<li class="menu-text">
-									<a href="<?php echo base_url(''); ?>" class="brand">
-										<img src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="<?php echo $site['WD_Name']; ?>"> <?php echo $site['WD_Name']; ?>
+								<li class="menu-text" style="font-size:22px">
+									<a href="<?php echo base_url(''); ?>" class="brand" style="font-size: 30px !important;">
+										<img style="border-radius:50%" src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="<?php echo $site['WD_Name']; ?>"> <?php echo $site['WD_Name']; ?>
 									</a>
 								</li>
 								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
@@ -111,11 +127,13 @@
 										<?php
 									}
 								} ?>
+								<!--
 								<li> <?php
 									if (get_session('C_ID') == '') { ?>
 										<!--<a href="#" title="เข้าสู่ระบบ" data-toggle="reveal-login" id="login-reveal"><i class="fa fa-sign-in"></i>เข้าสู่ระบบ</a>--> <?php
 									}
 									else {
+										/*
 										echo form_open('member/logout', array('id' => 'form-logout')); ?>
 										<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 											<a href="#" title="ลงชื่อออก" id="btn-logout"><i class="fa fa-sign-out"></i> ออกจากระบบ</a>
@@ -124,8 +142,9 @@
 											<?php }
 											echo form_hidden('current_url', current_url());
 										echo form_close();
+										*/
 									} ?>
-								</li>
+								<!--</li>-->
 								<li>
 								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>	
 									<a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>รถเข็น <?php if ($this->cart->contents()) echo '<span class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
@@ -159,7 +178,7 @@
 									   
 									    <ul class="translation-links menu">
           								<li><a id="th" href="?language=thai" onclick="/*translator('th')*/"><img width="16" src="<?php echo base_url('assets/images/flag/th.png')?>" alt="" title="Thai"> Thai</a></li>
-          								<li><a id="th" href="?language=en" onclick="/*translator('en')*/"><img width="16" src="<?php echo base_url('assets/images/flag/en.png')?>" alt="" title="Malaysia"> Englist</a></li>
+          								<li><a id="th" href="?language=en" onclick="/*translator('en')*/"><img width="16" src="<?php echo base_url('assets/images/flag/en.png')?>" alt="" title="Malaysia"> English</a></li>
 									    </ul>
 									  </li>
 									</ul>
@@ -167,7 +186,7 @@
 								<!-- <li><div id="google_translate_element" style="visibility:hidden"></div></li>
 								<li>
 									<select class="translation-links">
-										<option class="english" value="ภาษาอังกฤษ">English</option>
+										<option class="English" value="ภาษาอังกฤษ">English</option>
 										<option class="indonesian" 	value="ภาษาอินโดนีเซีย">Indonesian</option>
   										<option class="khmer" 		value="ภาษาเขมร">Khmer</option>
   										<option class="lao" 		value="ลาว">Lao</option>
@@ -212,6 +231,7 @@
 			<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>">วิธีชำระเงิน</a></li>
 			<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>">เกี่ยวกับเรา</a></li>
 			<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>">ติดต่อเรา</a></li>
+			<!--
 			<li> <?php
 				if (get_session('C_ID') == '') { ?>
 					<a href="<?php echo base_url('member/login'.'?language='.@$_GET['language']); ?>">ลงชื่อเข้าใช้</a> <?php
@@ -223,6 +243,7 @@
 					<a href="#" id="btn-logout-res">ลงชื่อออก</a> <?php
 				} ?>
 			</li>
+			-->
 		<?php }else{?>
 			<li><h3>Menu</h3></li>
 			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>">Product</a></li>
@@ -232,6 +253,7 @@
 			<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>">How to Pay</a></li>
 			<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>">About US</a></li>
 			<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>">Contact</a></li>
+			<!--
 			<li> <?php
 				if (get_session('C_ID') == '') { ?>
 					<a href="<?php echo base_url('member/login'.'?language='.@$_GET['language']); ?>">Login</a> <?php
@@ -243,6 +265,7 @@
 					<a href="#" id="btn-logout-res">Logout</a> <?php
 				} ?>
 			</li>
+			-->
 		<?php }?>
 		</ul>
 	</aside>

@@ -32,7 +32,7 @@
                 <div class="small-12 columns"><hr></div>
                 <div class="small-6 columns">
                     <div class="summary-detail-1">
-                        <h5>ค่าบริการจัดส่ง: </h5>
+                        <h5>ค่าบริการจัดส่ง: (ฟรี)</h5>
                     </div>
                 </div>
                 <div class="small-6 columns">

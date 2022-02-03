@@ -55,8 +55,11 @@
                         </div>
                         <?php }else{?>
                         <div class="vision-text _notranslate notranslate">
-                            <h2>အဘယ်ကြောင့်နည်း။ <span class="green">Tanisha?</span></h2>
-                            <p>အစားအသောက်ဖြည့်စွက်စာ ESTHER (သောက်ခြင်း) သည် ကျန်းမာရေးပြဿနာရှိသော အမျိုးသမီးများ၏ လိုအပ်ချက်များကို ဖြည့်ဆည်းပေးသည်။</p>
+                            <h2>Why is it <span class="green">Tanisha?</span></h2>
+                            <p>Dietary supplement ESTHER (drinking) meets the needs of women with health problems. Business selling, importing, exporting food supplements. Health food, consumer products
+Business category : Pharmacy and medical supplies retail store</p>
+<p>Complete in the envelope. Help.
+Help slow down the cells to be younger, 30 years old or more. Must try. Drink 1 sachet a day. Say goodbye to menopause. Balance hormones for 1 month. Know about it.</p>
                         </div>
                         <?php }?>
 
@@ -358,7 +361,7 @@
                             </div>
                             <?php }else{?>
                             <div class="_notranslate notranslate">
-                                <p>ကြည်လင်သန့်ရှင်းသော ကော်လာဂျင်နှင့် တင်သွင်းထားသော Dong Quai တို့ဖြစ်သည်။ အမှုန့်မရှိ၊ ငါးအနံ့မရှိ၊</p>
+                                <p>Clear, pure, collagen and imported dong quai. No powder, no fishy smell.</p>
                             </div>
                             <?php }?>
                         </div>

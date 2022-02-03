@@ -49,7 +49,7 @@
 }
 
 .product-menu li .active {
-    color: #dd7c1c;
+    color: #F9947F;
 }
 
 .product-menu li:not(.sub-menu) {
@@ -58,7 +58,7 @@
 
 .menu-head {
     padding: 0.111em 0.556em;
-    background-color: #dd7c1c;
+    background-color: #F9947F;
 }
 
 .menu-head>* {
@@ -108,7 +108,7 @@ a {
 }
 
 a:hover {
-    color: #dd7c1c;
+    color: #F9947F;
 }
 
 a:active,
@@ -333,8 +333,9 @@ small {
 
 .nav {
     position: relative;
-    background-image: url("../images/backgrounds/Nav.png");
+    /*background-image: url("../images/backgrounds/Nav.png");*/
     height: 75px;
+    /*
     vertical-align: middle;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -343,6 +344,7 @@ small {
     -moz-box-shadow: 0px 0px 3px #000;
     -webkit-box-shadow: 0px 0px 3px #000;
     box-shadow: 0px 0px 3px #000;
+    */
 }
 
 .nav a {
@@ -413,7 +415,7 @@ small {
 }
 
 .title-bar {
-    background-color: #dd7c1c;
+    background-color: #F9947F;
     text-align: center;
 }
 
@@ -439,7 +441,7 @@ small {
 }
 
 .off-canvas-list h3 {
-    color: #dd7c1c;
+    color: #F9947F;
     font-weight: bold;
     letter-spacing: 2px;
     margin-left: .25em;
@@ -459,7 +461,7 @@ small {
 }
 
 .off-canvas-list li:hover {
-    background-color: #dd7c1c;
+    background-color: #F9947F;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
     -webkit-transition: all 300ms linear;
@@ -479,7 +481,7 @@ small {
 }
 
 .reveal-login {
-    border: 5px solid #dd7c1c !important;
+    border: 5px solid #F9947F !important;
     -moz-box-shadow: 1px 1px 5px #333;
     -webkit-box-shadow: 1px 1px 5px #333;
     box-shadow: 1px 1px 5px #333;
@@ -493,7 +495,7 @@ small {
 
 .btn-login,
 .btn-signup {
-    background-color: #dd7c1c;
+    background-color: #F9947F;
     margin-top: 15px;
     padding: 0 30px;
     color: #FFF;
@@ -554,10 +556,10 @@ small {
 .form-login input[type="text"]:focus,
 .form-login input[type="password"]:focus,
 .form-login input[type="email"]:focus {
-    border: 1px solid #dd7c1c;
-    -moz-box-shadow: 0px 0px 1px, #dd7c1c;
-    -webkit-box-shadow: 0px 0px 1px, #dd7c1c;
-    box-shadow: 0px 0px 1px, #dd7c1c;
+    border: 1px solid #F9947F;
+    -moz-box-shadow: 0px 0px 1px, #F9947F;
+    -webkit-box-shadow: 0px 0px 1px, #F9947F;
+    box-shadow: 0px 0px 1px, #F9947F;
 }
 
 .field-input {
@@ -581,7 +583,7 @@ small {
 .footer-copyright {
     overflow: hidden;
     *zoom: 1;
-    background-color: #dd7c1c;
+    background-color: #F9947F;
     text-align: center;
 }
 
@@ -596,7 +598,7 @@ small {
 }
 
 .footer-copyright-2 h5 {
-    color: #dd7c1c;
+    color: #F9947F;
 }
 
 .footer-widget {
@@ -666,7 +668,7 @@ small {
 }
 
 .breadcrumbs a {
-    color: #dd7c1c;
+    color: #F9947F;
 }
 
 .pagination {
@@ -679,7 +681,7 @@ small {
 }
 
 .pagination .current {
-    background-color: #dd7c1c;
+    background-color: #F9947F;
 }
 
 .width-5 {
@@ -723,19 +725,19 @@ small {
 }
 
 .divider {
-    border: 1px solid #dd7c1c;
+    border: 1px solid #F9947F;
     width: 100px;
     margin: 2.5em 0 .5em 0;
 }
 
 .divider-2 {
-    border: 1px solid #dd7c1c;
+    border: 1px solid #F9947F;
     width: 100px;
     margin: 1em 0 .5em 0;
 }
 
 .divider-reverse {
-    border: 1px solid #dd7c1c;
+    border: 1px solid #F9947F;
     width: 100px;
     margin: 2.5em 0 .5em auto;
 }
@@ -752,11 +754,11 @@ small {
 }
 
 .hr-title-1 {
-    border: 1px solid #dd7c1c;
+    border: 1px solid #F9947F;
 }
 
 .hr-title-2 {
-    border: 1px solid #dd7c1c;
+    border: 1px solid #F9947F;
 }
 
 .hr-width-0 {
@@ -772,7 +774,7 @@ small {
 }
 
 .text-green {
-    color: #dd7c1c;
+    color: #F9947F;
 }
 
 .text-red {
@@ -823,11 +825,11 @@ small {
 }
 
 .is-accordion-submenu-parent>a::after {
-    border-color: #dd7c1c transparent transparent !important;
+    border-color: #F9947F transparent transparent !important;
 }
 
 .link {
-    color: #dd7c1c;
+    color: #F9947F;
 }
 
 .link:hover {
@@ -845,11 +847,11 @@ small {
 
 .product-menu .menu-title {
     font-weight: bold;
-    color: #dd7c1c;
+    color: #F9947F;
 }
 
 .btn-product {
-    background-color: #dd7c1c;
+    background-color: #F9947F;
 }
 
 .btn-wishlist {
@@ -871,7 +873,7 @@ small {
 }
 
 .btn-buy-now {
-    background-color: #dd7c1c;
+    background-color: #F9947F;
     color: #FFF;
 }
 
@@ -902,7 +904,7 @@ small {
 }
 
 .product:hover {
-    box-shadow: 0px 0px 2px #dd7c1c;
+    box-shadow: 0px 0px 2px #F9947F;
 }
 
 .product:hover .field-btn {
@@ -959,7 +961,7 @@ small {
 .product-name {
     margin-bottom: 5px;
     padding: 5px 0;
-    border-bottom: 1px solid #dd7c1c;
+    border-bottom: 1px solid #F9947F;
 }
 
 .product-name h2 {

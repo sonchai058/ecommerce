@@ -302,7 +302,7 @@ textarea {
 }
 
 .wrap_login .title_login .wrap_name li:last-child {
-    color: #eb8f00;
+    color: #F9947F;
     font-size: 26px;
 }
 
@@ -358,8 +358,8 @@ textarea {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    background-color: #eb8f00;
-    border: 1px #eb8f00 solid;
+    background-color: #F9947F;
+    border: 1px #F9947F solid;
     cursor: pointer;
     width: 80%;
     height: 35px;

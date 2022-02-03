@@ -64,8 +64,8 @@
 						บริษัท ธนิชา อินเตอร์เนชั่นแนล จำกัด.<br>
 						สำนักงานใหญ่ : เลขที่ 86/13 ถนนเสาหิน ซอย.18 ตำบลหนองหอย อำเภอเมือง จังหวัดเชียงใหม่ 50000 <br>
 						Tax ID : 0505564012718<br/>
-						Tanisha.inter@gmail.com
-						<a class="help" href="#" target="_blank">>> Click to view the map.</a>
+						tanisha.inter@gmail.com
+						<a class="help" href="https://maps.google.com/?q=18.7943954,98.8864369" target="_blank">>> Click to view the map.</a>
 					</p>
 					<p>
 						Phone: 099-367-4224 &nbsp; Fax: -
