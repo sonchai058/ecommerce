@@ -114,10 +114,22 @@
 				</div>
 			</div>
 		</div>
-
+		<style type="text/css">
+        /* Set the size of the div element that contains the map */
+        
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
 		<div class="row">
 			<div class="columns">
+				<!--
 				<div class="contact-map" id="map"></div>
+				-->
+				<div id="map"></div>
 			</div>
 		</div>
 	</section>
@@ -132,8 +144,8 @@ if (count($site) 	> 0) {
 	if ($site['WD_Longjitude'] 	!= '') $WD_Longjitude 	= $site['WD_Longjitude'];
 	if ($site['WD_ImgMap'] 		!= '') $WD_ImgMap 		= base_url('assets/images/webconfig/'.$site['WD_ImgMap']);
 } ?>
-
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!--
+<script src="https://maps.googleapis.com/maps/api/js"></script>-->
 <script>
 	var WD_Name 		= '';
 	// var WD_ImgMap 		= '';
@@ -184,7 +196,7 @@ if (count($site) 	> 0) {
         	alert('Request failed: ' + textStatus);
         });
 	}
-
+/*
   	function initialize() {
   		address(function(output){ WD_Address = output; });
   		tel(function(output){ WD_Tel = output; });
@@ -259,6 +271,7 @@ if (count($site) 	> 0) {
 		}, 500);
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
+*/
 
 	$(document).ready(function() {
 		$('#name').focus();
@@ -273,3 +286,26 @@ if (count($site) 	> 0) {
         });
 	});
 </script>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7dyF_jIgyLNKFTFp9uiadMBmnYMWdX1A&callback=initMap&libraries=&v=weekly&channel=2" async></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = {
+                lat: <?php echo $WD_Latitude;?>,
+                lng: <?php echo $WD_Longjitude;?>
+            };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>

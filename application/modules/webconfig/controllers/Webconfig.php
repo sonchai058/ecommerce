@@ -101,7 +101,7 @@ class Webconfig extends MX_Controller {
 
         $crud->columns('WD_ID', 'WD_Logo', 'WD_Icon', 'WD_BGcolor', 'WD_Themcolor', 'WD_Background', 'WD_Name', 'WD_EnName', 'WD_Address', 'WD_Email', 'WD_Tel', 'WD_Fax', 'WD_Title', 'WD_Descrip', 'WD_Keyword', 'WD_Gglink', 'WD_Twlink', 'WD_Inlink', 'WD_FbLink', 'WD_BG_BlockMain1', 'WD_BG_BlockMain2', 'WD_BG_BlockMain3', 'WD_BG_Footer', 'WD_BG_BlockSub', 'WD_Latitude', 'WD_Longjitude', 'WD_ImgMap', 'WD_SlideConfig', 'WD_UserUpdate', 'WD_DatetimeUpdate');
 
-        $crud->edit_fields('WD_Logo', 'WD_Icon', 'WD_Name', 'WD_EnName', 'WD_Address', 'WD_Email', 'WD_Tel', 'WD_Fax', 'WD_Title', 'WD_Descrip', 'WD_Keyword', 'WD_Gglink', 'WD_Twlink', 'WD_Inlink', 'WD_FbLink', 'WD_Latitude', 'WD_Longjitude', 'WD_ImgMap', 'WD_UserUpdate', 'WD_DatetimeUpdate');
+        $crud->edit_fields('WD_Logo', 'WD_Icon', 'WD_Name', 'WD_EnName', 'WD_Address', 'WD_Email', 'WD_Tel', 'WD_Fax', 'WD_Title', 'WD_Descrip', 'WD_Keyword', 'WD_Gglink', 'WD_Twlink', 'WD_Inlink', 'WD_FbLink', 'WD_Latitude', 'WD_Longjitude', 'WD_UserUpdate', 'WD_DatetimeUpdate');
 
         // $crud->set_rules('WD_Email', 'E-Email', 'required|valid_email');
 
