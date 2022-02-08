@@ -348,7 +348,8 @@ small {
 }
 
 .nav a {
-    color: #fff;
+    //color: #fff;
+    color: #FD6A02;
     -moz-transition: all 500ms linear;
     -o-transition: all 500ms linear;
     -webkit-transition: all 500ms linear;
@@ -583,8 +584,9 @@ small {
 .footer-copyright {
     overflow: hidden;
     *zoom: 1;
-    background-color: #F9947F;
+    //background-color: #F9947F;
     text-align: center;
+    background-color: transparent;
 }
 
 .footer-copyright h5 {
@@ -598,7 +600,11 @@ small {
 }
 
 .footer-copyright-2 h5 {
-    color: #F9947F;
+    color: #FFF;
+}
+
+.footer-copyright * {
+    color: #FFF !important;
 }
 
 .footer-widget {

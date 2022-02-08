@@ -124,6 +124,7 @@
             /* The width is the width of the web page */
         }
     </style>
+	<br/>
 		<div class="row">
 			<div class="columns">
 				<!--

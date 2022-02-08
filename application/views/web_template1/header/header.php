@@ -1,6 +1,6 @@
 <style type="text/css">
 	.off-canvas-wrapper {
-    	background: #fbb09f;
+    	background: #FFFFFF;
 	}
 </style>
 <div id="fb-root"></div>
@@ -25,7 +25,9 @@
     width: 100%;
     display: block;
     height: 0px;
-}"><?php echo $site['WD_Name']; ?></span>
+}"><!--<?php echo $site['WD_Name']; ?>-->
+										<img style="width:90px" src="<?php echo base_url('assets/images/logo111.png'); ?>" alt="<?php echo $site['WD_Name']; ?>">
+									</span>
 		<div class="title-bar-right">
 			<style type="text/css">
 				.mb_tran a{
@@ -84,7 +86,8 @@
 							<ul class="dropdown menu">
 								<li class="menu-text" style="font-size:22px">
 									<a href="<?php echo base_url(''); ?>" class="brand" style="font-size: 30px !important;">
-										<img style="border-radius:50%" src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="<?php echo $site['WD_Name']; ?>"> <?php echo $site['WD_Name']; ?>
+										<img style="border-radius:50%" src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="<?php echo $site['WD_Name']; ?>"> <!-- <?php echo $site['WD_Name']; ?>-->
+										<img style="width:90px" src="<?php echo base_url('assets/images/logo111.png'); ?>" alt="<?php echo $site['WD_Name']; ?>">
 									</a>
 								</li>
 								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>

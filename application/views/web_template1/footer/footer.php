@@ -1,5 +1,5 @@
 <?php $site = $this->webinfo_model->getOnceWebMain(); ?>
-<footer class="footer">
+<footer class="footer" style="background-color: #FD6A02;">
 	<div class="row">
 		<div class="small-12 medium-12 large-12 columns text-center">
 			<div class="home-adr _dotranslate">
