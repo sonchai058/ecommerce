@@ -319,6 +319,59 @@ Help slow down the cells to be younger, 30 years old or more. Must try. Drink 1 
                 </div>
             </div>
 
+            <!-- Collection 2 -->
+            <div class="row row-collection">
+                <div class="column order-1 medium-order-2 small-12 medium-expand">
+                        <div class="collection-list">
+                        <div class="collection-item-img">
+                            <img src="<?php echo base_url('assets/images/products/showcase/sh1.JPG'); ?>" alt="MDP-W-0003.3">
+                        </div>
+                        
+                            <!--
+                            <div class="collection-item-1">
+                                <div class="collection-item-img">
+                                    <img src="<?php echo base_url('assets/images/products/showcase/MDP-W-0003.3.png'); ?>" alt="MDP-W-0003.3">
+                                </div>
+                                <div class="item-model"><small>( MDP-W-0001 )</small></div>
+                            </div>
+                            <div class="collection-item-1">
+                                <div class="collection-item-img">
+                                    <img src="<?php echo base_url('assets/images/products/showcase/MDP-G-0011.3.png'); ?>" alt="MDP-G-0011.3">
+                                </div>
+                                <div class="item-model"><small>( MDP-W-001 )</small></div>
+                            </div>
+                            <div class="collection-item-1">
+                                <div class="collection-item-img">
+                                    <img src="<?php echo base_url('assets/images/products/showcase/MDP-G-0003.4.png'); ?>" alt="MDP-G-0003.4">
+                                </div>
+                                <div class="item-model"><small>( MDP-W-001 )</small></div>
+                            </div>
+                            -->
+                        </div>
+                </div>
+                <div class="column order-2 medium-order-1 small-12 medium-expand">
+                    <div class="collection-intro collection-reverse">
+                        <div class="collection-title">
+                            <h2 class="notranslate text-green">EAT<span class="sub-title-1">NO SUGAR</span></h2>
+                            <div class="divider-reverse"></div>
+                             <!--<p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
+                             <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                             <div class="_dotranslate">
+                                <p>ใสแบบเพียวๆ คอลลาเจน และดงกุยนำเข้า ไม่มีแป้ง ไม่มีกลิ่นคาว</p>
+                            </div>
+                            <?php }else{?>
+                            <div class="_notranslate notranslate">
+                                <p>Clear, pure, collagen and imported dong quai. No powder, no fishy smell.</p>
+                            </div>
+                            <?php }?>
+                        </div>
+                        <div class="collection-more">
+                            <a href="<?php echo base_url('product/category/2'); ?>" class="btn-view-store">ดูเพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Collection 3 -->
             <div class="row row-collection">
                 <div class="small-12 medium-expand columns">
