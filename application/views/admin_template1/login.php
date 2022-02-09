@@ -16,9 +16,9 @@
         <?php
             echo css_asset('jquery-ui.min.css');
             echo css_asset('font-awesome.min.css');
-            echo css_asset('../admin/css/images_sprites.css');
+            echo css_asset('../admin/css/images_sprites.css'); 
             echo css_asset('../admin/css/reset.css');
-            echo css_asset('../admin/css/login.css');
+            echo css_asset('../admin/css/login.css'.'?v='.strtotime(date("Y-m-d")));
             echo js_asset('jquery.min.js');
             echo js_asset('jquery-ui.min.js');
         ?>

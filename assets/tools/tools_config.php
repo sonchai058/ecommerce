@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="<?php echo base_url('assets/css/font-awesome.min.css'); ?>">
 <link rel="stylesheet" href="<?php echo base_url('assets/css/reset.css'); ?>">
 <link rel="stylesheet" href="<?php echo base_url('assets/css/fontsset.css'); ?>">
-<link rel="stylesheet" href="<?php echo base_url('assets/css/main.css'); ?>">
+<link rel="stylesheet" href="<?php echo base_url('assets/css/main.css'.'?v='.strtotime(date("Y-m-d"))); ?>">
 <link rel="stylesheet" href="<?php echo base_url('assets/admin/css/hover.css'); ?>">
 
 
@@ -14,7 +14,7 @@
 	if ($content_view === 'front-end/product' ||
 		(uri_seg(1) === 'product' 	&& $content_view === 'front-end/detail') ||
 		(uri_seg(1) === 'member' 	&& $content_view === 'front-end/wishlist')) { ?>
-		<link rel="stylesheet" href="<?php echo base_url('assets/css/product.css'); ?>">
+		<link rel="stylesheet" href="<?php echo base_url('assets/css/product.css'.'?v='.strtotime(date("Y-m-d"))); ?>">
 		<link rel="stylesheet" href="<?php echo base_url('assets/plugin/fancybox/source/jquery.fancybox.css'); ?>"> <?php
 	}
 	if ($content_view === 'front-end/account') { ?>
@@ -24,6 +24,6 @@
 		<link rel="stylesheet" href="<?php echo base_url('assets/plugin/timepicker/dist/jquery-ui-timepicker-addon.min.css'); ?>"> <?php
 	}
 	if ($content_view !== 'content/main' || $content_view !== 'front-end/product') { ?>
-		<link rel="stylesheet" href="<?php echo base_url('assets/css/style-1.css'); ?>"> <?php
+		<link rel="stylesheet" href="<?php echo base_url('assets/css/style-1.css'.'?v='.strtotime(date("Y-m-d"))); ?>"> <?php
 	}
 ?>
