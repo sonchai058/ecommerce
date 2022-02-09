@@ -24,11 +24,19 @@
 		                            } ?>
 		                            <div class="row">
 		                                <div class="small-4 medium-3 columns">
-		                                    <label for="OD_Code" class="middle label-login">เลขที่ใบสั่งซื้อ: </label>
+										<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+		                                    <label style="font-size: 20px;" for="OD_Code" class="middle label-login">เลขที่ใบสั่งซื้อ: </label>
+										<?php }else{?>
+											<label style="font-size: 20px;" for="OD_Code" class="middle label-login">purchase order number: </label>
+										<?php }?>
 		                                </div>
 		                                <div class="small-8 medium-9 columns">
 		                                    <label class="middle label-account"><input value="<?php echo @$_GET['code'];?>" type="text" name="OD_Code"></label>
-		                                	<a href="#" role="button" class="btn-login" id="btn-transfercheck">ค้นหา</a>
+		                                	<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+											<a href="#" role="button" class="btn-login" id="btn-transfercheck">ค้นหา</a>
+											<?php }else{?>
+												<a href="#" role="button" class="btn-login" id="btn-transfercheck">Search</a>
+											<?php }?>
 		                                </div>
 		                            </div>
 		                        </div>
@@ -58,7 +66,11 @@
 		                            } ?>
 		                            <div class="row">
 		                                <div class="small-4 medium-3 columns">
-		                                    <label for="OD_Code" class="middle label-login">เลขที่ใบสั่งซื้อ: </label>
+										<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+		                                    <label style="font-size: 20px;" for="OD_Code" class="middle label-login">เลขที่ใบสั่งซื้อ: </label>
+										<?php }else{?>
+											<label style="font-size: 20px;" for="OD_Code" class="middle label-login">purchase order number: </label>
+										<?php }?>
 		                                </div>
 		                                <div class="small-8 medium-9 columns">
 		                                    <label class="middle label-account"><?php echo $order_data['OD_Code']; ?></label>

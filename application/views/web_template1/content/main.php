@@ -39,7 +39,7 @@
         <div class="row row-vision">
                <div class="small-12 medium-5 columns">
                    <div class="slide-left">
-                       <img class="image-center vision-image" src="<?php echo base_url('assets/images/vision/img-vision.JPG'); ?>">
+                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/vision/img-vision.JPG'); ?>">
                    </div>
                </div>
                <div class="small-12 medium-7 columns">
@@ -47,19 +47,16 @@
                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                        <div class="vision-text _dotranslate">
                             <h2>ทำไมต้องเป็น <span class="green">Tanisha</span></h2>
-                            <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ ประกอบกิจการจำหน่าย นำเข้า ส่งออก ผลิตภัณฑ์เสริมอาหาร อาหารบำรุงสุขภาพสินค้าอุปโภค บริโภค
-หมวดธุรกิจ : ร้านขายปลีกสินค้าทางเภสัชภัณฑ์และเวชภัณฑ์ </p>
-                            <p>ครบจบในซอง ช่วย
-
-ช่วยชะลอให้เซลล์่อ่อนเยาว์ 30 ปีขึ้นไปต้องลอง ชงดื่มวันละ 1 ซอง บอกลาวัยทอง ปรับสมดุลฮอร์โมน 1 เดือนรู้เรื่อง</p>
+                            <p>การดำเนินชีวิตที่รีบเร่ง เคร่งเครียด แข่งขันท่ามกลางสภาพภูมิอากาศ เทคโนโลยีที่เปลี่ยนไปอย่างรวดเร็ว รวมถึงเวลาที่มีอยู่อย่างจำกัดในแต่ละวัน ด้วยภาระทั้งหน้าที่การงาน ครอบครัวและชีวิตส่วนตัว ส่งผลให้ผู้บริโภคส่วนใหญ่นิยมหันมา บริโภคผลิตภัณฑ์เสริมอาหารมากขึ้น </p>
+                            <p>เนื่องจากการบริโภคอาหารไม่ครบตามหลักโภชนาการหรือการรับประทานอาหารที่ผิดวิธี ผลิตภัณฑ์อาหารเสริมจึงเข้ามามีบทบาทในชีวิตประจำวันของผู้บริโภคมากขึ้น โดยเฉพาะเพศหญิงที่ให้ความสำคัญในการดูแลรูปร่าง ผิวพรรณ รวมทั้งการชะลอวัย  อีกทั้งฮอร์โมนที่มีการเปลี่ยนแปลง</p>
+                            <p>ด้วยประสบการณ์ที่ยาวนานของผู้บริหาร และเป็นผู้โลดเล่นอยู่ในวงการขายอาหารเสริมมากกว่า 10 ปีขึ้นไป จึงมองเห็นถึงโอกาสที่ช่วยแก้ปัญหาให้แก่ผู้หญิงที่ประสบพบเจอปัญหาเหล่านี้ อีกทั้งเพื่อเพิ่มความมั่นใจให้แก่ผู้บริโภค ทางบริษัททำการศึกษาและวิจัยทางผลิตภัณฑ์ จึงได้ผลิตอาหารเสริมชื่อ ESTHER ภายใต้แบรนด์ของบริษัทฯ​</p>
                         </div>
                         <?php }else{?>
                         <div class="vision-text _notranslate notranslate">
                             <h2>Why is it <span class="green">Tanisha?</span></h2>
-                            <p>Dietary supplement ESTHER (drinking) meets the needs of women with health problems. Business selling, importing, exporting food supplements. Health food, consumer products
-Business category : Pharmacy and medical supplies retail store</p>
-<p>Complete in the envelope. Help.
-Help slow down the cells to be younger, 30 years old or more. Must try. Drink 1 sachet a day. Say goodbye to menopause. Balance hormones for 1 month. Know about it.</p>
+                            <p>A fast-paced, stressful lifestyle, competing in the midst of the climate fast changing technology including limited time each day with the burden of work family and personal life As a result, most consumers turned to consume more dietary supplements</p>
+                            <p>due to inadequate food intake or eating the wrong way Dietary supplements therefore play a greater role in the daily lives of consumers. Especially females who pay attention to body shape, skin care, including anti-aging. The hormones that have changed</p>
+                            <p>with long experience of executives And who has been in the food supplement industry for more than 10 years, he sees an opportunity to help solve the problems for women who are experiencing these problems. as well as to increase consumer confidence The company has studied and researched the product. therefore produced a dietary supplement called ESTHER under the company's brand​</p>
                         </div>
                         <?php }?>
 
@@ -248,9 +245,9 @@ Help slow down the cells to be younger, 30 years old or more. Must try. Drink 1 
     </section>
 
     <section>
-        <div class="row row-promotion">
+        <div class="row row-promotion"  style="min-height: 0;">
             <div class="columns">
-                <div class="wrapper-promotion">
+                <div class="wrapper-promotion" style="min-height: 0;">
                     <article class="text-promotion">
                         <h1 class="text-title-home">Hot Sale</h1>
                         <hr class="hr-title-2 hr-width-1">
@@ -264,13 +261,12 @@ Help slow down the cells to be younger, 30 years old or more. Must try. Drink 1 
 
     <section>
         <div class="collection-wrapper-head">
-            <div class="title-home">
+            <div style="100%; text-align:center">
                 <h1 class="text-title-home">Tanisha Collection</h1>
-                <hr class="hr-title-1 hr-width-2">
-                <!-- <h4>KNOW MORE ABOUT OUR LATEST COLLECTION</h4> -->
-                <h4><blockquote><cite><span>Know more about our latest collection.</span></cite></blockquote></h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mdML1IEw3tI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
+        <br/> <br/> <br/> <br/>        <br/> <br/> <br/> <br/> <br/> <br/><br/> <br/><br/> <br/>
         <div class="collection-wrapper-content">
 
             <!-- Collection 1 -->
@@ -323,7 +319,7 @@ Help slow down the cells to be younger, 30 years old or more. Must try. Drink 1 
             <div class="row row-collection">
                 <div class="small-12 medium-expand columns">
                     <div class="collection-list">
-                        <div class="collection-item-2"><img src="<?php echo base_url('assets/images/products/stair/sh3.JPG'); ?>" alt="Lucky Stair" width="450"></div>
+                        <div class="collection-item-2"><img src="<?php echo base_url('assets/images/vision/img-vision.JPG'); ?>" alt="Lucky Stair" width="450"></div>
                     </div>
                 </div>
                 <div class="small-12 medium-expand columns">

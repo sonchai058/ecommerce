@@ -6,9 +6,17 @@
 		<div class="row">
 			<div class="columns">
 				<div class="wrapper-contact-title">
+				<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 					<h1><?php echo $title; ?></h1>
+				<?php }else{?>
+					<h1><?php echo 'Contact Us'; ?></h1>
+				<?php }?>
 					<div class="contact-desc">
+						<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 						<h4>ในกรณีที่ศูนย์บริการของเราได้มีความต้องการอย่างสูงจากลูกค้าคุณสามารถส่งข้อความ คำถามใดๆ หรือข้อเสนอแนะให้เราผ่านทางเว็บฟอร์มด้านล่าง</h4>
+						<?php }else{?>
+							<h4>In the event that our service center has high demand from customers, you can send us a message, any questions or suggestions via the web form below.</h4>
+						<?php }?>
 					</div>
 				</div>
 			</div>
@@ -17,8 +25,13 @@
 		<div class="row">
 			<div class="small-12 medium-6 columns">
 				<div class="form-contact">
+				<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 					<h5>- คุณสามารถหาคำตอบอย่างสะดวกและรวดเร็วได้ที่: <a href="<?php echo base_url('service'); ?>" class="help">ศูนย์ช่วยเหลือ</a> ของเรา</h5>
-					<h5>- หากคุณต้องการติดตามสถานะคำสั่งซื้อ: กรุณาคลิกที่ <a href="<?php if (get_session('C_ID') != '') echo base_url('member/history'); else echo base_url('member/transfercustom'); ?>" class="help">ติดตามสถานะคำสั่งซื้อ</a> ของเรา</h5> <?php
+					<!--<h5>- หากคุณต้องการติดตามสถานะคำสั่งซื้อ: กรุณาคลิกที่ <a href="<?php if (get_session('C_ID') != '') echo base_url('member/history'); else echo base_url('member/transfercustom'); ?>" class="help">ติดตามสถานะคำสั่งซื้อ</a> ของเรา</h5> -->
+				<?php }else{?>
+					<h5>- You can find answers easily and quickly at: <a href="<?php echo base_url('service'); ?>" class="help">Help Center</a></h5>
+					<!--<h5>- หากคุณต้องการติดตามสถานะคำสั่งซื้อ: กรุณาคลิกที่ <a href="<?php if (get_session('C_ID') != '') echo base_url('member/history'); else echo base_url('member/transfercustom'); ?>" class="help">ติดตามสถานะคำสั่งซื้อ</a> ของเรา</h5>--> 
+				<?php }
 					$attributes = array(
 						'class' => 'form-contact-to-email'
 					);
@@ -64,7 +77,12 @@
 						'title' 		=> 'ข้อความ',
 					);
 					echo form_textarea($data); ?>
-					<a href="#" class="btn-form-submit">ส่งข้อความ</a> <?php
+					<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+					<a href="#" class="btn-form-submit">ส่งข้อความ</a> 
+					<?php }else{?>
+						<a href="#" class="btn-form-submit">Send</a> 
+					<?php }?>
+					<?php
 					echo form_hidden('contacted', 'contacted');
 					echo form_close(); ?>
   				</div>
@@ -79,8 +97,17 @@
 				<div class="home-adr _notranslate notranslate">
 				<div class="adr-1">
 					<p>
+					<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 						บริษัท ธนิชา อินเตอร์เนชั่นแนล จำกัด.<br>
-						สำนักงานใหญ่ : เลขที่ 86/13 ถนนเสาหิน ซอย.18 ตำบลหนองหอย อำเภอเมือง จังหวัดเชียงใหม่ 50000.
+						สำนักงานใหญ่ : เลขที่ 86/13 ถนนเสาหิน ซอย.18 ตำบลหนองหอย อำเภอเมือง จังหวัดเชียงใหม่ 50000 <br>
+						Tax ID : 0505564012718<br/>
+						tanisha.inter@gmail.com
+					<?php }else{?>
+						TANISHA INTERNATIONAL COMPANY LIMITED
+						HEAD OFFICE : No.86/13 , SAO HIN ROAD, 
+						LAND 18, NONG HOI DISTRICT, MUANG AREA, CHIANG MAI THAILAND 50000
+						PHONE : (+66)53-282-149 
+					<?php }?>
 						<a class="help" href="<?php echo base_url('assets/images/map/Tanisha.jpg'); ?>" target="_blank">>> Click to view the map.</a>
 					</p>
 					<p>
@@ -155,7 +182,7 @@ if (count($site) 	> 0) {
 	var WD_Longjitude 	= 0;
 	var latLngLenght 	= 0;
 
-	var WD_markname 	= ['บริษัท ลักกี้ดอร์ เทรดดิ้ง จำกัด', 'บริษัท เจ. วู๊ด อุตสาหกรรม จำกัด'];
+	var WD_markname 	= ['TANISHA INTERNATIONAL COMPANY LIMITED'];
 	var WD_Addmaps 		= ['Tanisha.jpg', 'jwood.jpg'];
 
 	var WD_Address 		= [];

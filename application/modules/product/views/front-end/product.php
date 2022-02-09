@@ -16,7 +16,7 @@
                         <input id="search" type="text" placeholder="ค้นหาสินค้า..." class="form-control" style="font-size: 20px;padding: 20px;margin-top: 10px;" value="<?php echo @$_GET['search'];?>">
                     </div>
                     <div class="small-2 medium-2 large-2 columns" style="padding-top:10px">
-                        <button onclick="window.location.replace('?search='+$('#search').val())" type="button" class="btn-buy-now" style="width:100%;font-weight:bold">ค้นหา</button>
+                        <button onclick="window.location.replace('?search='+$('#search').val())" type="button" class="btn-buy-now" style="width:100%;font-weight:bold;font-size:20px">ค้นหา</button>
                     </div>
                 </div>
                 <?php

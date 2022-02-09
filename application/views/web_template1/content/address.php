@@ -22,7 +22,12 @@
 	// dieArray($site['WD_Address']);
 	for ($WD = 0; $WD < $WD_sizeof; ++$WD) { ?>
 		<div class="adr-<?php echo ($WD + 1); ?>">
-			<p><!--<?php if (isset($site['WD_Address'][$WD])) echo ltrim($site['WD_Address'][$WD], '<br />'); ?>&nbsp;--><a class="help" href="<?php echo $WD_Addmaps[$WD]; ?>" target="_blank">>> คลิกเพื่อดูแผนที่</a></p>
+			<p><!--<?php if (isset($site['WD_Address'][$WD])) echo ltrim($site['WD_Address'][$WD], '<br />'); ?>&nbsp;-->
+			<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+			<a class="help" href="<?php echo $WD_Addmaps[$WD]; ?>" target="_blank">>> คลิกเพื่อดูแผนที่</a></p>
+			<?php }else{?>
+				<a class="help" href="<?php echo $WD_Addmaps[$WD]; ?>" target="_blank">>> Location</a></p>
+			<?php }?>
 			<!-- <p><?php if (isset($site['WD_Address'][$WD])) echo ltrim($site['WD_Address'][$WD], '<br />'); ?></p> -->
 			<p>
 				<?php
