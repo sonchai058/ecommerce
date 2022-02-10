@@ -4,7 +4,13 @@
             <div class="row row-summary">
                 <div class="small-12 medium-expanded columns">
                     <div class="summary-head">
-                        <h3>สรุปการสั่งซื้อ <?php if ($grand_quantity !== 0) echo '('.number_format($grand_quantity).')' ?></h3>
+                        <h3>
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                            สรุปการสั่งซื้อ
+                            <?php }else{?>
+                                Order Summary
+                                <?php }?>
+                        <?php if ($grand_quantity !== 0) echo '('.number_format($grand_quantity).')' ?></h3>
                     </div>
                 </div> <?php
                 foreach ($this->cart->contents() as $value) { ?>
@@ -23,7 +29,11 @@
                 <div class="small-12 columns"><hr></div>
                 <div class="small-6 columns">
                     <div class="summary-detail-1">
+                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                         <h5>น้ำหนักสินค้าทั้งหมด: </h5>
+                        <?php }else{?>
+                            <h5>total product weight: </h5>
+                        <?php }?>
                     </div>
                 </div>
                 <div class="small-6 columns">
@@ -32,7 +42,11 @@
                 <div class="small-12 columns"><hr></div>
                 <div class="small-6 columns">
                     <div class="summary-detail-1">
+                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                         <h5>ค่าบริการจัดส่ง: (ฟรี)</h5>
+                        <?php }else{?>
+                            <h5>delivery fee: (free)</h5>
+                            <?php }?>
                     </div>
                 </div>
                 <div class="small-6 columns">
@@ -57,7 +71,11 @@
                 <div class="small-12 columns"><hr></div>
                 <div class="small-6 columns">
                     <div class="summary-detail-1">
+                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                         <h5>ยอดสุทธิ: </h5>
+                        <?php }else{?>
+                        <h5>net amount: </h5>
+                        <?php }?>
                     </div>
                 </div>
                 <div class="small-6 columns">

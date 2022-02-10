@@ -6,6 +6,7 @@
             <div class="row">
                 <div class="small-12 medium-8 columns">
                     <div class="login-wrapper">
+                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                         <h4>ยืนยันสินค้า</h4>
                         <table class="table-cart">
                             <thead>
@@ -16,6 +17,20 @@
                                     <th width="100">ราคาสินค้า</th>
                                     <th width="100">ราคาทั้งหมด</th>
                                 </tr>
+                                <?php
+		}else{ 
+		?>
+                        <h4>product confirmation</h4>
+                        <table class="table-cart">
+                            <thead>
+                                <tr>
+                                    <th width="100"><?php if ($grand_quantity !== 0) echo number_format($grand_quantity).' product confirmation'; else echo 'no product'; ?></th>
+                                    <th width="375"></th>
+                                    <th width="90"></th>
+                                    <th width="100">product price</th>
+                                    <th width="100">total price</th>
+                                </tr>
+        <?php }?>
                             </thead>
                             <tbody> <?php
                                 foreach ($this->cart->contents() as $value) {
@@ -64,7 +79,13 @@
                         </table>
                         <div class="row">
                             <div class="small-12 medium-3 large-offset-9 columns">
+                            <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                                 <a href="<?php echo base_url('cart/payment'); ?>" class="button btn-checkout">ดำเนินการต่อไป</a>
+                                <?php
+		}else{ 
+		?>
+                                <a href="<?php echo base_url('cart/payment'); ?>" class="button btn-checkout">continue</a>
+        <?php }?>
                             </div>
                         </div>
                     </div>

@@ -5,6 +5,10 @@
 	.menu *{
 		color: #FD6A02 !important;
 	}
+	.dropdown.menu li a {
+		font-size: 12px;
+		font-weight: bold;
+	}
 </style>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="qygm9FWt"></script>
@@ -51,7 +55,7 @@
 			<div id="google_translate_element" style="display: none;"></div>
 			<ul class="dropdown menu mb_tran" data-dropdown-menu>
 				<li>
-					<a style="color: #FD6A02;" href="#"><!-- <img src="<?php echo base_url('assets/images/flag/th.png');?>" alt=""> -->
+					<a style="color: #FD6A02; font-size: 15px !important" href="#"><!-- <img src="<?php echo base_url('assets/images/flag/th.png');?>" alt=""> -->
 						<?php 
 							$icon = 'th.png';
 							$lang = 'Thai';
@@ -87,8 +91,8 @@
 					<div class="columns">
 						<div class="top-bar-left">
 							<ul class="dropdown menu">
-								<li class="menu-text" style="font-size:22px">
-									<a href="<?php echo base_url(''); ?>" class="brand" style="font-size: 30px !important;">
+								<li class="menu-text" style="font-size:20px">
+									<a href="<?php echo base_url(''); ?>?language=<?php echo @$_GET['language'];?>" class="brand" style="font-size: 30px !important;">
 										<!--<img style="border-radius:50%" src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="<?php echo $site['WD_Name']; ?>">--> <!-- <?php echo $site['WD_Name']; ?>-->
 										<img style="width:90px" src="<?php echo base_url('assets/images/logo111.png'); ?>" alt="<?php echo $site['WD_Name']; ?>">
 									</a>
@@ -99,14 +103,14 @@
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="วิธีชำระเงิน">การสั่งซื้อ/ชำระเงิน</a></li>
 									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
 									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>
-									<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="แจ้งโอนเงิน">แจ้งโอนเงิน</a></li>
+									<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="แจ้งโอนเงิน">ติดตามสินค้า</a></li>
 								<?php }else{?>
 									<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="Home">Home</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="Promotion/Event">Promotion/Event</a></li>
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="How to order payment">How to order payment</a></li>
 									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="About US">About US</a></li>
 									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Contact Us</a></li>
-									<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="Confrim Payment">Confrim Payment</a></li>
+									<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="Confrim Payment">Confrim Payment/Track Order</a></li>
 								<?php }?>
 							</ul>
 						</div>
@@ -155,9 +159,9 @@
 								<!--</li>-->
 								<li>
 								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>	
-									<a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>ตะกร้าสินค้า <?php if ($this->cart->contents()) echo '<span class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
+									<a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>ตะกร้าสินค้า <?php if ($this->cart->contents()) echo '<span style="color:#fff !important" class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
 								<?php }else{?>
-									<a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>Shopping Cart <?php if ($this->cart->contents()) echo '<span class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
+									<a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>Shopping Cart <?php if ($this->cart->contents()) echo '<span style="color:#fff !important"  class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
 									<?php }?>
 								<!-- <li> <?php
 									echo form_open('product', array('id' => 'form-productsearch')); ?>
@@ -232,14 +236,16 @@
 		<ul class="menu vertical off-canvas-list">
 		<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 			<li><h3>เมนูหลัก</h3></li>
-			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>">หน้าแรก</a></li>
-			<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>">โปรโมชั่น/อีเว้นท์</a></li>
+
+			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="หน้าแรก">หน้าแรก</a></li>
+									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="สินค้า">โปรโมชั่น/อีเว้นท์</a></li>
+									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="วิธีชำระเงิน">การสั่งซื้อ/ชำระเงิน</a></li>
+									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
+									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>
+									<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="แจ้งโอนเงิน">ติดตามสินค้า</a></li>
+
 			<li><a href="<?php echo base_url('cart'.'?language='.@$_GET['language']); ?>">ตะกร้าสินค้า</a></li>
-			<li><a href="<?php echo base_url('member/history'.'?language='.@$_GET['language']); ?>">การสั่งซื้อ/ชำระเงิน</a></li>
-			<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>">วิธีชำระเงิน</a></li>
-			<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>">เกี่ยวกับเรา</a></li>
-			<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>">ติดต่อเรา</a></li>
-			<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>">แจ้งโอนเงิน</a></li>
+		
 			<!--<li><a href="#">สมัครสมาชิก</a></li>-->
 			<!--
 			<li> <?php
@@ -256,13 +262,14 @@
 			-->
 		<?php }else{?>
 			<li><h3>Menu</h3></li>
-			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>">Home</a></li>
-			<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>">Promotion/Event</a></li>
-			<li><a href="<?php echo base_url('cart'.'?language='.@$_GET['language']); ?>">Shopping Cart</a></li>
-			<li><a href="<?php echo base_url('member/history'.'?language='.@$_GET['language']); ?>">สถานะการสั่งซื้อ</a></li>
-			<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>">How to order payment</a></li>
-			<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>">About Us</a></li>
-			<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>">Contact Us</a></li>
+			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="Home">Home</a></li>
+									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="Promotion/Event">Promotion/Event</a></li>
+									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="How to order payment">How to order payment</a></li>
+									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="About US">About US</a></li>
+									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Contact Us</a></li>
+									<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="Confrim Payment">Confrim Payment/Track Order</a></li>
+
+									<li><a href="<?php echo base_url('cart'.'?language='.@$_GET['language']); ?>">Cart</a></li>
 			<!--
 			<li> <?php
 				if (get_session('C_ID') == '') { ?>

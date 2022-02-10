@@ -82,7 +82,11 @@
 				if ($product_detail['P_Color'] != '') {
 					$colors = explode(",", $product_detail['P_Color']); ?>
 					<ul>
+					<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 						<li><bold><h5>เลือกสี</h5></bold>
+					<?php }else{?>
+						<li><bold><h5>Color</h5></bold>
+					<?php }?>
 							<select name="color"> <?php
 								foreach ($colors as $key => $value) {
 									$product_color = rowArray($this->common_model->get_where_custom('product_color', 'PC_ID', $value));
@@ -109,19 +113,41 @@
 							echo '฿'.number_format(0, 2, '.', ','); ?>
 					</h2> <?php
 					if (@$product_stock['PS_Price'] != 0 && !empty(@$product_price['PP_Price']) && @$product_price['PP_Price'] != 0) { ?>
-						<h4 class="price-sale">ราคาปกติ <?php echo '฿'.number_format(@$product_stock['PS_Price'], 2, '.', ','); ?></h4> <?php
+						<h4 class="price-sale">
+						<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+							ราคาปกติ
+						<?php }else{?>
+							normal price
+						<?php }?>
+							<?php echo '฿'.number_format(@$product_stock['PS_Price'], 2, '.', ','); ?></h4> <?php
 					} ?>
 				</div> <?php
 				if (!empty($product_stock['PS_Amount']) && $product_stock['PS_Amount'] > 0) { ?>
-					<h5><i class="fa fa-check"></i> มีสินค้า <?php echo ' ('.$product_stock['PS_Amount'].')'; ?></h5> <?php
+					<h5><i class="fa fa-check"></i> 
+					<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+					มีสินค้า
+					<?php }else{?>
+						Stock
+					<?php }?>
+					 <?php echo ' ('.$product_stock['PS_Amount'].')'; ?></h5> <?php
 				}
 				else { ?>
-					<h5 class="text-red"><i class="fa fa-times"></i> สินค้าหมด</h5> <?php
+					<h5 class="text-red"><i class="fa fa-times"></i> 
+					<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+					สินค้าหมด
+					<?php }else{?>
+						out of stock
+					<?php }?>
+					</h5> <?php
 				} ?>
 				<input class="product-prp" id="prp" name="prp" type="hidden" value="<?php if (!empty(@$product_price['PP_Price']) && @$product_price['PP_Price'] != 0) echo number_format(@$product_price['PP_Price'], 2, '.', ''); else echo number_format(0, 2, '.', ''); ?>">
 				<input class="product-prs" id="prs" name="prs" type="hidden" value="<?php if (!empty(@$product_price['PS_Price']) && @$product_stock['PS_Price'] != 0) echo number_format(@$product_stock['PS_Price'], 2, '.', ''); else echo number_format(0, 2, '.', ''); ?>">
 				<input class="product-qty" id="qty" name="qty" type="number" value="1" min="1">
+				<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 				<a href="#" class="button btn-product" id="btn_cart_add">เพิ่มสินค้าในตะกร้า</a>
+				<?php }else{?>
+					<a href="#" class="button btn-product" id="btn_cart_add">Add to Cart</a>
+					<?php }?>
 				<!-- <div class="wishlist"> -->
 				<?php
 					if (get_session('C_ID')) {
@@ -137,7 +163,7 @@
 				<hr>
 				<div class="_dotranslate">
 					
-				
+				<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 					<h5><bold>รายละเอียดสินค้า</bold></h5>
 					<p><?php echo $product_detail['P_Detail']; ?></p>
 
@@ -149,6 +175,19 @@
 					<p><?php echo $product_detail['P_Weight']; ?> (กก.)</p>
 
 					<h5><bold>ข้อมูลจำเพาะของสินค้า</bold></h5>
+				<?php }else{?>
+					<h5><bold>Product details</bold></h5>
+					<p><?php echo $product_detail['P_Detail']; ?></p>
+
+					<h5><bold>size</bold></h5>
+					<!-- <p><?php if ($product_detail['PSI_Name'] != '') echo $product_detail['PSI_Name']; else echo '-'; ?></p> -->
+					<p><?php if ($product_detail['P_Size'] != '') echo $product_detail['P_Size']; else echo '-'; ?></p>
+
+					<h5><bold>weight</bold></h5>
+					<p><?php echo $product_detail['P_Weight']; ?> (kg.)</p>
+
+					<h5><bold>Product Specifications</bold></h5>
+				<?php }?>
 					<ol> <?php
 						if ($product_detail['PT_ID'] != '') {
 							$PT_ID = explode(',', $product_detail['PT_ID']);
@@ -162,13 +201,31 @@
 								}
 							}
 							$PT_String = rtrim($PT_String, ', '); ?>
-							<li>สถานะสินค้า: <?php echo trim($PT_String); ?></li> <?php
+							<li>
+							<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+								สถานะสินค้า: 
+							<?php }else{?>
+								Product status: 
+							<?php }?>
+								<?php echo trim($PT_String); ?></li> <?php
 						}
 						if ($product_detail['PSI_Name'] != '') { ?>
-							<li>ขนาด / รูปร่าง: <?php echo $product_detail['PU_Name']; ?></li> <?php
+							<li>
+							<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+								ขนาด / รูปร่าง: 
+							<?php }else{?>
+								Size/Shape:
+							<?php }?>
+							<?php echo $product_detail['PU_Name']; ?></li> <?php
 						}
 						if ($product_detail['PU_Name'] != '') { ?>
-							<li>หน่วยสินค้า: <?php echo $product_detail['PU_Name']; ?></li> <?php
+							<li>
+							<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+								หน่วยสินค้า: 
+							<?php }else{?>
+								product unit
+							<?php }?>
+							<?php echo $product_detail['PU_Name']; ?></li> <?php
 						} ?>
 					</ol>
 				</div>

@@ -16,7 +16,11 @@
                             'novalidate'    => 'novalidate',
                         );
                         echo form_open('cart/cartOrderAddress', $attributes); ?>
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                             <h4>เลือกการจัดส่ง (ทางร้านจะเลือกจัดส่งให้)</h4>
+                        <?php }else{?>
+                            <h4>choose delivery (The store will choose to deliver)</h4>
+                        <?php }?>
                             <div class="row">
                                 <!-- <div class="small-4 columns">
                                     <div class="checkout-img-delivery">
@@ -79,6 +83,7 @@
                                     <p><i class="fi-alert"></i><?php echo form_error('Zipcode_Code'); ?></p>
                                 </div> <?php
                             } ?>
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                             <div class="row">
                                 <div class="small-4 medium-3 columns">
                                     <label for="OD_Name" class="middle label-login">ชื่อ-นามสกุล: </label>
@@ -200,7 +205,134 @@
                                 <div class="small-12 medium-3 large-offset-9 columns">
                                     <a href="#" class="button btn-checkout" id="btn_cart_address">ดำเนินการต่อไป</a>
                                 </div>
-                            </div> <?php
+                            </div> 
+                            <?php }else{?>
+                                <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="OD_Name" class="middle label-login">name-surname: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <input type="text" id="OD_Name" name="OD_Name" placeholder="name-surname" required value="<?php echo get_session('OD_Name'); ?>">
+                                    <span class="form-error"><h5>Please enter your first and last name</h5></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="OD_Tel" class="middle label-login">telephone: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <input type="text" id="OD_Tel" name="OD_Tel" placeholder="telephone" required value="<?php echo get_session('OD_Tel'); ?>">
+                                    <span class="form-error"><h5>Please enter phone number</h5></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="OD_Email" class="middle label-login">Email: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <input type="text" id="OD_Email" name="OD_Email" placeholder="Email" required value="<?php echo get_session('OD_Email'); ?>">
+                                    <span class="form-error"><h5>Please enter e-mail</h5></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="OD_hrNumber" class="middle label-login">No./Room: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <input type="text" id="OD_hrNumber" name="OD_hrNumber" placeholder="No./Room" required value="<?php echo get_session('OD_hrNumber'); ?>">
+                                    <span class="form-error"><h5>Please enter number/room</h5></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="OD_VilBuild" class="middle label-login">Village/Building/Condo: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <input type="text" id="OD_VilBuild" name="OD_VilBuild" placeholder="Village/Building/Condo" value="<?php echo get_session('OD_VilBuild'); ?>">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="OD_VilNo" class="middle label-login">Village: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <input type="text" id="OD_VilNo" name="OD_VilNo" placeholder="Village" value="<?php echo get_session('OD_VilNo'); ?>">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="OD_LaneRoad" class="middle label-login">alley / alley: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <input type="text" id="OD_LaneRoad" name="OD_LaneRoad" placeholder="alley / alley" value="<?php echo get_session('OD_LaneRoad'); ?>">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="OD_Street" class="middle label-login">road: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <input type="text" id="OD_Street" name="OD_Street" placeholder="road" value="<?php echo get_session('OD_Street'); ?>">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="Province_ID" class="middle label-login">province: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <select id="Province_ID" name="Province_ID" onchange="ajaxRequest('<?php echo base_url('main/locations'); ?>', 'amphures', 'Province_ID', this.value, 'Amphur_ID', 'Amphur_Name', '#Amphur_ID', 'select')" required> <?php
+                                        foreach ($provinces as $key => $value) { ?>
+                                            <option value="<?php echo $key; ?>" <?php if (get_session('Province_ID') != '' && get_session('Province_ID') == $key) { ?> selected <?php } ?>><?php echo trim($value); ?></option> <?php
+                                        } ?>
+                                    </select>
+                                    <span class="form-error"><h5>Please select a province</h5></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="Amphur_ID" class="middle label-login">district/district: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <select id="Amphur_ID" name="Amphur_ID" onchange="ajaxRequest('<?php echo base_url('main/locations'); ?>', 'districts', 'Amphur_ID', this.value, 'District_ID', 'District_Name', '#District_ID', 'select')" required> <?php
+                                        foreach ($amphures as $key => $value) { ?>
+                                            <option value="<?php echo $key; ?>"><?php echo trim($value); ?></option> <?php
+                                        } ?>
+                                    </select>
+                                    <span class="form-error"><h5>Please select a District/District</h5></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="District_ID" class="middle label-login">sub-district/sub-district: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <select id="District_ID" name="District_ID" onchange="ajaxRequest('<?php echo base_url('main/locations'); ?>', 'zipcodes', 'District_ID', this.value, 'Zipcode_ID', 'Zipcode_Code', '.zipcodes', 'input')" required> <?php
+                                        foreach ($districts as $key => $value) { ?>
+                                            <option value="<?php echo $key; ?>"><?php echo trim($value); ?></option> <?php
+                                        } ?>
+                                    </select>
+                                    <span class="form-error"><h5>Please select a Subdistrict/Subdistrict</h5></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-4 medium-3 columns">
+                                    <label for="Zipcode_Code" class="middle label-login">ZIP code: </label>
+                                </div>
+                                <div class="small-8 medium-9 columns">
+                                    <input type="text" id="Zipcode_Code" name="Zipcode_Code" placeholder="ZIP code" class="zipcodes" required value="<?php echo get_session('Zipcode_Code'); ?>">
+                                    <span class="form-error"><h5>Please enter zip code</h5></span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="small-12 medium-3 large-offset-9 columns">
+                                    <a href="#" class="button btn-checkout" id="btn_cart_address">continue</a>
+                                </div>
+                            </div> 
+
+                            <?php }?>
+                            
+                            <?php
                         echo form_close(); ?>
                     </div>
                 </div>

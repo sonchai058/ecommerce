@@ -252,7 +252,11 @@
                         <h1 class="text-title-home">Hot Sale</h1>
                         <hr class="hr-title-2 hr-width-1">
                         <h2 class="sup-title-promotion">Now in Stores</h2>
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                         <a href="<?php echo base_url('product/type/3'); ?>" class="btn-view-store">ดูเพิ่มเติม</a>
+                        <?php }else{?>
+                        <a href="<?php echo base_url('product/type/3'); ?>" class="btn-view-store">See more</a>
+                        <?php }?>
                     </article>
                 </div>
             </div>
@@ -299,18 +303,29 @@
                             <h2 class="text-green">Esther <span class="sub-title-1">Dietary Supplement Product</span></h2>
                             <div class="divider"></div>
                             <!-- <p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
+                            <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                             <div class="_dotranslate">
                                <p>ครบจบในซอง ช่วย</p>
                             </div>
                             <div class="_notranslate notranslate">
                                 <p>ช่วยชะลอให้เซลล์่อ่อนเยาว์ 30 ปีขึ้นไปต้องลอง ชงดื่มวันละ 1 ซอง บอกลาวัยทอง ปรับสมดุลฮอร์โมน 1 เดือนรู้เรื่อง</p>
                             </div>
-                            
-
                         </div>
                         <div class="collection-more">
                             <a href="<?php echo base_url('product/category/1'); ?>" class="btn-view-store">ดูเพิ่มเติม</a>
                         </div>
+                        <?php }else{?>
+                            <div class="_dotranslate">
+                               <p>Complete in the envelope. Help.</p>
+                            </div>
+                            <div class="_notranslate notranslate">
+                                <p>Help slow down the cells to be younger, 30 years old or more. Must try. Drink 1 sachet a day. Say goodbye to menopause. Balance hormones for 1 month. Know about it.</p>
+                            </div>
+                        </div>
+                        <div class="collection-more">
+                            <a href="<?php echo base_url('product/category/1'); ?>" class="btn-view-store">See more</a>
+                        </div>
+                        <?php }?>
                     </div>
                 </div>
             </div>
@@ -328,13 +343,22 @@
                             <h2 class="text-green">DIETARY<span class="sub-title-2"> SUPPLEMENT PRODUCT</span></h2>
                             <div class="divider-2"></div>
                             <div class="_dotranslate">
+                            <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                                 <p>เนียนนุ่ม ลดอาการปวดประจำเดือน <bold>"DIETARY"</bold> ลดริ้วรอย <bold>"SUPLEMENT PRODUCT"</bold> ผิวไส</p>
                                 <br>
                                 <img src="<?php echo base_url('assets/images/products/stair/sh4.JPG'); ?>" alt="" width="200">
                                 <br>
                                 <div class="text-green ico-mid"><bold><i class="fa fa-caret-right"></i> Product</bold></div>
                                 <p>ครบจบในซอง ช่วย ช่วยชะลอให้เซลล์่อ่อนเยาว์ 30 ปีขึ้นไปต้องลอง ชงดื่มวันละ 1 ซอง บอกลาวัยทอง ปรับสมดุลฮอร์โมน 1 เดือนรู้เรื่อง</p>
-<!--
+                            <?php }else{?>
+                                <p>Soft and smooth, reduce menstrual pain <bold>"DIETARY"</bold> reduce wrinkles <bold>"SUPLEMENT PRODUCT"</bold> clear skin</p>
+                                <br>
+                                <img src="<?php echo base_url('assets/images/products/stair/sh4.JPG'); ?>" alt="" width="200">
+                                <br>
+                                <div class="text-green ico-mid"><bold><i class="fa fa-caret-right"></i> Product</bold></div>
+                                <p>Complete in a sachet. Help to slow down the cells to be younger than 30 years old. Must try. Drink 1 sachet per day. Say goodbye to menopause. Balance hormones for 1 month. Know about it.</p>
+                            <?php }?>
+                                <!--            
                                 <br>
                                 <img src="<?php echo base_url('assets/images/products/stair/sw-core2.png'); ?>" alt="" width="200">
                                 <br>
@@ -358,7 +382,11 @@
                         </div>
                         <br><br>
                         <div class="collection-more">
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                             <a href="<?php echo base_url('product/category/3'); ?>" class="btn-view-store">ดูเพิ่มเติม</a>
+                        <?php }else{?>
+                            <a href="<?php echo base_url('product/category/3'); ?>" class="btn-view-store">See more</a>
+                        <?php }?>
                         </div>
                     </div>
                 </div>

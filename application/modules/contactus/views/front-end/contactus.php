@@ -35,6 +35,7 @@
 					$attributes = array(
 						'class' => 'form-contact-to-email'
 					);
+					if(@$_GET['language']==''|| @$_GET['language']=='thai'){
 					echo form_open('contactus', $attributes);
 					if (validation_errors()) { ?> <font color="red"><?php echo form_error('name'); ?></font> <?php }
 					$data = array(
@@ -76,7 +77,52 @@
 						'rows' 			=> '7',
 						'title' 		=> 'ข้อความ',
 					);
-					echo form_textarea($data); ?>
+					echo form_textarea($data); 
+					}else{
+						echo form_open('contactus', $attributes);
+						if (validation_errors()) { ?> <font color="red"><?php echo form_error('name'); ?></font> <?php }
+						$data = array(
+							'type'			=> 'text',
+							'id' 			=> 'name',
+							'name' 			=> 'name',
+							'placeholder' 	=> 'name-lastname...',
+							'required' 		=> 'required',
+							'title' 		=> 'name-lastname',
+						);
+						echo form_input($data);
+						if (validation_errors()) { ?> <font color="red"><?php echo form_error('email'); ?></font> <?php }
+						$data = array(
+							'type'			=> 'email',
+							'id' 			=> 'email',
+							'name' 			=> 'email',
+							'placeholder' 	=> 'email...',
+							'required' 		=> 'required',
+							'title' 		=> 'email',
+						);
+						echo form_input($data);
+						if (validation_errors()) { ?> <font color="red"><?php echo form_error('subject'); ?></font> <?php }
+						$data = array(
+							'type'			=> 'text',
+							'id' 			=> 'subject',
+							'name' 			=> 'subject',
+							'placeholder' 	=> 'topic...',
+							'required' 		=> 'required',
+							'title' 		=> 'topic',
+						);
+						echo form_input($data);
+						if (validation_errors()) { ?> <font color="red"><?php echo form_error('message'); ?></font> <?php }
+						$data = array(
+							'id' 			=> 'message',
+							'name' 			=> 'message',
+							'placeholder' 	=> 'message...',
+							'required' 		=> 'required',
+							'cols' 			=> '30',
+							'rows' 			=> '7',
+							'title' 		=> 'message',
+						);
+						echo form_textarea($data); 
+					}
+ ?>
 					<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 					<a href="#" class="btn-form-submit">ส่งข้อความ</a> 
 					<?php }else{?>

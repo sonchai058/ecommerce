@@ -6,6 +6,7 @@
 			<?php $this->load->view('front-end/sidebar'); ?>
 
 			<div class="small-12 medium-9 large-7 columns">
+			<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 				<h2 class="text-title">วิธีการซื้อสินค้า</h2>
 				<div class="transport-wrapper">
 					<h4><i class="fa fa-angle-double-right"></i> ฉันจะทำรายการสั่งซื้อได้อย่างไร ?</h4>
@@ -40,6 +41,42 @@
 					<h4><i class="fa fa-angle-double-right"></i> ฉันจะได้รับการยืนยันคำสั่งซื้อหลังจากทำการสั่งซื้อสินค้าหรือไม่คะ ?</h4>
 					<p>คุณจะได้รับ <bold>เอกสารยืนยันคำสั่งซื้อและรายละเอียดของคำสั่งซื้อ</bold> ผ่านทาง <bold>อีเมล์</bold> หลังจากที่คุณได้ทำการสั่งซื้อสินค้า เราจะแจ้งให้คุณทราบอีกครั้งเมื่อสินค้าของคุณได้รับการจัดส่งแล้ว</p>
 					<br>
+			<?php }else{?>
+				<h2 class="text-title">How to buy</h2>
+				<div class="transport-wrapper">
+					<h4><i class="fa fa-angle-double-right"></i> How do I place an order? ?</h4>
+					<img src="<?php echo base_url('assets/images/howto/how-to-buy.png'); ?>" alt="howtopay">
+					<br>
+					<h4><i class="fa fa-angle-double-right"></i> I placed an order and received a confirmation of the order. what do i have to do next ?</h4>
+					<p>An order confirmation will be sent to you via email and SMS after you have placed your order. We will send another email and SMS when your product status changes. You can check the status of your order. <a href="<?php echo base_url('member/transfercustom'); ?>" class="link">click here</a></p>
+					<br>
+					<h4><i class="fa fa-angle-double-right"></i> How can I place an order without an account on Tanisha's website? ?</h4>
+					<p>You can order products with Tanisha without having an account as follows:</p>
+					<ol class="service-ol">
+						<li>Choose the product you want and order</li>
+						<li>Go to the email login step. Enter your email and select <bold>"Continue without password"</bold></li>
+						<li>Enter shipping information and choose your payment method</li>
+						<li>order your product</li>
+					</ol>
+					<!-- <p>สำหรับรายละเอียดเพิ่มเติมเกี่ยวกับวิธีการสั่งซื้อคลิกที่นี่ <a href="#!" class="link">www.Tanisha.com/how-to-buy</a></p> -->
+					<br>
+					<p>We recommend that you create an account. which will be notified of latest and attractive Tanisha's promotions. Also to have your information and order history saved for your best online shopping experience.</p>
+					<br>
+					<h4><i class="fa fa-angle-double-right"></i> Can I call Tanisha to place an order? ?</h4>
+					<p>We can assist you in placing your order over the phone. If you choose cash on delivery, however</p>
+					<!-- <p>เราขอแนะนำท่านดูรายละเอียดวิธีการสั่งซื้อสินค้าออนไลน์ <a href="#!" class="link">www.Tanisha.com/how-to-buy</a> </p> -->
+					<p>If you are unable to make an online purchase Please contact our customer service department. <a href="<?php echo base_url('contactus'); ?>" class="link">click here</a> We are very happy to help you.</p>
+					<br>
+					<h4><i class="fa fa-angle-double-right"></i> Can I remove products from How to shopping basket?</h4>
+					<p>To remove a product from the shopping cart, you can do the following:</p>
+					<p>- Press to select the basket symbol. at the top of the website page to enter your shopping cart</p>
+					<p>- press select <bold>“Delete product list”</bold></p>
+					<p>After that, the items in your shopping cart will be removed.</p>
+					<br>
+					<h4><i class="fa fa-angle-double-right"></i> Will I receive an order confirmation after placing an order? ?</h4>
+					<p>you will get <bold>Order confirmation and order details</bold> through <bold>Email</bold> after you have made an order We'll notify you again once your item has been shipped.</p>
+					<br>
+			<?php }?>
 				</div>
 
 

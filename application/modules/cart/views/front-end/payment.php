@@ -5,7 +5,13 @@
             <div class="row">
                 <div class="small-12 medium-8 columns">
                     <div class="login-wrapper">
-                        <h4>เลือกการชำระเงิน</h4> <?php
+                        <h4>            
+                            <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                            เลือกการชำระเงิน
+                            <?php }else{?>
+                            choose payment
+                            <?php }?>
+                        </h4> <?php
                         $attributes = array(
                             'id' => 'cart_order_payment',
                         );
@@ -24,7 +30,13 @@
                                     </label>
                                     <input type="radio" name="payment" value="150" id="transfer" required checked>
                                     <!-- <label for="transfer">+฿0</label> -->
-                                    <label for="transfer">โอนเงิน</label>
+                                    <label for="transfer">
+                                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                                        โอนเงิน
+                                        <?php }else{?>
+                                            transfer money
+                                            <?php }?>
+                                    </label>
                                 </fieldset>
                                 <fieldset class="small-4 columns">
                                     <label for="credit-card">
@@ -32,7 +44,13 @@
                                     </label>
                                     <input type="radio" name="payment" value="150" id="credit-card" required>
                                     <!-- <label for="credit-card">+฿0</label> -->
-                                    <label for="credit-card">บัตรเครดิต</label>
+                                    <label for="credit-card">
+                                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                                        บัตรเครดิต
+                                        <?php }else{?>
+                                        credit card
+                                            <?php }?>
+                                    </label>
                                 </fieldset>
                                 <fieldset class="small-4 columns">
                                     <label  for="cvv2">
@@ -40,13 +58,25 @@
                                     </label>
                                     <input type="radio" name="payment" value="150" id="cvv2" required>
                                     <!-- <label for="cvv2">+฿0</label> -->
-                                    <label for="cvv2">บัตรเดบิต</label>
+                                    <label for="cvv2">
+                                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                                        บัตรเดบิต
+                                        <?php }else{?>
+                                            debit card
+                                            <?php }?>
+                                    </label>
                                 </fieldset>
                             </div>
                             <hr>
                             <div class="row">
                                 <div class="small-12 medium-3 large-offset-9 columns">
-                                    <a href="#" class="button btn-checkout" id="btn_cart_payment">ดำเนินการต่อไป</a>
+                                    <a href="#" class="button btn-checkout" id="btn_cart_payment">
+                                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                                        ดำเนินการต่อไป
+                                        <?php }else{?>
+                                        continue
+                                            <?php }?>
+                                    </a>
                                 </div>
                             </div> <?php
                         echo form_close(); ?>

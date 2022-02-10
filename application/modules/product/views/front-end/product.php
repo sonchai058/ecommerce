@@ -8,15 +8,30 @@
             <!-- Product -->
             <div class="columns">
                 <div class="wrapper-product-title">
+                <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                     <h2>สินค้าของ Tanisha</h2>
                     <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ</p>
+                <?php }else{?>
+                    <h2>Tanisha's products</h2>
+                    <p>Dietary supplement ESTHER (drinking) meets the needs of women with health problems.</p>
+                <?php }?>
                 </div>
                 <div class="row row-product" style="width:100%">
                     <div class="small-10 medium-10 large-10 columns">
-                        <input id="search" type="text" placeholder="ค้นหาสินค้า..." class="form-control" style="font-size: 20px;padding: 20px;margin-top: 10px;" value="<?php echo @$_GET['search'];?>">
+                        <input id="search" type="text" placeholder="
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                            ค้นหาสินค้า...
+                        <?php }else{?>
+                            Product search...
+                        <?php }?>
+                        " class="form-control" style="font-size: 20px;padding: 20px;margin-top: 10px;" value="<?php echo @$_GET['search'];?>">
                     </div>
                     <div class="small-2 medium-2 large-2 columns" style="padding-top:10px">
+                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                         <button onclick="window.location.replace('?search='+$('#search').val())" type="button" class="btn-buy-now" style="width:100%;font-weight:bold;font-size:20px">ค้นหา</button>
+                        <?php }else{?>
+                            <button onclick="window.location.replace('?search='+$('#search').val())" type="button" class="btn-buy-now" style="width:100%;font-weight:bold;font-size:20px">Search</button>
+                        <?php }?>
                     </div>
                 </div>
                 <?php

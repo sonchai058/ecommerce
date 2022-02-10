@@ -6,8 +6,13 @@
     <section>
         <div class="row account-wrapper">
             <div class="small-12 medium-expand columns">
+
 				<div class="wrapper-orderstatus-title">
-					<h1><?php echo $title; ?></h1>
+				<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+					<h1><?php echo $title.'/ติดตามสินค้า';; ?></h1>
+					<?php }else{?>
+						<h1><?php echo 'Confirm Pay/Track Order'; ?></h1>
+						<?php }?>
 				</div> <?php
 					$attributes = array(
 	                    'class' 		=> 'form-login',
@@ -23,7 +28,7 @@
 		                                </div> <?php
 		                            } ?>
 		                            <div class="row">
-		                                <div class="small-4 medium-3 columns">
+		                                <div class="small-4 medium-3 columns text-right">
 										<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 		                                    <label style="font-size: 20px;" for="OD_Code" class="middle label-login">เลขที่ใบสั่งซื้อ: </label>
 										<?php }else{?>
@@ -65,7 +70,7 @@
 		                                </div> <?php
 		                            } ?>
 		                            <div class="row">
-		                                <div class="small-4 medium-3 columns">
+		                                <div class="small-4 medium-3 columns text-right">
 										<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 		                                    <label style="font-size: 20px;" for="OD_Code" class="middle label-login">เลขที่ใบสั่งซื้อ: </label>
 										<?php }else{?>
@@ -86,22 +91,38 @@
 		                                            <option value="<?php echo $key; ?>"><?php echo trim($value); ?></option> <?php
 		                                        } ?>
 		                                    </select>
+											<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 		                                    <span class="form-error"><h5>กรุณาเลือก ธนาคาร</h5></span>
+											<?php }else{?>
+												<span class="form-error"><h5>Please select a bank</h5></span>
+											<?php }?>
 		                                </div>
 		                            </div>
 		                            <div class="row">
 		                                <div class="small-4 medium-3 columns">
+										<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 		                                    <label for="OT_Payment" class="middle label-login">ช่องทางชำระเงิน: </label>
+											<?php }else{?>
+												<label for="OT_Payment" class="middle label-login">payment method: </label>
+												<?php }?>
 		                                </div>
 		                                <div class="small-8 medium-9 columns">
 		                                	<label class="middle label-account">
+											<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 			                                    <input type="radio" name="OT_Payment" value="1" title="โอนผ่านธนาคาร" checked> โอนผ่านธนาคาร &nbsp;
 												<input type="radio" name="OT_Payment" value="2" title="ชำระผ่านบัตร"> ชำระผ่านบัตร &nbsp;
 												<input type="radio" name="OT_Payment" value="3" title="ชำระผ่านเคาเตอร์เซอร์วิส"> ชำระผ่านเคาเตอร์เซอร์วิส &nbsp;
 												<input type="radio" name="OT_Payment" value="4" title="อื่นๆ"> อื่นๆ &nbsp;
+												<?php }else{?>
+													<input type="radio" name="OT_Payment" value="1" title="โอนผ่านธนาคาร" checked> bank transfer &nbsp;
+												<input type="radio" name="OT_Payment" value="2" title="ชำระผ่านบัตร"> card payment &nbsp;
+												<input type="radio" name="OT_Payment" value="3" title="ชำระผ่านเคาเตอร์เซอร์วิส"> Pay via counter service &nbsp;
+												<input type="radio" name="OT_Payment" value="4" title="อื่นๆ"> other &nbsp;
+													<?php }?>
 		                                	</label>
 		                                </div>
 		                            </div>
+									<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 									<div class="row">
 		                                <div class="small-4 medium-3 columns">
 		                                    <label for="OT_DateTimeAdd" class="middle label-login">วันเวลาที่ทำรายการ: </label>
@@ -143,6 +164,49 @@
 		                                	<span class="form-error"><h5>กรุณาเลือกไฟล์</h5></span>
 		                                </div>
 		                            </div>
+									<?php }else{?>
+										<div class="row">
+		                                <div class="small-4 medium-3 columns">
+		                                    <label for="OT_DateTimeAdd" class="middle label-login">transaction date: </label>
+		                                </div>
+		                                <div class="small-8 medium-9 columns">
+		                                	<input type="text" id="datetimepicker" name="OT_DateTimeAdd" placeholder="transaction date" required readonly>
+		                                	<span class="form-error"><h5>Please select a transaction date</h5></span>
+		                                </div>
+		                            </div>
+		                            <div class="row">
+		                                <div class="small-4 medium-3 columns">
+		                                    <label for="OT_Price" class="middle label-login">amount: </label>
+		                                </div>
+		                                <div class="small-8 medium-9 columns">
+		                                    <input type="text" id="OT_Price" name="OT_Price" placeholder="amount" required>
+		                                    <span class="form-error"><h5>Please enter amount</h5></span>
+		                                </div>
+		                            </div>
+		                            <div class="row">
+		                                <div class="small-4 medium-3 columns">
+		                                    <label for="OT_Descript" class="middle label-login">Note/Details: </label>
+		                                </div>
+		                                <div class="small-8 medium-9 columns">
+		                                    <textarea id="OT_Descript" name="OT_Descript" placeholder="Note/Details" rows="3"></textarea>
+		                                </div>
+		                            </div>
+		                            <div class="row">
+		                            	<div class="small-4 medium-3 columns">
+		                                    <label for="OT_ImgAttach" class="middle label-login">proof of transfer: </label>
+		                                </div>
+		                                <div class="small-8 medium-9 columns">
+		                                	<label for="OT_ImgAttach" class="btn-upload">
+		                                		<i class="fa fa-cloud-upload"></i> select file
+		                                	</label>
+											<input type="file" class="input-file-custom" id="OT_ImgAttach" name="OT_ImgAttach">
+		                                	<br>
+		                                	<span class="val-upload">The file has not been selected.</span>
+		                                	<br><br>
+		                                	<span class="form-error"><h5>Please select a file</h5></span>
+		                                </div>
+		                            </div>
+									<?php }?>
 		                            <div class="row">
 		                            	<div class="small-4 medium-3 columns"></div>
 		                                <div class="small-8 medium-9 columns">
@@ -155,8 +219,13 @@
 		                        <div class="small-12 columns">
 		                        	<hr>
 		                            <div class="field-submit">
+									<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 		                                <a href="#" role="button" class="btn-login" id="btn-transfer">ยืนยัน</a>
 		                            	<a href="<?php echo base_url('member'); ?>" role="button" class="btn-signup">ยกเลิก</a>
+									<?php }else{?>
+										<a href="#" role="button" class="btn-login" id="btn-transfer">confirm</a>
+		                            	<a href="<?php echo base_url('member'); ?>" role="button" class="btn-signup">cancel</a>
+									<?php }?>
 		                            </div>
 		                        </div>
 		                    </div> <?php

@@ -1038,7 +1038,7 @@ button {
 }
 
 .row {
-    max-width: 170rem;
+    max-width: 155rem;
     margin-left: auto;
     margin-right: auto;
     display: -webkit-flex;
@@ -3222,7 +3222,7 @@ screen and (min-width:75em) {
 
 .dropdown.menu .is-dropdown-submenu-parent.opens-left .submenu {
     left: auto;
-    right: 100%
+    right: 0%
 }
 
 .dropdown.menu.align-right .submenu.first-sub {

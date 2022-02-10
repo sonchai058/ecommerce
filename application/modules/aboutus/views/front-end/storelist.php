@@ -6,7 +6,7 @@
 			<?php $this->load->view('front-end/sidebar'); ?>
 
 			<div class="small-12 medium-9 large-7 columns">
-				<h2>รายชื่อร้านค้า</h2>
+				<h2>Shops</h2>
 				<hr>
 				<div class="row">
 					<div class="small-4 columns">
