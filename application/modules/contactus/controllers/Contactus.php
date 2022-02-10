@@ -75,7 +75,7 @@ class Contactus extends MX_Controller {
 			$this->form_validation->set_message('valid_email', 	'%s จะต้องมีรูปแบบที่ถูกต้อง');
 			if ($this->form_validation->run() !== false) {
 				$this->contactsend(get_inpost('name'), get_inpost('email'), get_inpost('subject'), get_inpost('message'));
-				redirect('contactus', 'refresh');
+				redirect('contactus'."?language=".@$_GET['language'], 'refresh');
 			}
 			else
 				print("<script language='javascript'>alert('!!! ส่งข้อความล้มเหลว กรุณาตรวจสอบข้อมูลอีกครั้ง');</script>");

@@ -26,10 +26,10 @@
 			<div class="small-12 medium-6 columns">
 				<div class="form-contact">
 				<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-					<h5>- คุณสามารถหาคำตอบอย่างสะดวกและรวดเร็วได้ที่: <a href="<?php echo base_url('service'); ?>" class="help">ศูนย์ช่วยเหลือ</a> ของเรา</h5>
+					<h5>- คุณสามารถหาคำตอบอย่างสะดวกและรวดเร็วได้ที่: <a href="<?php echo base_url('service'."?language=".@$_GET['language']); ?>" class="help">ศูนย์ช่วยเหลือ</a> ของเรา</h5>
 					<!--<h5>- หากคุณต้องการติดตามสถานะคำสั่งซื้อ: กรุณาคลิกที่ <a href="<?php if (get_session('C_ID') != '') echo base_url('member/history'); else echo base_url('member/transfercustom'); ?>" class="help">ติดตามสถานะคำสั่งซื้อ</a> ของเรา</h5> -->
 				<?php }else{?>
-					<h5>- You can find answers easily and quickly at: <a href="<?php echo base_url('service'); ?>" class="help">Help Center</a></h5>
+					<h5>- You can find answers easily and quickly at: <a href="<?php echo base_url('service'."?language=".@$_GET['language']); ?>" class="help">Help Center</a></h5>
 					<!--<h5>- หากคุณต้องการติดตามสถานะคำสั่งซื้อ: กรุณาคลิกที่ <a href="<?php if (get_session('C_ID') != '') echo base_url('member/history'); else echo base_url('member/transfercustom'); ?>" class="help">ติดตามสถานะคำสั่งซื้อ</a> ของเรา</h5>--> 
 				<?php }
 					$attributes = array(
@@ -237,7 +237,7 @@ if (count($site) 	> 0) {
 
 	function address(handleData) {
 		var request = $.ajax({
-			url: "<?php echo base_url('main/address'); ?>"
+			url: "<?php echo base_url('main/address'."?language=".@$_GET['language']); ?>"
 		});
         request.done(function(msg) {
         	handleData(JSON.parse(msg));
@@ -249,7 +249,7 @@ if (count($site) 	> 0) {
 
 	function tel(handleData) {
 		var request = $.ajax({
-			url: "<?php echo base_url('main/tel'); ?>"
+			url: "<?php echo base_url('main/tel'."?language=".@$_GET['language']); ?>"
 		});
         request.done(function(msg) {
         	handleData(JSON.parse(msg));
@@ -261,7 +261,7 @@ if (count($site) 	> 0) {
 
 	function fax(handleData) {
 		var request = $.ajax({
-			url: "<?php echo base_url('main/fax'); ?>"
+			url: "<?php echo base_url('main/fax'."?language=".@$_GET['language']); ?>"
 		});
         request.done(function(msg) {
         	handleData(JSON.parse(msg));

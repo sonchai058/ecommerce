@@ -187,10 +187,10 @@
 	                            <div class="field-submit">
 								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 	                                <a href="#" role="button" class="btn-login" id="btn-transfer">ยืนยัน</a>
-	                            	<a href="<?php echo base_url('member'); ?>" role="button" class="btn-signup">ยกเลิก</a>
+	                            	<a href="<?php echo base_url('member'."?language=".@$_GET['language']); ?>" role="button" class="btn-signup">ยกเลิก</a>
 								<?php }else{?>
 	                                <a href="#" role="button" class="btn-login" id="btn-transfer">confirm</a>
-	                            	<a href="<?php echo base_url('member'); ?>" role="button" class="btn-signup">cancel</a>
+	                            	<a href="<?php echo base_url('member'."?language=".@$_GET['language']); ?>" role="button" class="btn-signup">cancel</a>
 									<?php }?>
 	                            </div>
 	                        </div>

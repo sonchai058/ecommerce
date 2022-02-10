@@ -128,7 +128,7 @@
                         <hr>
                         <div class="row">
                             <div class="small-12 medium-3 large-offset-9 columns">
-                                <a href="<?php echo base_url('cart/review'); ?>" class="button btn-checkout">continue</a>
+                                <a href="<?php echo base_url('cart/review'."?language=".@$_GET['language']); ?>" class="button btn-checkout">continue</a>
                             </div>
                         </div>
                     </form>

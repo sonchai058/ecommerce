@@ -28,7 +28,7 @@
 					<br>
 					<p><bold>หมายเหตุ</bold>: การยกเลิกสามารถทำได้ก่อนที่จะเริ่มต้นการจัดส่ง คุณจะไม่สามารถเข้าแบบฟอร์มการยกเลิกออนไลน์หลังจากที่สินค้าของคุณได้รับการจัดส่งแล้ว</p>
 					<br>
-					<p>หากคุณไม่ได้มีบัญชี Tanisha กรุณาติดต่อเรา <a href="<?php echo base_url('contactus'); ?>" class="link">คลิกที่นี่</a> เพื่อการยกเลิกคำสั่งซื้อของคุณ</p>
+					<p>หากคุณไม่ได้มีบัญชี Tanisha กรุณาติดต่อเรา <a href="<?php echo base_url('contactus'."?language=".@$_GET['language']); ?>" class="link">คลิกที่นี่</a> เพื่อการยกเลิกคำสั่งซื้อของคุณ</p>
 					<br>
 
 					<h4 class="text-title"><i class="fa fa-angle-double-right"></i> นโยบายการยกเลิกของ Tanisha เป็นอย่างไร ?</h4>
@@ -63,7 +63,7 @@
 					<br>
 					<p>หากต้องการตรวจสอบว่าคำสั่งซื้อของคุณถูกยกเลิกหรือไม่คุณสามารถเข้าสู่บัญชี Tanisha ของคุณ และไปที่ "สินค้าของฉัน" หากสถานะของสินค้าแสดงว่า "ยกเลิก" คุณสามารถมั่นใจได้ว่าการยกเลิกได้ประสบความสำเร็จ</p>
 					<br>
-					<p>ในกรณีที่การยกเลิกของคุณไม่ได้มีการตอบรับจาก Tanisha ภายใน 60 นาที สินค้าของคุณอาจจะอยู่ในการจัดส่งและไม่สามารถยกเลิกได้ กรุณาติดต่อเรา <a href="<?php echo base_url('contactus'); ?>" class="link">คลิกที่นี่</a> สำหรับความช่วยเหลือเพิ่มเติม</p>
+					<p>ในกรณีที่การยกเลิกของคุณไม่ได้มีการตอบรับจาก Tanisha ภายใน 60 นาที สินค้าของคุณอาจจะอยู่ในการจัดส่งและไม่สามารถยกเลิกได้ กรุณาติดต่อเรา <a href="<?php echo base_url('contactus'."?language=".@$_GET['language']); ?>" class="link">คลิกที่นี่</a> สำหรับความช่วยเหลือเพิ่มเติม</p>
 					<br>
 		<?php }else{?>
 			<h2 class="text-title">order cancellation</h2>
@@ -87,7 +87,7 @@
 					<br>
 					<p><bold>note</bold>: Cancellations can be made prior to the start of delivery. You will not be able to access the online cancellation form after your order has been shipped.</p>
 					<br>
-					<p>If you don't have a Tanisha account, please contact us. <a href="<?php echo base_url('contactus'); ?>" class="link">click here</a> to cancel your order</p>
+					<p>If you don't have a Tanisha account, please contact us. <a href="<?php echo base_url('contactus'."?language=".@$_GET['language']); ?>" class="link">click here</a> to cancel your order</p>
 					<br>
 
 					<h4 class="text-title"><i class="fa fa-angle-double-right"></i> What is Tanisha's cancellation policy??</h4>
@@ -122,7 +122,7 @@
 					<br>
 					<p>To check if your order has been canceled, you can log in to your Tanisha account and go to "My Products". If the status of the product shows "Cancelled", you can rest assured that the cancellation was successful.</p>
 					<br>
-					<p>In the event that your cancellation is not received from Tanisha within 60 minutes, your item may be in delivery and cannot be cancelled. please contact us <a href="<?php echo base_url('contactus'); ?>" class="link">click here</a> for more help</p>
+					<p>In the event that your cancellation is not received from Tanisha within 60 minutes, your item may be in delivery and cannot be cancelled. please contact us <a href="<?php echo base_url('contactus'."?language=".@$_GET['language']); ?>" class="link">click here</a> for more help</p>
 		<?php }?>
 					<!-- <h4 class="text-title"><i class="fa fa-angle-double-right"></i> ฉันเพิ่งยกเลิกคำสั่งซื้อของฉัน การคืนเงินจะใช้เวลาเท่าไหร่ ?</h4>
 					<p>ในกรณีที่มีการยกเลิกสินค้า การคืนเงินจะดำเนินการภายในสองวันทำการของการส่งแบบฟอร์มการยกเลิกออนไลน์</p>

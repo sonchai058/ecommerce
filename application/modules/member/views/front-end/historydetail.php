@@ -21,7 +21,7 @@
                     <li>Placed on <?php echo date('d/m/Y', strtotime($order_data['OD_DateTimeUpdate'])); ?></li>
                     <li><span class="<?php if (in_array($order_status, $success)) echo 'success'; else if (in_array($order_status, $primary)) echo 'primary'; else if (in_array($order_status, $secondary)) echo 'secondary'; else if (in_array($order_status, $warning)) echo 'warning'; else if (in_array($order_status, $alert)) echo 'alert'; ?> order-badge"><?php echo $order_status; ?></span></li> <?php
                     if (in_array($order_status, $secondary)) { ?>
-                        <li><a class="btn-history-transfer" href="<?php echo base_url('member/transfer/'.$order_data['OD_ID']); ?>">แจ้งโอนเงิน</a></li> <?php
+                        <li><a class="btn-history-transfer" href="<?php echo base_url('member/transfer/'.$order_data['OD_ID']."?language=".@$_GET['language']); ?>">แจ้งโอนเงิน</a></li> <?php
                     } ?>
                 </ul>
                 <table class="table-order scroll">
@@ -38,7 +38,7 @@
                         foreach ($order_list as $key => $value) { ?>
                             <tr>
                                 <td>
-                                    <a href="<?php echo base_url('product/detail/'.$value['P_ID']); ?>"> <?php
+                                    <a href="<?php echo base_url('product/detail/'.$value['P_ID']."?language=".@$_GET['language']); ?>"> <?php
                                         if ($value['P_Img'] !== '') { ?>
                                             <img src="<?php echo base_url('assets/uploads/user_uploads_img/'.$value['P_Img']); ?>" alt="" width="50"> <?php
                                         }
@@ -47,7 +47,7 @@
                                         } ?>
                                     </a>
                                 </td>
-                                <td><h5><a href="<?php echo base_url('product/detail/'.$value['P_ID']); ?>"><?php echo $value['P_Name'].' ('.$value['P_IDCode'].')'; ?></a></h5></td>
+                                <td><h5><a href="<?php echo base_url('product/detail/'.$value['P_ID']."?language=".@$_GET['language']); ?>"><?php echo $value['P_Name'].' ('.$value['P_IDCode'].')'; ?></a></h5></td>
                                 <td><?php echo number_format($value['ODL_Amount']); ?></td>
                                 <td>฿<?php echo number_format($value['ODL_Price'], 2, '.', ','); ?></td>
                                 <td>฿<?php echo number_format($value['ODL_FullSumPrice'], 2, '.', ','); ?></td>

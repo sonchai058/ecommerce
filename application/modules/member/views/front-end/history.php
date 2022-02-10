@@ -39,12 +39,12 @@
 									<td> <?php
 										// if (in_array($order_status[$key], $secondary)) {
 										if ($order_status[$key] === 'รอโอนเงิน') { ?>
-											<a class="btn-history-transfer" href="<?php echo base_url('member/transfer/'.$value['OD_ID']); ?>">แจ้งโอนเงิน</a> <?php
+											<a class="btn-history-transfer" href="<?php echo base_url('member/transfer/'.$value['OD_ID']."?language=".@$_GET['language']); ?>">แจ้งโอนเงิน</a> <?php
 										}
 										else if (in_array($order_status[$key], $primary) || in_array($order_status[$key], $success))
 											echo $value['OD_EmsCode']; ?>
 									</td>
-									<td><a class="btn-history-detail" href="<?php echo base_url('member/historydetail/'.$value['OD_ID']); ?>">ดูข้อมูล</a></td>
+									<td><a class="btn-history-detail" href="<?php echo base_url('member/historydetail/'.$value['OD_ID']."?language=".@$_GET['language']); ?>">ดูข้อมูล</a></td>
 								</tr> <?php
 							} ?>
 						</tbody>
@@ -72,7 +72,7 @@
 									<td>฿<?php echo number_format($value['OD_FullSumPrice'], 2, '.', ','); ?></td>
 									<td><span class="<?php if (in_array($order_status_history[$key], $success)) echo 'success'; else if (in_array($order_status_history[$key], $primary)) echo 'primary'; else if (in_array($order_status_history[$key], $secondary)) echo 'secondary'; else if (in_array($order_status_history[$key], $warning)) echo 'warning'; else if (in_array($order_status_history[$key], $alert)) echo 'alert'; ?> order-badge"><?php echo $order_status_history[$key]; ?></span></td>
 									<td><?php if (in_array($order_status_history[$key], $primary) || in_array($order_status_history[$key], $success)) echo $value['OD_EmsCode']; ?></td>
-									<td><a class="btn-history-detail" href="<?php echo base_url('member/historydetail/'.$value['OD_ID']); ?>">ดูข้อมูล</a></td>
+									<td><a class="btn-history-detail" href="<?php echo base_url('member/historydetail/'.$value['OD_ID']."?language=".@$_GET['language']); ?>">ดูข้อมูล</a></td>
 								</tr> <?php
 							} ?>
 						</tbody>

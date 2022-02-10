@@ -13,7 +13,7 @@
 					<img src="<?php echo base_url('assets/images/howto/how-to-buy.png'); ?>" alt="howtopay">
 					<br>
 					<h4><i class="fa fa-angle-double-right"></i> ฉันทำการสั่งซื้อและมีการแจ้งยืนยันการสั่งซื้อเรียบร้อยแล้ว ฉันต้องทำอะไรต่อไป ?</h4>
-					<p>การยืนยันคำสั่งซื้อจะถูกส่งถึงคุูณทาง อีเมล และ SMS หลังจากที่คุณสั่งซื้อสินค้าเป็นที่เรียบร้อยแล้ว ทางเราจะส่งอีเมล และ SMS อีกเมื่อสินค้าของคุณมีการเปลี่ยนแปลงสถานะ คุณสามารถตรวจสอบสถานะคำสั่งสื้อของคุณได้ <a href="<?php echo base_url('member/transfercustom'); ?>" class="link">คลิกที่นี่</a></p>
+					<p>การยืนยันคำสั่งซื้อจะถูกส่งถึงคุูณทาง อีเมล และ SMS หลังจากที่คุณสั่งซื้อสินค้าเป็นที่เรียบร้อยแล้ว ทางเราจะส่งอีเมล และ SMS อีกเมื่อสินค้าของคุณมีการเปลี่ยนแปลงสถานะ คุณสามารถตรวจสอบสถานะคำสั่งสื้อของคุณได้ <a href="<?php echo base_url('member/transfercustom'."?language=".@$_GET['language']); ?>" class="link">คลิกที่นี่</a></p>
 					<br>
 					<h4><i class="fa fa-angle-double-right"></i> ฉันสามารถสั่งซื้อสินค้าได้โดยไม่ต้องมีบัญชีในเว็บไซต์ของ Tanisha ได้อย่างไร ?</h4>
 					<p>ท่านสามารถสั่งซื้อสินค้ากับ Tanisha ได้โดยไม่ต้องมีบัญชี ดังนี้</p>
@@ -30,7 +30,7 @@
 					<h4><i class="fa fa-angle-double-right"></i> ฉันสามารถโทรไป Tanisha เพื่อทำการสั่งซื้อสินค้าได้หรือไม่ ?</h4>
 					<p>เราสามารถช่วยเหลือท่านในการทำรายการสั่งซื้อทางโทรศัพท์ หากท่านเลือกการชำระเงินแบบเก็บเงินปลายทางอย่างไรก็ตาม</p>
 					<!-- <p>เราขอแนะนำท่านดูรายละเอียดวิธีการสั่งซื้อสินค้าออนไลน์ <a href="#!" class="link">www.Tanisha.com/how-to-buy</a> </p> -->
-					<p>หากท่านไม่สามารถทำการสั่งซื้อออนไลน์ได้ กรุณาติดต่อแผนกบริการลูกค้าของเรา <a href="<?php echo base_url('contactus'); ?>" class="link">คลิกที่นี่</a> เรามีความยินดีเป็นอย่างยิ่งที่จะช่วยเหลือท่าน</p>
+					<p>หากท่านไม่สามารถทำการสั่งซื้อออนไลน์ได้ กรุณาติดต่อแผนกบริการลูกค้าของเรา <a href="<?php echo base_url('contactus'."?language=".@$_GET['language']); ?>" class="link">คลิกที่นี่</a> เรามีความยินดีเป็นอย่างยิ่งที่จะช่วยเหลือท่าน</p>
 					<br>
 					<h4><i class="fa fa-angle-double-right"></i> ฉันสามารถลบสินค้าออกจาก ตระกร้าช้อปปิ้งได้อย่างไร ?</h4>
 					<p>สำหรับการลบสินค้าออกจากตระกร้าช้อปปิ้งสามารถทำได้ดังนี้</p>
@@ -48,7 +48,7 @@
 					<img src="<?php echo base_url('assets/images/howto/how-to-buy.png'); ?>" alt="howtopay">
 					<br>
 					<h4><i class="fa fa-angle-double-right"></i> I placed an order and received a confirmation of the order. what do i have to do next ?</h4>
-					<p>An order confirmation will be sent to you via email and SMS after you have placed your order. We will send another email and SMS when your product status changes. You can check the status of your order. <a href="<?php echo base_url('member/transfercustom'); ?>" class="link">click here</a></p>
+					<p>An order confirmation will be sent to you via email and SMS after you have placed your order. We will send another email and SMS when your product status changes. You can check the status of your order. <a href="<?php echo base_url('member/transfercustom'."?language=".@$_GET['language']); ?>" class="link">click here</a></p>
 					<br>
 					<h4><i class="fa fa-angle-double-right"></i> How can I place an order without an account on Tanisha's website? ?</h4>
 					<p>You can order products with Tanisha without having an account as follows:</p>
@@ -65,7 +65,7 @@
 					<h4><i class="fa fa-angle-double-right"></i> Can I call Tanisha to place an order? ?</h4>
 					<p>We can assist you in placing your order over the phone. If you choose cash on delivery, however</p>
 					<!-- <p>เราขอแนะนำท่านดูรายละเอียดวิธีการสั่งซื้อสินค้าออนไลน์ <a href="#!" class="link">www.Tanisha.com/how-to-buy</a> </p> -->
-					<p>If you are unable to make an online purchase Please contact our customer service department. <a href="<?php echo base_url('contactus'); ?>" class="link">click here</a> We are very happy to help you.</p>
+					<p>If you are unable to make an online purchase Please contact our customer service department. <a href="<?php echo base_url('contactus'."?language=".@$_GET['language']); ?>" class="link">click here</a> We are very happy to help you.</p>
 					<br>
 					<h4><i class="fa fa-angle-double-right"></i> Can I remove products from How to shopping basket?</h4>
 					<p>To remove a product from the shopping cart, you can do the following:</p>

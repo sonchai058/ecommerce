@@ -182,7 +182,7 @@ class Cart extends MX_Controller {
             );
             $this->template->load('index_page', $data);
         }
-        else redirect('cart', 'refresh');
+        else redirect('cart'."?language=".@$_GET['language'], 'refresh');
 	}
 
     public function review() {
@@ -210,7 +210,7 @@ class Cart extends MX_Controller {
             // dieArray($data);
             $this->template->load('index_page', $data);
         }
-        else redirect('cart', 'refresh');
+        else redirect('cart'."?language=".@$_GET['language'], 'refresh');
     }
 
 	public function payment() {
@@ -236,7 +236,7 @@ class Cart extends MX_Controller {
             );
             $this->template->load('index_page', $data);
         }
-        else redirect('cart', 'refresh');
+        else redirect('cart'."?language=".@$_GET['language'], 'refresh');
 	}
 
     public function addToCart($P_ID = null, $P_Color = null) {
@@ -284,7 +284,7 @@ class Cart extends MX_Controller {
                 $this->cart->insert($data);
 
                 // echo '<script>alert("เพิ่มสินค้าลงในตะกร้าเรียบร้อยแล้ว");</script>';
-                redirect('cart', 'refresh');
+                redirect('cart'."?language=".@$_GET['language'], 'refresh');
             }
             else {
                 if (count($stock_price) <= 0 || $stock_price['PS_Amount'] == 0)
@@ -295,7 +295,7 @@ class Cart extends MX_Controller {
                     echo '<script>alert("สินค้าหมด");</script>';
             }
         }
-        redirect('product', 'refresh');
+        redirect('product?language='.@$_GET['language'], 'refresh');
     }
 
     public function cartOrderAdded() {
@@ -333,7 +333,7 @@ class Cart extends MX_Controller {
             $this->cart->insert($data);
 
             // echo '<script>alert("เพิ่มสินค้าลงในตะกร้าเรียบร้อยแล้ว");</script>';
-            redirect('cart', 'refresh');
+            redirect('cart'."?language=".@$_GET['language'], 'refresh');
         }
         else {
             if (count($stock_price) <= 0 || $stock_price['PS_Amount'] == 0)
@@ -367,9 +367,9 @@ class Cart extends MX_Controller {
                 }
                 else echo '<script>alert("สั่งซื้อ '.$cart['name'].' ได้ไม่เกิน '.$cart['stock'].'");</script>';
             }
-            redirect('cart', 'refresh');
+            redirect('cart'."?language=".@$_GET['language'], 'refresh');
         }
-        else redirect('product', 'refresh');
+        else redirect('product'."?language=".@$_GET['language'], 'refresh');
     }
 
     public function cartOrderRemove($rowid = null, $P_ID = null) {
@@ -393,7 +393,7 @@ class Cart extends MX_Controller {
                 $this->session->unset_userdata('Zipcode_Code');
                 $this->session->unset_userdata('account_address');
                 $this->session->unset_userdata('packing_fee');
-                redirect('product', 'refresh');
+                redirect('product'."?language=".@$_GET['language'], 'refresh');
             }
             else {
                 $data = array(
@@ -402,12 +402,12 @@ class Cart extends MX_Controller {
                 );
                 $this->cart->update($data);
                 if ($this->cart->contents())
-                    redirect('cart', 'refresh');
+                    redirect('cart'."?language=".@$_GET['language'], 'refresh');
                 else
-                    redirect('product', 'refresh');
+                    redirect('product'."?language=".@$_GET['language'], 'refresh');
             }
         }
-        else redirect('product', 'refresh');
+        else redirect('product'."?language=".@$_GET['language'], 'refresh');
     }
 
     public function getAddress() {
@@ -453,7 +453,7 @@ class Cart extends MX_Controller {
                 // $address_items['packing_fee']       = get_inpost('packing_fee');
                 $this->session->set_userdata($address_items);
 
-                redirect('cart/review', 'refresh');
+                redirect('cart/review'."?language=".@$_GET['language'], 'refresh');
             }
             else {
                 $this->form_validation->set_rules('OD_Name',        'ชื่อ-นามสกุล', 'trim|required');
@@ -491,7 +491,7 @@ class Cart extends MX_Controller {
                     $address_items['account_address']   = '';
                     $this->session->set_userdata($address_items);
 
-                    redirect('cart/review', 'refresh');
+                    redirect('cart/review'."?language=".@$_GET['language'], 'refresh');
                     die();
                 }
                 else {
@@ -500,7 +500,7 @@ class Cart extends MX_Controller {
                 }
             }
         }
-        else redirect('product', 'refresh');
+        else redirect('product'."?language=".@$_GET['language'], 'refresh');
     }
 
 	public function cartOrderSaved() {
@@ -700,13 +700,13 @@ class Cart extends MX_Controller {
                     // echo "<script>alert('".$order_msg."');</script>";
                     // die("-..-");
 
-                    redirect('cart/cartResult/'.$OD_ID['OD_ID'], 'refresh');
+                    redirect('cart/cartResult/'.$OD_ID['OD_ID']."?language=".@$_GET['language'], 'refresh');
                     // $this->cartResult($OD_ID['OD_ID']);
                 }
             }
-            else redirect('cart', 'refresh');
+            else redirect('cart'."?language=".@$_GET['language'], 'refresh');
         }
-        else redirect('product', 'refresh');
+        else redirect('product'."?language=".@$_GET['language'], 'refresh');
 	}
 
     public function cartResult($OD_ID = null){
@@ -824,7 +824,7 @@ class Cart extends MX_Controller {
         $this->db->query(" UPDATE `order_transfer` SET `OT_Allow` = '3' WHERE `OD_ID` = '$OD_ID' ");
         $this->db->query(" UPDATE `order_transfer` SET `OT_Allow` = '1' WHERE `OD_ID` = '$OD_ID' ORDER BY `OT_ID` DESC LIMIT 1 ");
         $this->orderTransferSendEmail($this->input->post('OD_ID'));
-        redirect('cart/order_transfer_form', 'refresh');
+        redirect('cart/order_transfer_form'."?language=".@$_GET['language'], 'refresh');
     }
 
     public function cartResultToEmail($OD_ID = null) {

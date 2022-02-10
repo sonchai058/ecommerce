@@ -152,10 +152,10 @@
 				<?php
 					if (get_session('C_ID')) {
 						if ($product_wlist === false) { ?>
-							<a href="<?php echo base_url('product/wishlist/add/'.$product_detail['P_ID']); ?>" class="btn-wishlist"><i class="fa fa-star-o"></i> เพิ่มในรายการสินค้าที่ชอบ</a> <?php
+							<a href="<?php echo base_url('product/wishlist/add/'.$product_detail['P_ID']."?language=".@$_GET['language']); ?>" class="btn-wishlist"><i class="fa fa-star-o"></i> เพิ่มในรายการสินค้าที่ชอบ</a> <?php
 						}
 						else if ($product_wlist === true) { ?>
-							<br><a href="<?php echo base_url('product/wishlist/del/'.$product_detail['P_ID']); ?>" class="btn-wishlist-active"><i class="fa fa-check-square-o"></i> อยู่ในรายการสินค้าที่ชอบ</a> <?php
+							<br><a href="<?php echo base_url('product/wishlist/del/'.$product_detail['P_ID']."?language=".@$_GET['language']); ?>" class="btn-wishlist-active"><i class="fa fa-check-square-o"></i> อยู่ในรายการสินค้าที่ชอบ</a> <?php
 						}
 					}
 				?>

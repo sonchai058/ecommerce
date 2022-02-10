@@ -37,12 +37,12 @@
                                     $P_ID = $value['id']; ?>
                                     <tr>
                                         <td>
-                                            <a href="<?php if ($value['id'] !== '') echo base_url('product/detail/'.$value['id']); ?>">
+                                            <a href="<?php if ($value['id'] !== '') echo base_url('product/detail/'.$value['id']."?language=".@$_GET['language']); ?>">
                                                 <img src="<?php if ($value['options']['imgs'] != '') echo base_url('assets/uploads/user_uploads_img/'.$value['options']['imgs']); else echo base_url('assets/images/noimage.gif'); ?>" alt="" width="50">
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="<?php if ($value['id'] !== '') echo base_url('product/detail/'.$value['id']); ?>">
+                                            <a href="<?php if ($value['id'] !== '') echo base_url('product/detail/'.$value['id']."?language=".@$_GET['language']); ?>">
                                                 <h5><?php if ($value['options']['code'] != '') echo ' '.$value['options']['code']; ?></h5>
                                                 <h5><?php if ($value['name'] != '') echo $value['name']; ?></h5>
                                             </a> <?php
@@ -80,11 +80,11 @@
                         <div class="row">
                             <div class="small-12 medium-3 large-offset-9 columns">
                             <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                                <a href="<?php echo base_url('cart/payment'); ?>" class="button btn-checkout">ดำเนินการต่อไป</a>
+                                <a href="<?php echo base_url('cart/payment?language='.@$_GET['language']); ?>" class="button btn-checkout">ดำเนินการต่อไป</a>
                                 <?php
         }else{
         ?>
-                                <a href="<?php echo base_url('cart/payment'); ?>" class="button btn-checkout">continue</a>
+                                <a href="<?php echo base_url('cart/payment?language='.@$_GET['language']); ?>" class="button btn-checkout">continue</a>
         <?php }?>
                             </div>
                         </div>

@@ -212,10 +212,10 @@ class Product extends MX_Controller {
 		        $this->template->load('index_page', $data);
 		    }
 		    else
-		    	redirect('product', 'refresh');
+		    	redirect('product'."?language=".@$_GET['language'], 'refresh');
 	    }
 	    else
-	    	redirect('product', 'refresh');
+	    	redirect('product'."?language=".@$_GET['language'], 'refresh');
 	}
 
 	public function wishlist($operator = null, $P_ID = null) {
@@ -247,9 +247,9 @@ class Product extends MX_Controller {
 					$this->common_model->update('wishlist', $data, 'P_ID = '.$P_ID.' AND M_ID = '.$C_ID);
 				}
 			}
-			redirect('product/detail/'.$P_ID, 'refresh');
+			redirect('product/detail/'.$P_ID."?language=".@$_GET['language'], 'refresh');
 		}
-	    else redirect('product', 'refresh');
+	    else redirect('product'."?language=".@$_GET['language'], 'refresh');
 	}
 
 }

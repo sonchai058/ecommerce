@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="product-price">
                                     <h5 class="product-title-2 text-green"><?php echo $value['P_Title']; ?></h5>
-                                        <h5 class="product-title-2 text-green"><a href="<?php echo base_url('product/detail/'.$value['P_ID']); ?>"><?php echo $value['P_IDCode']; ?></a></h5>
+                                        <h5 class="product-title-2 text-green"><a href="<?php echo base_url('product/detail/'.$value['P_ID']."?language=".@$_GET['language']); ?>"><?php echo $value['P_IDCode']; ?></a></h5>
                                         <h4> <?php
                                             if (count($product_promotion_query) > 0)
                                                 echo '฿'.number_format($product_promotion_query['PP_Price'], 2, '.', ',');
@@ -104,9 +104,9 @@
                                             </select>
                                             <br><br> <?php
                                         } ?>
-                                        <a href="<?php echo base_url('product/detail/'.$value['P_ID']); ?>" class="btn-view-detail"><i class="fa fa-search"></i> View Detail</a>
+                                        <a href="<?php echo base_url('product/detail/'.$value['P_ID']."?language=".@$_GET['language']); ?>" class="btn-view-detail"><i class="fa fa-search"></i> View Detail</a>
                                         <a href="#" class="btn-buy-now" onclick="addToCart('<?php echo $value['P_ID']; ?>')"><i class="fa fa-search"></i> Buy Now</a>
-                                        <!-- <a href="<?php echo base_url('product/color/'.$value['P_ID']); ?>" class="btn-buy-now various fancybox.ajax"><i class="fa fa-cart-plus"></i></i> Buy Now</a> -->
+                                        <!-- <a href="<?php echo base_url('product/color/'.$value['P_ID']."?language=".@$_GET['language']); ?>" class="btn-buy-now various fancybox.ajax"><i class="fa fa-cart-plus"></i></i> Buy Now</a> -->
                                     </div>
                                 </div>
 
@@ -140,7 +140,7 @@
     var color_value     = '';
 
     function addToCart(this_id) {
-        window.location.href = "<?php echo base_url('cart/addToCart'); ?>/" + this_id + "/" + color_value;
+        window.location.href = "<?php echo base_url('cart/addToCart'); ?>/" + this_id + "/" + color_value+"?language="+"<?php echo @$_GET['language'];?>";
     }
 
     function render_pagination() {

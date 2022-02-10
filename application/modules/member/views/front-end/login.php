@@ -8,7 +8,7 @@
                 <img src="<?php echo base_url('assets/images/logo/logo-2.png'); ?>" alt="<?php echo $site['WD_Name']; ?>">
             </div>
 
-            <?php $this->template->load('content/login'); ?>
+            <?php $this->template->load('content/login'."?language=".@$_GET['language']); ?>
 
         </div>
         <hr>

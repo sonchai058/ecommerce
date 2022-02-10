@@ -188,7 +188,7 @@
 	                                    <label for="Province_ID" class="middle label-login">จังหวัด: </label>
 	                                </div>
 	                                <div class="small-8 medium-9 columns">
-	                                    <select id="Province_ID" name="Province_ID" onchange="ajaxRequest('<?php echo base_url('main/locations'); ?>', 'amphures', 'Province_ID', this.value, 'Amphur_ID', 'Amphur_Name', '#Amphur_ID', 'select')" required> <?php
+	                                    <select id="Province_ID" name="Province_ID" onchange="ajaxRequest('<?php echo base_url('main/locations'."?language=".@$_GET['language']); ?>', 'amphures', 'Province_ID', this.value, 'Amphur_ID', 'Amphur_Name', '#Amphur_ID', 'select')" required> <?php
 	                                        foreach ($provinces as $key => $value) { ?>
 	                                            <option value="<?php echo $key; ?>" <?php if ($key == $member_data['Province_ID']) { ?> selected <?php } ?>><?php echo trim($value); ?></option> <?php
 	                                        } ?>
@@ -201,7 +201,7 @@
 	                                    <label for="Amphur_ID" class="middle label-login">เขต/อำเภอ: </label>
 	                                </div>
 	                                <div class="small-8 medium-9 columns">
-	                                    <select id="Amphur_ID" name="Amphur_ID" onchange="ajaxRequest('<?php echo base_url('main/locations'); ?>', 'districts', 'Amphur_ID', this.value, 'District_ID', 'District_Name', '#District_ID', 'select')" required> <?php
+	                                    <select id="Amphur_ID" name="Amphur_ID" onchange="ajaxRequest('<?php echo base_url('main/locations'."?language=".@$_GET['language']); ?>', 'districts', 'Amphur_ID', this.value, 'District_ID', 'District_Name', '#District_ID', 'select')" required> <?php
 	                                        foreach ($amphures as $key => $value) { ?>
 	                                            <option value="<?php echo $key; ?>" <?php if ($key == $member_data['Amphur_ID']) { ?> selected <?php } ?>><?php echo trim($value); ?></option> <?php
 	                                        } ?>
@@ -214,7 +214,7 @@
 	                                    <label for="District_ID" class="middle label-login">แขวง/ตำบล: </label>
 	                                </div>
 	                                <div class="small-8 medium-9 columns">
-	                                    <select id="District_ID" name="District_ID" onchange="ajaxRequest('<?php echo base_url('main/locations'); ?>', 'zipcodes', 'District_ID', this.value, 'Zipcode_ID', 'Zipcode_Code', '.zipcodes', 'input')" required> <?php
+	                                    <select id="District_ID" name="District_ID" onchange="ajaxRequest('<?php echo base_url('main/locations'."?language=".@$_GET['language']); ?>', 'zipcodes', 'District_ID', this.value, 'Zipcode_ID', 'Zipcode_Code', '.zipcodes', 'input')" required> <?php
 	                                        foreach ($districts as $key => $value) { ?>
 	                                            <option value="<?php echo $key; ?>" <?php if ($key == $member_data['District_ID']) { ?> selected <?php } ?>><?php echo trim($value); ?></option> <?php
 	                                        } ?>
@@ -275,7 +275,7 @@
 	                        	<hr>
 	                            <div class="field-submit">
 	                                <a href="#" role="button" class="btn-login" id="btn-account">ยืนยัน</a>
-	                            	<a href="<?php echo base_url('member'); ?>" role="button" class="btn-signup">ยกเลิก</a>
+	                            	<a href="<?php echo base_url('member'."?language=".@$_GET['language']); ?>" role="button" class="btn-signup">ยกเลิก</a>
 	                            </div>
 	                        </div>
 	                    </div> <?php

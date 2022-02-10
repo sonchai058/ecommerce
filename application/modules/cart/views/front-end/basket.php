@@ -9,10 +9,10 @@
                 <div class="columns">
                 <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                     <h2>ไม่มีสินค้าในตะกร้า</h2>
-                    <a href="<?php echo base_url('product'); ?>" class="btn-continue-shop"> เลือกซื้อสินค้า</a>
+                    <a href="<?php echo base_url('product'."?language=".@$_GET['language']); ?>" class="btn-continue-shop"> เลือกซื้อสินค้า</a>
                 <?php }else{?>
                     <h2>There are no items in the cart.</h2>
-                    <a href="<?php echo base_url('product'); ?>" class="btn-continue-shop"> Shop</a>
+                    <a href="<?php echo base_url('product'."?language=".@$_GET['language']); ?>" class="btn-continue-shop"> Shop</a>
                 <?php }?>
                     <hr>
                 </div>
@@ -68,18 +68,18 @@
                                 echo form_hidden('cart['.$value['id'].'][options][imgs]',    $value['options']['imgs']); ?>
                                 <tr>
                                     <td>
-                                        <a href="<?php if ($value['id'] !== '') echo base_url('product/detail/'.$value['id']); ?>">
+                                        <a href="<?php if ($value['id'] !== '') echo base_url('product/detail/'.$value['id']."?language=".@$_GET['language']); ?>">
                                             <img src="<?php if ($value['options']['imgs'] != '') echo base_url('assets/uploads/user_uploads_img/'.$value['options']['imgs']); else echo base_url('assets/images/noimage.gif'); ?>" alt="" width="50">
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="<?php if ($value['id'] !== '') echo base_url('product/detail/'.$value['id']); ?>">
+                                        <a href="<?php if ($value['id'] !== '') echo base_url('product/detail/'.$value['id']."?language=".@$_GET['language']); ?>">
                                             <h5><?php if ($value['options']['code'] != '') echo ' '.$value['options']['code']; ?></h5>
                                             <h5><?php if ($value['name'] != '') echo $value['name']; ?></h5>
                                         </a> <?php
                                         $product_stock = rowArray($this->common_model->custom_query(" SELECT * FROM `product_stock` WHERE `P_ID` = '$P_ID' AND `PS_Allow` != '3' ORDER BY `PS_ID` DESC LIMIT 1 "));
                                         if (count($product_stock) > 0 && $product_stock['PS_Amount'] != 0) { ?>
-                                            <h5><i class="fa fa-check"></i>
+                                            <h5><i class="fa fa-check"></i> 
                                             <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                                             มีสินค้า
                                             <?php }else{?>
@@ -111,11 +111,11 @@
                                             //         LIMIT 1     "
                                             // );
                                             // if (count($product_wlist_query) <= 0) { ?>
-                                                <!-- <a href="<?php echo base_url('product/wishlist/add/'.$value['id']); ?>" class="btn-wishlist"><i class="fa fa-star-o"></i> เพิ่มในสินค้าที่อยากได้</a>  -->
+                                                <!-- <a href="<?php echo base_url('product/wishlist/add/'.$value['id']."?language=".@$_GET['language']); ?>" class="btn-wishlist"><i class="fa fa-star-o"></i> เพิ่มในสินค้าที่อยากได้</a>  -->
                                                 <?php
                                             // }
                                             // else if (count($product_wlist_query) > 0) { ?>
-                                                <!-- <a href="<?php echo base_url('product/wishlist/del/'.$value['id']); ?>" class="btn-wishlist-active"><i class="fa fa-check-square-o"></i> อยู่ในสินค้าที่อยากได้</a>  -->
+                                                <!-- <a href="<?php echo base_url('product/wishlist/del/'.$value['id']."?language=".@$_GET['language']); ?>" class="btn-wishlist-active"><i class="fa fa-check-square-o"></i> อยู่ในสินค้าที่อยากได้</a>  -->
                                                 <?php
                                             // }
                                         // } ?>
@@ -191,8 +191,8 @@
                         <div class="small-6 columns">
                             <h3 class="text-right">฿446 THB</h3>
                         </div> -->
-                        <a href="<?php echo base_url('cart/address'); ?>" class="button btn-checkout">ดำเนินการชำระเงิน</a>
-                        <a href="<?php echo base_url('product'); ?>" class="btn-continue-shop">เลือกซื้อสินค้าต่อ</a>
+                        <a href="<?php echo base_url('cart/address?language='.@$_GET['language']); ?>" class="button btn-checkout">ดำเนินการชำระเงิน</a>
+                        <a href="<?php echo base_url('product?language='.@$_GET['language']); ?>" class="btn-continue-shop">เลือกซื้อสินค้าต่อ</a>
                         <?php }else{?>
                             <div class="small-12 medium-expanded columns">
                             <div class="summary-head">
@@ -213,8 +213,8 @@
                         <div class="small-6 columns">
                             <h3 class="text-right">฿446 THB</h3>
                         </div> -->
-                        <a href="<?php echo base_url('cart/address'); ?>" class="button btn-checkout">proceed to payment</a>
-                        <a href="<?php echo base_url('product'); ?>" class="btn-continue-shop">Continue shopping</a>
+                        <a href="<?php echo base_url('cart/address'."?language=".@$_GET['language']); ?>" class="button btn-checkout">proceed to payment</a>
+                        <a href="<?php echo base_url('product'."?language=".@$_GET['language']); ?>" class="btn-continue-shop">Continue shopping</a>
                             <?php }?>
                     </div>
                 </div>
@@ -256,7 +256,7 @@
 
     function removeItem(this_name, this_id, this_rowid) {
         if (confirm('ยืนยันการลบ ' + this_name + ' ออกจากตะกร้าสินค้า') === true)
-            window.location.href = "<?php echo base_url('cart/cartOrderRemove'); ?>/" + this_rowid + "/" + this_id;
+            window.location.href = "<?php echo base_url('cart/cartOrderRemove'."?language=".@$_GET['language']); ?>/" + this_rowid + "/" + this_id;
     }
 
     $(document).ready(function() {
@@ -266,7 +266,7 @@
         });
         $('#btn_cart_clears').click(function() {
             if (confirm('ยืนยันการล้างตะกร้าสินค้า') === true)
-                window.location.href = "<?php echo base_url('cart/cartOrderRemove/all'); ?>";
+                window.location.href = "<?php echo base_url('cart/cartOrderRemove/all'."?language=".@$_GET['language']); ?>";
         });
     });
 </script>

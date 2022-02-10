@@ -2,15 +2,15 @@
 	<ul class="menu vertical categories">
 		<li class="categoires-head"><h3></h3></li>
 		<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-		<!-- <li><a href="<?php echo base_url('aboutus'); ?>" 			class="categoires-title <?php if (uri_seg(1) === 'aboutus' && !uri_seg(2)					) echo 'active'; ?>">เกี่ยวกับเรา</a></li> -->
-		<li><a href="<?php echo base_url('aboutus/terms'); ?>" 		class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'terms'		) echo 'active'; ?>">ข้อตกลงและเงื่อนไข</a></li>
-		<li><a href="<?php echo base_url('aboutus/privacy'); ?>" 	class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'privacy'		) echo 'active'; ?>">นโยบายความเป็นส่วนตัว</a></li>
-<!-- 		<li><a href="<?php echo base_url('aboutus/storelist'); ?>" 	class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'storelist'	) echo 'active'; ?>">รายชื่อร้านค้า</a></li> -->
+		<!-- <li><a href="<?php echo base_url('aboutus'."?language=".@$_GET['language']); ?>" 			class="categoires-title <?php if (uri_seg(1) === 'aboutus' && !uri_seg(2)					) echo 'active'; ?>">เกี่ยวกับเรา</a></li> -->
+		<li><a href="<?php echo base_url('aboutus/terms'."?language=".@$_GET['language']); ?>" 		class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'terms'		) echo 'active'; ?>">ข้อตกลงและเงื่อนไข</a></li>
+		<li><a href="<?php echo base_url('aboutus/privacy'."?language=".@$_GET['language']); ?>" 	class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'privacy'		) echo 'active'; ?>">นโยบายความเป็นส่วนตัว</a></li>
+<!-- 		<li><a href="<?php echo base_url('aboutus/storelist'."?language=".@$_GET['language']); ?>" 	class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'storelist'	) echo 'active'; ?>">รายชื่อร้านค้า</a></li> -->
 		<?php }else{?>
-					<!-- <li><a href="<?php echo base_url('aboutus'); ?>" 			class="categoires-title <?php if (uri_seg(1) === 'aboutus' && !uri_seg(2)					) echo 'active'; ?>">เกี่ยวกับเรา</a></li> -->
-		<li><a href="<?php echo base_url('aboutus/terms'); ?>" 		class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'terms'		) echo 'active'; ?>">Terms and Conditions</a></li>
-		<li><a href="<?php echo base_url('aboutus/privacy'); ?>" 	class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'privacy'		) echo 'active'; ?>">Privacy Policy</a></li>
-<!-- 		<li><a href="<?php echo base_url('aboutus/storelist'); ?>" 	class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'storelist'	) echo 'active'; ?>">รายชื่อร้านค้า</a></li> -->
+					<!-- <li><a href="<?php echo base_url('aboutus'."?language=".@$_GET['language']); ?>" 			class="categoires-title <?php if (uri_seg(1) === 'aboutus' && !uri_seg(2)					) echo 'active'; ?>">เกี่ยวกับเรา</a></li> -->
+		<li><a href="<?php echo base_url('aboutus/terms'."?language=".@$_GET['language']); ?>" 		class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'terms'		) echo 'active'; ?>">Terms and Conditions</a></li>
+		<li><a href="<?php echo base_url('aboutus/privacy'."?language=".@$_GET['language']); ?>" 	class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'privacy'		) echo 'active'; ?>">Privacy Policy</a></li>
+<!-- 		<li><a href="<?php echo base_url('aboutus/storelist'."?language=".@$_GET['language']); ?>" 	class="categoires-title <?php if (uri_seg(1) === 'aboutus' &&  uri_seg(2) === 'storelist'	) echo 'active'; ?>">รายชื่อร้านค้า</a></li> -->
 		<?php }?>
 	</ul>
 </div>

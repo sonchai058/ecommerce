@@ -56,7 +56,7 @@ class Member extends MX_Controller {
 	}
 
 	public function index() {
-		redirect('member/history', 'refresh');
+		redirect('member/history'."?language=".@$_GET['language'], 'refresh');
 	}
 
 	public function login() {
@@ -70,7 +70,7 @@ class Member extends MX_Controller {
 		$breadcrumb = $this->breadcrumb_model->breadcrumb($navi_props['path'], $navi_props['name'], $title);
 
 		if (get_session('C_ID') != '')
-			redirect('main', 'refresh');
+			redirect('main'."?language=".@$_GET['language'], 'refresh');
 		else {
 	        if (get_inpost('loggedin')) {
 	        	$this->form_validation->set_rules('user_id', 	'ชื่อผู้ใช้งาน',	'trim|required');
@@ -94,7 +94,7 @@ class Member extends MX_Controller {
 				}
 				else
 					print("<script language='javascript'>alert('!!! เข้าสู่ระบบล้มเหลว กรุณาตรวจสอบข้อมูลอีกครั้ง');</script>");
-	        	redirect(get_inpost('current_url'), 'refresh');
+	        	redirect(get_inpost('current_url')."?language=".@$_GET['language'], 'refresh');
 	        }
 	        else {
 	        	$data = array(
@@ -114,7 +114,7 @@ class Member extends MX_Controller {
 		$this->session->unset_userdata('C_Username');
 		$this->session->unset_userdata('C_flName');
 		$this->session->unset_userdata('C_Img');
-		redirect(get_inpost('current_url'), 'refresh');
+		redirect(get_inpost('current_url')."?language=".@$_GET['language'], 'refresh');
 	}
 
 	public function register() {
@@ -128,7 +128,7 @@ class Member extends MX_Controller {
 		$breadcrumb = $this->breadcrumb_model->breadcrumb($navi_props['path'], $navi_props['name'], $title);
 
 		if (get_session('C_ID') != '')
-			redirect('member/login', 'refresh');
+			redirect('member/login'."?language=".@$_GET['language'], 'refresh');
 		else {
 			$data = array(
 				'content_view' 	=> $content_view,
@@ -168,7 +168,7 @@ class Member extends MX_Controller {
 						$this->common_model->update('member', $update_data, 'M_ID = '.$member['M_ID']);
 					}
 					$this->registerverifysend(get_inpost('email'), get_inpost('username'), get_inpost('password'));
-					redirect('main', 'refresh');
+					redirect('main'."?language=".@$_GET['language'], 'refresh');
 				}
 				else
 					print("<script language='javascript'>alert('!!! สมัครใช้งานล้มเหลว กรุณาตรวจสอบข้อมูลก่อนสมัครใช้งาน');</script>");
@@ -179,7 +179,7 @@ class Member extends MX_Controller {
 
 	public function registerverifysend($M_Email = null, $M_Username = null, $M_Password = null) {
 		if (get_session('C_ID') != '')
-			redirect('member/login', 'refresh');
+			redirect('member/login'."?language=".@$_GET['language'], 'refresh');
 		else {
 			$site = $this->webinfo_model->getOnceWebMain();
 			$config['useragent']	= $site['WD_Name'];
@@ -206,7 +206,7 @@ class Member extends MX_Controller {
 		$breadcrumb = $this->breadcrumb_model->breadcrumb($navi_props['path'], $navi_props['name'], $title);
 
 		if (get_session('C_ID') != '')
-			redirect('main', 'refresh');
+			redirect('main'."?language=".@$_GET['language'], 'refresh');
 		else {
 			$data = array(
 				'content_view' 	=> $content_view,
@@ -223,7 +223,7 @@ class Member extends MX_Controller {
 		        	$rows = rowArray($this->common_model->custom_query(" SELECT * FROM member WHERE M_Username = '$M_Username' AND M_Email = '$M_Email' "));
 					if (count($rows) > 0) {
 						$this->passwordsend($M_Email, $M_Username, $this->encrypt->decode($rows['M_Password']));
-						redirect('main', 'refresh');
+						redirect('main'."?language=".@$_GET['language'], 'refresh');
 					}
 					else
 						print("<script language='javascript'>alert('!!! ชื่อผู้ใช้งานหรืออีเมล์ไม่ถูกต้อง กรุณาส่งข้อมูลอีกครั้ง');</script>");
@@ -237,7 +237,7 @@ class Member extends MX_Controller {
 
 	public function passwordsend($M_Email = null, $M_Username = null, $M_Password = null) {
 		if (get_session('C_ID') != '')
-			redirect('member/login', 'refresh');
+			redirect('member/login'."?language=".@$_GET['language'], 'refresh');
 		else {
 			$site = $this->webinfo_model->getOnceWebMain();
 			$config['useragent']	= $site['WD_Name'];
@@ -415,12 +415,12 @@ class Member extends MX_Controller {
 			$order_data = rowArray($order);
 			if ($order_data['OD_Allow'] === '6' || $order_data['OD_Allow'] === '7' || $order_data['OD_Allow'] === '8') {
 				// echo "<script>alert('แจ้งโอนเงินเรียบร้อยแล้ว');</script>";
-				redirect('member', 'refresh');
+				redirect('member'."?language=".@$_GET['language'], 'refresh');
 			}
 		}
 		else {
 			$order_data = array();
-			redirect('member', 'refresh');
+			redirect('member'."?language=".@$_GET['language'], 'refresh');
 		}
 
 		$data = array(
@@ -469,7 +469,7 @@ class Member extends MX_Controller {
 					$this->common_model->update('order', array('OD_Allow' => '5', 'OD_UserUpdate' => '0', 'OD_DateTimeUpdate' => date('Y-m-d H:i:s')), " `OD_ID` = '$OD_ID' ");
 					$this->orderTransferSendEmail($OD_ID);
 					// print("<script language='javascript'>alert('แจ้งโอนเงินเรียบร้อยแล้ว');</script>");
-					redirect('member', 'refresh');
+					redirect('member'."?language=".@$_GET['language'], 'refresh');
 				}
 			}
 			else print("<script language='javascript'>alert('!!! แจ้งโอนเงินล้มเหลว กรุณาตรวจสอบข้อมูล');</script>");
@@ -552,7 +552,7 @@ class Member extends MX_Controller {
 					$this->common_model->update('order', array('OD_Allow' => '5', 'OD_UserUpdate' => get_session('C_ID'), 'OD_DateTimeUpdate' => date('Y-m-d H:i:s')), " `OD_ID` = '$OD_ID' ");
 					$this->orderTransferSendEmail($OD_ID);
 					// print("<script language='javascript'>alert('แจ้งโอนเงินเรียบร้อยแล้ว');</script>");
-					redirect('main', 'refresh');
+					redirect('main'."?language=".@$_GET['language'], 'refresh');
 				}
 			}
 			else print("<script language='javascript'>alert('!!! แจ้งโอนเงินล้มเหลว กรุณาตรวจสอบข้อมูล');</script>");
@@ -732,7 +732,7 @@ class Member extends MX_Controller {
 						$update_data['M_Password'] = $this->encrypt->encode(get_inpost('M_Password'));
 					$this->common_model->update('member', $update_data, 'M_ID = '.get_session('C_ID'));
 					// print("<script language='javascript'>alert('อัพเดทข้อมูลเรียบร้อยแล้ว');</script>");
-					redirect('member/account', 'refresh');
+					redirect('member/account'."?language=".@$_GET['language'], 'refresh');
 				}
 				else $this->session->set_flashdata('M_Email_Error', 'อีเมล '.get_inpost('M_Email').' มีผู้ใช้งานแล้ว');
 			}
@@ -829,7 +829,7 @@ class Member extends MX_Controller {
         }
         catch (Exception $e) {
             if ($e->getCode() == 14)
-                redirect('member/profile_management/edit');
+                redirect('member/profile_management/edit'."?language=".@$_GET['language']);
             else
                 show_error($e->getMessage());
         }

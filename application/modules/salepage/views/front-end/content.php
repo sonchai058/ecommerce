@@ -25,11 +25,11 @@ if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
 		}
 		if(@$_GET['language']=='thai' || @$_GET['language']==''){
 ?>
-	<li><a href="<?php echo base_url('salepage?');?>?id=<?php echo $data['id']?>" 	class="categoires-title <?php if (@$_GET['id']== $data['id']){ echo 'active'; }?>"><?php echo $data['name_th']?></a></li>
+	<li><a href="<?php echo base_url('salepage'."?language=".@$_GET['language']);?>?id=<?php echo $data['id']?>" 	class="categoires-title <?php if (@$_GET['id']== $data['id']){ echo 'active'; }?>"><?php echo $data['name_th']?></a></li>
 <?php
 		}else {
 ?>
-	<li><a href="<?php echo base_url('salepage?');?>?id=<?php echo $data['id']?>" 	class="categoires-title <?php if (@$_GET['id']== $data['id']){ echo 'active'; }?>"><?php echo $data['name_en']?></a></li>
+	<li><a href="<?php echo base_url('salepage'."?language=".@$_GET['language']);?>?id=<?php echo $data['id']?>" 	class="categoires-title <?php if (@$_GET['id']== $data['id']){ echo 'active'; }?>"><?php echo $data['name_en']?></a></li>
 <?php
 		}
 	}

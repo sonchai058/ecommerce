@@ -49,7 +49,7 @@
                             </label>
                             <div class="field-submit">
                                 <a href="#" role="button" class="btn-login" id="btn-forgot">ยืนยัน</a>
-                                <!-- <a href="<?php echo base_url('member/login'); ?>" role="button" class="btn-signup">เข้าสู่ระบบ</a> -->
+                                <!-- <a href="<?php echo base_url('member/login'."?language=".@$_GET['language']); ?>" role="button" class="btn-signup">เข้าสู่ระบบ</a> -->
                                 <a href="#" role="button" class="btn-signup" data-toggle="reveal-login">เข้าสู่ระบบ</a>
                             </div>
                         </div>
