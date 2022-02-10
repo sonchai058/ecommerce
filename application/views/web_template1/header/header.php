@@ -6,9 +6,15 @@
 		color: #FD6A02 !important;
 	}
 	.dropdown.menu li a {
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: bold;
 	}
+	.dropdown.menu *{
+        font-weight:bold;
+    } 
+</style>
+<style>
+
 </style>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="qygm9FWt"></script>
@@ -33,7 +39,7 @@
     display: block;
     height: 0px;
 }"><!--<?php echo $site['WD_Name']; ?>-->
-										<!<img style="width:90px" src="<?php echo base_url('assets/images/logo111.png'); ?>" alt="<?php echo $site['WD_Name']; ?>">
+										<img style="width:110px" src="<?php echo base_url('assets/images/logo111.png'); ?>" alt="<?php echo $site['WD_Name']; ?>">
 									</span>
 		<div class="title-bar-right">
 			<style type="text/css">
@@ -64,7 +70,7 @@
 								$lang = 'en';
 							 }
 							echo '<img width="16" src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
-						   	echo "Language&nbsp";
+						   	echo "&nbsp";
 						?>
 					</a>
 
@@ -94,7 +100,7 @@
 								<li class="menu-text" style="font-size:20px">
 									<a href="<?php echo base_url(''); ?>?language=<?php echo @$_GET['language'];?>" class="brand" style="font-size: 30px !important;">
 										<!--<img style="border-radius:50%" src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="<?php echo $site['WD_Name']; ?>">--> <!-- <?php echo $site['WD_Name']; ?>-->
-										<img style="width:90px" src="<?php echo base_url('assets/images/logo111.png'); ?>" alt="<?php echo $site['WD_Name']; ?>">
+										<img style="width:110px" src="<?php echo base_url('assets/images/logo111.png'); ?>" alt="<?php echo $site['WD_Name']; ?>">
 									</a>
 								</li>
 								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
@@ -159,9 +165,9 @@
 								<!--</li>-->
 								<li>
 								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>	
-									<a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>ตะกร้าสินค้า <?php if ($this->cart->contents()) echo '<span style="color:#fff !important" class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
+									<a href="#" title="รถเข็น" id="shopping_cart"><i style="font-size:20px" class="fa fa-shopping-cart"></i><?php if ($this->cart->contents()) echo '<span style="color:#fff !important" class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
 								<?php }else{?>
-									<a href="#" title="รถเข็น" id="shopping_cart"><i class="fa fa-shopping-cart"></i>Shopping Cart <?php if ($this->cart->contents()) echo '<span style="color:#fff !important"  class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
+									<a href="#" title="รถเข็น" id="shopping_cart"><i style="font-size:20px" class="fa fa-shopping-cart"></i><?php if ($this->cart->contents()) echo '<span style="color:#fff !important"  class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
 									<?php }?>
 								<!-- <li> <?php
 									echo form_open('product', array('id' => 'form-productsearch')); ?>
@@ -183,7 +189,7 @@
 												$lang = 'en';
 											 }
 										    echo '<img width="16" src="'.base_url('assets/images/flag/'.$icon).'" alt="">';
-										    echo "Language&nbsp";
+										    echo "&nbsp";
 										?>
 
 										</a>
@@ -237,7 +243,8 @@
 		<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 			<li><h3>เมนูหลัก</h3></li>
 
-			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="หน้าแรก">หน้าแรก</a></li>
+			<li><a href="<?php echo base_url().'?language='.@$_GET['language']; ?>" title="หน้าแรก">หน้าแรก</a></li>
+			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="ผลิตภัณฑ์">ผลิตภัณฑ์</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="สินค้า">โปรโมชั่น/อีเว้นท์</a></li>
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="วิธีชำระเงิน">การสั่งซื้อ/ชำระเงิน</a></li>
 									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
@@ -262,7 +269,8 @@
 			-->
 		<?php }else{?>
 			<li><h3>Menu</h3></li>
-			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="Home">Home</a></li>
+			<li><a href="<?php echo base_url().'?language='.@$_GET['language']; ?>" title="Home">Home</a></li>
+			<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="Products">Products</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="Promotion/Event">Promotion/Event</a></li>
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="How to order payment">How to order payment</a></li>
 									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="About US">About US</a></li>

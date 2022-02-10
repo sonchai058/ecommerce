@@ -39,20 +39,20 @@
         <div class="row row-vision">
                <div class="small-12 medium-5 columns">
                    <div class="slide-left">
-                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/vision/img-vision.JPG'); ?>">
+                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/vision/new.JPG'); ?>">
                    </div>
                </div>
                <div class="small-12 medium-7 columns">
                    <div class="slide-right">
                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                       <div class="vision-text _dotranslate">
-                            <h2>ทำไมต้องเป็น <span class="green">Tanisha</span></h2>
+                       <div class="vision-text _dotranslate" style="font-weight:bold">
+                            <h2>ทำไมต้องเป็น <span class="green">TANISHA</span></h2>
                             <p>การดำเนินชีวิตที่รีบเร่ง เคร่งเครียด แข่งขันท่ามกลางสภาพภูมิอากาศ เทคโนโลยีที่เปลี่ยนไปอย่างรวดเร็ว รวมถึงเวลาที่มีอยู่อย่างจำกัดในแต่ละวัน ด้วยภาระทั้งหน้าที่การงาน ครอบครัวและชีวิตส่วนตัว ส่งผลให้ผู้บริโภคส่วนใหญ่นิยมหันมา บริโภคผลิตภัณฑ์เสริมอาหารมากขึ้น </p>
                             <p>เนื่องจากการบริโภคอาหารไม่ครบตามหลักโภชนาการหรือการรับประทานอาหารที่ผิดวิธี ผลิตภัณฑ์อาหารเสริมจึงเข้ามามีบทบาทในชีวิตประจำวันของผู้บริโภคมากขึ้น โดยเฉพาะเพศหญิงที่ให้ความสำคัญในการดูแลรูปร่าง ผิวพรรณ รวมทั้งการชะลอวัย  อีกทั้งฮอร์โมนที่มีการเปลี่ยนแปลง</p>
-                            <p>ด้วยประสบการณ์ที่ยาวนานของผู้บริหาร และเป็นผู้โลดเล่นอยู่ในวงการขายอาหารเสริมมากกว่า 10 ปีขึ้นไป จึงมองเห็นถึงโอกาสที่ช่วยแก้ปัญหาให้แก่ผู้หญิงที่ประสบพบเจอปัญหาเหล่านี้ อีกทั้งเพื่อเพิ่มความมั่นใจให้แก่ผู้บริโภค ทางบริษัททำการศึกษาและวิจัยทางผลิตภัณฑ์ จึงได้ผลิตอาหารเสริมชื่อ ESTHER ภายใต้แบรนด์ของบริษัทฯ​</p>
+                            <p>ด้วยประสบการณ์ที่ยาวนานของผู้บริหาร และเป็นผู้โลดแล่นอยู่ในวงการขายอาหารเสริมมากกว่า 10 ปีขึ้นไป จึงมองเห็นถึงโอกาสที่ช่วยแก้ปัญหาให้แก่ผู้หญิงที่ประสบพบเจอปัญหาเหล่านี้ อีกทั้งเพื่อเพิ่มความมั่นใจให้แก่ผู้บริโภค ทางบริษัททำการศึกษาและวิจัยทางผลิตภัณฑ์ จึงได้ผลิตอาหารเสริมชื่อ ESTHER ภายใต้แบรนด์ของบริษัทฯ​</p>
                         </div>
                         <?php }else{?>
-                        <div class="vision-text _notranslate notranslate">
+                        <div class="vision-text _notranslate notranslate" style="font-weight:bold">
                             <h2>Why is it <span class="green">Tanisha?</span></h2>
                             <p>A fast-paced, stressful lifestyle, competing in the midst of the climate fast changing technology including limited time each day with the burden of work family and personal life As a result, most consumers turned to consume more dietary supplements</p>
                             <p>due to inadequate food intake or eating the wrong way Dietary supplements therefore play a greater role in the daily lives of consumers. Especially females who pay attention to body shape, skin care, including anti-aging. The hormones that have changed</p>
@@ -65,7 +65,55 @@
             </div>
     </section>
 
+    <section class="wrap-vision">
+        <div class="row row-vision">
+               <div class="small-6 medium-6 columns">
+                    <div class="" style="width:100%; margin:0 auto;">
+
+                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+         
+                        <h2 class="text-green">ผลิตภัณฑ์เสริมอาหาร<span class="sub-title-2"> ESTHER</span></h2>
+                        <div class="divider-2"></div>
+                        <p class="vision-text _dotranslate" style="margin-top:-10px; width:80%; line-height:1.5; text-align:center">
+              
+                    <b style="font-weight:bold">"จบปัญหาภายในซองเดียวด้วย ESTHER"</b> <br/> ผลิตภัณฑ์เสริมอาหาร ESTHER ช่วยในการดูแลสุขภาพผิวพรรณให้แข็งแรงจากภายใน
+
+                        สู่ความสวยใสเปล่งประกาย สู่ผิวพรรณภายนอก
+
+                        <br/>ผ่านการตรวจสอบจากองค์การอาหารและยา
+
+                        <br/>ขึ้นทะเบียน เลขที่ 13-1-11163-5-0059
+                    </p>
+                        <?php }else{?>
+              
+                        <h2 class="text-green">dietary supplement<span class="sub-title-2"> ESTHER</span></h2>
+                        <div class="divider-2"></div>
+                            <p class="vision-text _dotranslate" style="margin-top:-10px; width:100%; line-height:1.5; text-align:center">
+   
+
+                            <b style="font-weight:bold">"Finish the problem in one envelope with ESTHER"</b> <br/> dietary supplement ESTHER helps to maintain healthy skin health from within.
+
+to shine bright to the outer skin
+
+<br/>Passed the inspection from the Food and Drug Administration.
+
+</br/>Registration number 13-1-11163-5-0059
+                        </p>
+                            <?php }?>
+                   </div>
+               </div>
+               <div class="small-6 medium-6 columns">
+                    <div class="" style="width:100%; margin:0 auto;">
+                    <br/>
+                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/vision/new1.JPG'); ?>">
+                   </div>
+               </div>
+            </div>
+    </section>
+
+    
     <section>
+<!--
         <div class="collection-wrapper-head">
             <div class="title-home">
                 <h1 class="text-title-home">New Collecttion</h1>
@@ -73,69 +121,8 @@
                 <h4><blockquote><cite><span>Know more about our latest collection.</span></cite></blockquote></h4>
             </div>
         </div>
-        <div class="row row-feature"> <?php
-            foreach ($feature_items as $key => $value) {
-                $feature_stocks = rowArray($this->common_model->custom_query(
-                    "   SELECT * FROM `product_stock`
-                        WHERE `P_ID` = '{$value['P_ID']}'
-                        AND `PS_Allow` = '1'
-                        ORDER BY `PS_ID` DESC LIMIT 1   "
-                ));
-                $feature_promotions = rowArray($this->common_model->custom_query(
-                    "   SELECT * FROM `product_price`
-                        WHERE `P_ID` = '{$value['P_ID']}'
-                        AND `PP_Special` = '1'
-                        AND `PP_Allow` = '1'
-                        ORDER BY `PP_ID` DESC LIMIT 1   "
-                )); ?>
-                <div class="small-12 medium-12 large-12 columns">
-                    <div class="product">
-                        <div class="product-img"> <?php
-                            if ($value['P_Img'] !== '') { ?>
-                                <img src="<?php echo base_url('assets/uploads/user_uploads_img/'.$value['P_Img']); ?>" alt="<?php echo $value['P_Name']; ?>"> <?php
-                            }
-                            else { ?>
-                                <img src="<?php echo base_url('assets/images/noimage.gif'); ?>" alt="<?php echo $value['P_Name']; ?>"> <?php
-                            } ?>
-                        </div>
-                        <h3 class="product-title"><?php echo $value['P_IDCode']; ?></h3>
-                        <p> <?php
-                                 if ($value['P_Title']   !== '') mb_substr(strip_tags($value['P_Title']), 0, 37,'UTF-8').'...';
-                            else if ($value['P_Detail']  !== '') mb_substr(strip_tags($value['P_Detail']), 0, 37,'UTF-8').'...'; ?>
-                        </p>
-                        <h3 class="home-product-price"> <?php
-                                 if (count($feature_promotions) > 0) echo '฿'.number_format($feature_promotions['PP_Price'],    2, '.', ',');
-                            else if (count($feature_stocks)     > 0) echo '฿'.number_format($feature_stocks['PS_Price'],        2, '.', ','); ?>
-                        </h3>
-                        <!-- <div class="wrap-price-sale">
-                            <h5>
-                                <span class="price-sale"><?php if (count($feature_promotions) > 0 && count($feature_stocks) > 0) echo '฿'.number_format($feature_stocks['PS_Price'], 2, '.', ','); ?></span><?php
-                                if (count($feature_promotions) > 0 && count($feature_stocks) > 0) { ?>
-                                    <span class="price-per-sale"><?php echo number_format(((1 - ($feature_promotions['PP_Price'] / $feature_stocks['PS_Price'])) * 100), 0, '.', ',').'%'; ?></span> <?php
-                                } ?>
-                            </h5>
-                        </div> -->
-                        <div class="field-btn"> <?php
-                            $product = rowArray($this->common_model->get_where_custom('product', 'P_ID', $value['P_ID']));
-                            if (count($product) > 0) {
-                                $colors = explode(",", $product['P_Color']); ?>
-                                <select class="color-picker">
-                                    <option value="0" disabled selected>Colors</option> <?php
-                                    foreach ($colors as $key => $values) {
-                                        $product_color = rowArray($this->common_model->get_where_custom('product_color', 'PC_ID', $values));
-                                        if (count($product_color) > 0) { ?>
-                                            <option value="<?php echo $product_color['PC_ID']; ?>"><?php echo $product_color['PC_Name']; ?></option> <?php
-                                        }
-                                    } ?>
-                                </select>
-                                <br><br> <?php
-                            } ?>
-                            <a href="<?php echo base_url('product/detail/'.$value['P_ID']); ?>" class="btn-view-detail"><i class="fa fa-search"></i> View Detail</a>
-                            <a href="#" class="btn-buy-now" onclick="addToCart('<?php echo $value['P_ID']; ?>')"><i class="fa fa-cart-plus"></i> Buy Now</a>
-                        </div>
-                    </div>
-                </div> <?php
-            } ?>
+
+
 
 
             <!-- <div class="small-6 medium-3 columns">
@@ -243,7 +230,7 @@
             </div> -->
         </div>
     </section>
-
+<!--
     <section>
         <div class="row row-promotion"  style="min-height: 0;">
             <div class="columns">
@@ -262,7 +249,8 @@
             </div>
         </div>
     </section>
-
+                        -->
+<!--
     <section>
         <div class="collection-wrapper-head">
             <div style="100%; text-align:center">
@@ -272,8 +260,9 @@
         </div>
         <br/> <br/> <br/> <br/>        <br/> <br/> <br/> <br/> <br/> <br/><br/> <br/><br/> <br/>
         <div class="collection-wrapper-content">
-
+                -->
             <!-- Collection 1 -->
+            <!--
             <div class="row row-collection">
                 <div class="small-12 medium-expand columns">
                     <div class="collection-list">
@@ -303,6 +292,7 @@
                             <h2 class="text-green">Esther <span class="sub-title-1">Dietary Supplement Product</span></h2>
                             <div class="divider"></div>
                             <!-- <p>ถ้าจะพูดถึงประตูในอดีตพวกเราจะคิดถึงประตูทำจากไม้มีฝัก 4, ฝัก 5, ฝัก 8 หรือบานไม้สักแกะลายเป็นต้นแต่ในปัจจุบัน มีการณรงค์ให้ดูแลสิ่งแวดล้อมกันมากขึ้นมา แต่ยังให้ความรู้สึกเหมือนไม้แถมยังปรับปรุงจุดอ่อนต่างๆของไม้ได้อักด้วย ด้วยเหตุนี้ “<bold>Tanisha</bold>” จึงนำวัสดุเหล่านี้มาผสมผสานกับไม้ และพัฒนาออกมาในรูปแบบของประตูแบบต่างๆ ที่สามารถใช้ได้ทั้งภายนอกและภายใน เพื่อตอบสนองความต้องการทั้งรูปแบบและสีสันที่สวยงาม ทั้งยังคงให้ความรู้สึกที่ยังคงเป็นธรรมชาติและอนุรักษ์สิ่งแวดล้อมให้กับโลกต่อไป</p> -->
+                           <!--
                             <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                             <div class="_dotranslate">
                                <p>ครบจบในซอง ช่วย</p>
@@ -329,8 +319,9 @@
                     </div>
                 </div>
             </div>
-
+                        -->
             <!-- Collection 3 -->
+            <section>
             <div class="row row-collection">
                 <div class="small-12 medium-expand columns">
                     <div class="collection-list">
@@ -380,6 +371,7 @@
 -->
                             </div>
                         </div>
+                        <!--
                         <br><br>
                         <div class="collection-more">
                         <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
@@ -388,6 +380,7 @@
                             <a href="<?php echo base_url('product/category/3'); ?>" class="btn-view-store">See more</a>
                         <?php }?>
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
