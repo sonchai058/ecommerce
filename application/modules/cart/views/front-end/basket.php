@@ -7,8 +7,13 @@
         if (!$this->cart->contents()) { ?>
             <div class="row">
                 <div class="columns">
+                <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                     <h2>ไม่มีสินค้าในตะกร้า</h2>
                     <a href="<?php echo base_url('product'); ?>" class="btn-continue-shop"> เลือกซื้อสินค้า</a>
+                <?php }else{?>
+                    <h2>There are no items in the cart.</h2>
+                    <a href="<?php echo base_url('product'); ?>" class="btn-continue-shop"> shop</a>
+                <?php }?>
                     <hr>
                 </div>
             </div> <?php
@@ -16,7 +21,11 @@
         else if ($this->cart->contents()) { ?>
             <div class="row">
                 <div class="columns">
+                <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                     <h2>ตะกร้าสินค้าของคุณ</h2>
+                    <?php }else{?>
+                        <h2>Cart</h2>
+                        <?php }?> 
                     <hr>
                 </div>
             </div>
@@ -25,11 +34,19 @@
                     <table class="scroll table-cart">
                         <thead>
                             <tr>
+                            <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                                 <th class="width-10"><?php if ($grand_quantity !== 0) echo number_format($grand_quantity).' สินค้า'; else echo 'ไม่มีสินค้า'; ?></th>
                                 <th class="width-45"></th>
                                 <th class="width-15">จำนวน / สี</th>
                                 <th class="width-10">ราคาสินค้า</th>
                                 <th class="width-10">ราคาทั้งหมด</th>
+                                <?php }else{?>
+                                    <th class="width-10"><?php if ($grand_quantity !== 0) echo number_format($grand_quantity).' Product'; else echo 'no inventory'; ?></th>
+                                <th class="width-45"></th>
+                                <th class="width-15">Amount / Color</th>
+                                <th class="width-10">Price</th>
+                                <th class="width-10">Summary</th>
+                                    <?php }?> 
                                 <th></th>
                             </tr>
                         </thead>
@@ -61,14 +78,31 @@
                                         </a> <?php
                                         $product_stock = rowArray($this->common_model->custom_query(" SELECT * FROM `product_stock` WHERE `P_ID` = '$P_ID' AND `PS_Allow` != '3' ORDER BY `PS_ID` DESC LIMIT 1 "));
                                         if (count($product_stock) > 0 && $product_stock['PS_Amount'] != 0) { ?>
-                                            <h5><i class="fa fa-check"></i> มีสินค้า <?php echo ' ('.$product_stock['PS_Amount'].')'; ?></h5> <?php
+<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                                            <h5><i class="fa fa-check"></i> มีสินค้า <?php echo ' ('.$product_stock['PS_Amount'].')'; ?></h5> 
+<?php }else{?>
+    <h5><i class="fa fa-check"></i> Stock <?php echo ' ('.$product_stock['PS_Amount'].')'; ?></h5> 
+<?php }?>
+                                            <?php
                                             echo form_input(array('type' => 'hidden', 'name' => 'cart['.$value['id'].'][stock]', 'value' => number_format($product_stock['PS_Amount'])));
                                         }
                                         else { ?>
-                                            <h5><i class="fa fa-times"></i> สินค้าหมด</h5> <?php
+<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                                            <h5><i class="fa fa-times"></i> สินค้าหมด</h5> 
+                                            <?php }else{?>
+                                                <h5><i class="fa fa-times"></i> out of stock</h5> 
+                                                <?php }?>
+
+
+                                            <?php
                                             echo form_input(array('type' => 'hidden', 'name' => 'cart['.$value['id'].'][stock]', 'value' => number_format(0)));
                                         } ?>
-                                        <h5>น้ำหนักต่อหน่วย: <?php echo number_format($value['options']['weight'], 2, '.', ','); ?> (กก.)</h5> <?php
+                                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                                        <h5>น้ำหนักต่อหน่วย: <?php echo number_format($value['options']['weight'], 2, '.', ','); ?> (กก.)</h5> 
+                                        <?php }else{?>
+                                            <h5>Weight/Unit: <?php echo number_format($value['options']['weight'], 2, '.', ','); ?> (kg.)</h5> 
+                                            <?php }?>
+                                        <?php
                                         // if (get_session('C_ID')) {
                                             // $wlist_P_ID = $value['id'];
                                             // $wlist_M_ID = get_session('C_ID');
@@ -96,7 +130,12 @@
                                         if (count($product) > 0) {
                                             $colors = explode(",", $product['P_Color']); ?>
                                             <select name="cart[<?php echo $value['id']; ?>][options][color]">
-                                                <option disabled <?php if ($value['options']['color'] == '') { ?> selected <?php } ?>>เลือกสี</option> <?php
+                                            <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                                                <option disabled <?php if ($value['options']['color'] == '') { ?> selected <?php } ?>>เลือกสี</option> 
+                                            <?php }else{?>
+                                                <option disabled <?php if ($value['options']['color'] == '') { ?> selected <?php } ?>>Color</option>
+                                            <?php }?>
+                                                <?php
                                                 foreach ($colors as $key => $values) {
                                                     $product_color = rowArray($this->common_model->get_where_custom('product_color', 'PC_ID', $values));
                                                     if (count($product_color) > 0) { ?>
@@ -123,14 +162,20 @@
                             echo form_close(); ?>
                         </tbody>
                     </table>
+                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                     <a href="#" class="button btn-cart-update" id="btn_cart_update">อัพเดทตะกร้าสินค้า</a>
                     <a href="#" class="button btn-cart-clears" id="btn_cart_clears">ล้างตะกร้าสินค้า</a>
+                    <?php }else{?>
+                        <a href="#" class="button btn-cart-update" id="btn_cart_update">update shopping cart</a>
+                    <a href="#" class="button btn-cart-clears" id="btn_cart_clears">Clear the shopping cart</a>
+                    <?php }?>
                     <hr>
                 </div>
 
                 <!-- Summary -->
                 <div class="columns">
                     <div class="row">
+                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                         <div class="small-12 medium-expanded columns">
                             <div class="summary-head">
                                 <h3>สรุปการสั่งซื้อ</h3>
@@ -150,8 +195,31 @@
                         <div class="small-6 columns">
                             <h3 class="text-right">฿446 THB</h3>
                         </div> -->
-                        <a href="<?php echo base_url('cart/address'); ?>" class="button btn-checkout">ดำเนินการชำระเงิน</a>
-                        <a href="<?php echo base_url('product'); ?>" class="btn-continue-shop">เลือกซื้อสินค้าต่อ</a>
+                        <a href="<?php echo base_url('cart/address?language='.@$_GET['language']); ?>" class="button btn-checkout">ดำเนินการชำระเงิน</a>
+                        <a href="<?php echo base_url('product?language='.@$_GET['language']); ?>" class="btn-continue-shop">เลือกซื้อสินค้าต่อ</a>
+                        <?php }else{?>
+                            <div class="small-12 medium-expanded columns">
+                            <div class="summary-head">
+                                <h3>Order Summary</h3>
+                            </div>
+                        </div>
+                        <div class="small-6 columns">
+                            <div class="summary-detail-1">
+                                <h5>net amount: </h5>
+                            </div>
+                        </div>
+                        <div class="small-6 columns">
+                            <h4 class="text-right" id="grand_total">฿<?php echo number_format($grand_total, 2, '.', ','); ?></h4>
+                        </div>
+                        <!-- <div class="small-6 columns">
+                            <h5>ยอดสุทธิ (รวมภาษีมูลค่าเพิ่ม): </h5>
+                        </div>
+                        <div class="small-6 columns">
+                            <h3 class="text-right">฿446 THB</h3>
+                        </div> -->
+                        <a href="<?php echo base_url('cart/address?language='.@$_GET['language']); ?>" class="button btn-checkout">proceed to payment</a>
+                        <a href="<?php echo base_url('product?language='.@$_GET['language']); ?>" class="btn-continue-shop">Continue shopping</a>
+                        <?php }?>
                     </div>
                 </div>
             </div> <?php

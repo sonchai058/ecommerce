@@ -64,7 +64,7 @@
                         </table>
                         <div class="row">
                             <div class="small-12 medium-3 large-offset-9 columns">
-                                <a href="<?php echo base_url('cart/payment'); ?>" class="button btn-checkout">ดำเนินการต่อไป</a>
+                                <a href="<?php echo base_url('cart/payment?language='.@$_GET['language']); ?>" class="button btn-checkout">ดำเนินการต่อไป</a>
                             </div>
                         </div>
                     </div>
