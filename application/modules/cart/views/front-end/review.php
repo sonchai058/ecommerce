@@ -18,8 +18,8 @@
                                     <th width="100">ราคาทั้งหมด</th>
                                 </tr>
                                 <?php
-		}else{ 
-		?>
+        }else{
+        ?>
                         <h4>product confirmation</h4>
                         <table class="table-cart">
                             <thead>
@@ -82,8 +82,8 @@
                             <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                                 <a href="<?php echo base_url('cart/payment'); ?>" class="button btn-checkout">ดำเนินการต่อไป</a>
                                 <?php
-		}else{ 
-		?>
+        }else{
+        ?>
                                 <a href="<?php echo base_url('cart/payment'); ?>" class="button btn-checkout">continue</a>
         <?php }?>
                             </div>

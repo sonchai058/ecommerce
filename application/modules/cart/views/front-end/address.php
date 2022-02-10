@@ -205,7 +205,7 @@
                                 <div class="small-12 medium-3 large-offset-9 columns">
                                     <a href="#" class="button btn-checkout" id="btn_cart_address">ดำเนินการต่อไป</a>
                                 </div>
-                            </div> 
+                            </div>
                             <?php }else{?>
                                 <div class="row">
                                 <div class="small-4 medium-3 columns">
@@ -328,7 +328,7 @@
                                 <div class="small-12 medium-3 large-offset-9 columns">
                                     <a href="#" class="button btn-checkout" id="btn_cart_address">continue</a>
                                 </div>
-                            </div> 
+                            </div>
 
                             <?php }?>
                             

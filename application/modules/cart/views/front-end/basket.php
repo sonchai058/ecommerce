@@ -79,7 +79,7 @@
                                         </a> <?php
                                         $product_stock = rowArray($this->common_model->custom_query(" SELECT * FROM `product_stock` WHERE `P_ID` = '$P_ID' AND `PS_Allow` != '3' ORDER BY `PS_ID` DESC LIMIT 1 "));
                                         if (count($product_stock) > 0 && $product_stock['PS_Amount'] != 0) { ?>
-                                            <h5><i class="fa fa-check"></i> 
+                                            <h5><i class="fa fa-check"></i>
                                             <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                                             มีสินค้า
                                             <?php }else{?>

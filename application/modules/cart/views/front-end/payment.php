@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="small-12 medium-8 columns">
                     <div class="login-wrapper">
-                        <h4>            
+                        <h4>
                             <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                             เลือกการชำระเงิน
                             <?php }else{?>
