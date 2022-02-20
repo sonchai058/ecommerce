@@ -7,7 +7,7 @@
 	}
 	.dropdown.menu li a {
 		font-size: 13px;
-		font-weight: bold;
+		font-weight: normal;
 	}
 	.dropdown.menu *{
         font-weight:bold;

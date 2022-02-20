@@ -2,10 +2,19 @@
 <style type="text/css">
 	.footer * {
 		color: #fff;
-		font-weight: bold;
+		//font-weight: bold;
 	}
 	.footer-widget * {
 		color: #fff !important;
+	}
+	.footer h3 {
+		font-weight:bold;
+	}
+	.footer{
+		font-weight: 0 !important;
+	}
+	.footer a, .footer h5 ,.footer h5 a{
+		font-weight: normal !important;
 	}
 </style>	
 <footer class="footer" style="background-color: #F36F26;">
@@ -24,7 +33,7 @@
 		<?php }else{?>
 
 		<?php }?>
-			<hr class="hr-title-2">
+			<!--<hr class="hr-title-2">-->
 			<ul class="footer-widget">
 			<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 				<li><a href="<?php echo base_url('aboutus'); ?>" 			title="เกี่ยวกับ">เกี่ยวกับ</a></li>
@@ -47,7 +56,7 @@
 			<?php }else{?>
 			<h3>Customer Service</h3>
 			<?php }?>
-			<hr class="hr-title-2">
+			<!-- <hr class="hr-title-2">-->
 			<ul class="footer-widget">
 			<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 				<li><a href="<?php echo base_url('service'); ?>" 			title="ศูนย์ให้ความช่วยเหลือ">ศูนย์ให้ความช่วยเหลือ</a></li>
@@ -61,19 +70,23 @@
 			</ul>
 		</div>
 
-		<div class="small-6 medium-6 large-3 columns">
+		<div class="small-7 medium-6 large-3 columns">
 		<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 			<h3>ติดต่อเรา</h3>
 		<?php }else{?>
 			<h3>Contact Us</h3>
 		<?php }?>
-			<hr class="hr-title-2">
-			<ul class="pay-icon">
-				<li><a href="https://www.facebook.com/estherthailandofficial"><img width="64px" src="<?php echo base_url('assets/images/icon1.png'); ?>" alt=""></a></li>
-				<li><a href="#"><img width="64px" src="<?php echo base_url('assets/images/icon2.png'); ?>" alt=""></a></li>
-				<li><a href="#"><img width="64px" src="<?php echo base_url('assets/images/icon3.png'); ?>" alt=""></a></li>
-				<li><a href="https://page.line.me/tanisha"><img width="64px" src="<?php echo base_url('assets/images/icon4.png'); ?>" alt=""></a></li>
-<!--
+			<!--<hr class="hr-title-2">-->
+			
+				<div class="small-6 medium-12 large-12 columns">
+					<ul class="pay-icon">
+					<li><a href="https://www.facebook.com/Tanisha-International-111115911344877/"><img width="40px" src="<?php echo base_url('assets/images/facebook.png'); ?>" alt=""></a></li>
+					<li><a href="https://instagram.com/tanisha.international?r=nametag"><img width="40px" src="<?php echo base_url('assets/images/instragram.png'); ?>" alt=""></a></li>
+					<li><a href="https://youtube.com/channel/UC2Ih0xjIfUTHN2xb6cBPp2Q"><img width="40px" src="<?php echo base_url('assets/images/youtube.png'); ?>" alt=""></a></li>
+					<li><a href="https://lin.ee/ZSlO3GH"><img width="40px" src="<?php echo base_url('assets/images/line.png'); ?>" alt=""></a></li>
+					</ul>
+				</div>
+				<!--
 				<li><a href="#"><img src="<?php echo base_url('assets/images/payment/visa-1@2x.png'); ?>" alt="visa"></a></li>
 				<li><a href="#"><img src="<?php echo base_url('assets/images/payment/mastercard@2x.png'); ?>" alt="mastercard"></a></li>
 				<li><a href="#"><img src="<?php echo base_url('assets/images/payment/maestro@2x.png'); ?>" alt="maestro"></a></li>
@@ -82,28 +95,29 @@
 -->
 				<!--<li><a href="#"><img width="128" src="<?php echo base_url('assets/images/bank/32x32/kbank-icon-png-2-Transparent-Images.png'); ?>" alt="KBANK"></a></li>-->
 				<!--<li><a href="#"><img src="<?php echo base_url('assets/images/bank/32x32/tmb1.png'); ?>" alt="TMB"></a></li>-->
-			</ul>
+			
 		</div>
 
 
-	<div class="small-6 medium-6 large-3 columns">
+	<div class="small-5 medium-6 large-3 columns">
 			<h3>Partnership</h3>
-			<hr class="hr-title-2">
+			<!--<hr class="hr-title-2">-->
 			<ul class="partner">
 				<!-- <li><a target="_blank" href="http://www.homeworks.co.th"><img src="<?php echo base_url('assets/images/partner/homeworks.png'); ?>" alt="homeworks"></a></li> -->
 				<!-- <li><a target="_blank" href="http://www.globalhouse.co.th"><img src="<?php echo base_url('assets/images/partner/globalhouse.png'); ?>" alt="globalhouse"></a></li> -->
 				<!-- <li><a target="_blank" href="http://www.thaiwatsadu.com"><img src="<?php echo base_url('assets/images/partner/thaiwatsadu.png'); ?>" alt="thaiwatsadu"></a></li> -->
-				<!-- <li><a target="_blank" href="#"><img width="128" src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="Esther Thailand"></a></li>-->x
+				<!-- <li><a target="_blank" href="#"><img width="128" src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="Esther Thailand"></a></li>-->
 			</ul>
 		</div>
 	
 	</div>
+	<br/>
 	<div class="footer-copyright">
-		<div class="width:100%; font-size: 13px !important">
-					<p>
+		<div class="width:100%; font-size: 14px !important">
+					<p class="footer">
 					<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 						บริษัท ธนิชา อินเตอร์เนชั่นแนล จำกัด.<br/>
-						สำนักงานใหญ่ : เลขที่ 86/13 ถนนเสาหิน ซอย.18 ตำบลหนองหอย อำเภอเมือง จังหวัดเชียงใหม่ 50000<br/>
+						สำนักงานใหญ่ : เลขที่ 86/13 ถนนเสาหิน ซอย.18 ตำบลหนองหอย <br/>อำเภอเมือง จังหวัดเชียงใหม่ 50000<br/>
 						Tax ID : 0505564012718
 						, Email : tanisha.inter@gmail.com
 						, Phone (+66) 53-282-149

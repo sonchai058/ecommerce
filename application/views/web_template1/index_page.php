@@ -17,6 +17,8 @@
 		<?php $this->load->file('assets/tools/tools_script.php'); ?>
 
 		<title><?php echo $site['WD_Name'].' ('.$title.')'; ?></title>
+
+		<meta name="format-detection" content="telephone=no">
 	</head>
 	<body>
 

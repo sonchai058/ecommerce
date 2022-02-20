@@ -30,9 +30,14 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400&display=swap&display=swap" rel="stylesheet">
+
 <style type="text/css">
 	p , a , span, h1,h2,h3,h4,h5,h6 {
+		font-weight: 200;
 		font-family: 'Kanit', sans-serif !important;
+	}
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: 400;
 	}
 </style>
