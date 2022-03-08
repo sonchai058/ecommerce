@@ -328,7 +328,7 @@ to shine bright to the outer skin
                         <div class="collection-item-2"><img src="<?php echo base_url('assets/images/vision/img-vision.JPG'); ?>" alt="Lucky Stair" width="450"></div>
                     </div>
                 </div>
-                <div class="small-12 medium-expand columns">
+                <div class="small-12 medium-expand columns" style="display:none;">
                     <div class="collection-intro">
                         <div class="collection-title">
                             <h2 class="text-green">DIETARY<span class="sub-title-2"> SUPPLEMENT PRODUCT</span></h2>
