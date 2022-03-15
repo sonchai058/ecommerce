@@ -139,10 +139,10 @@
 								}
 								else { ?>
 									<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="สมัครตัวแทน" id="member-transfer">สมัครตัวแทน</a></li> 
+									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="สมัครตัวแทน" id="member-transfer"><b style="font-size: 13px;font-weight: normal;">สมัครตัวแทน</b></a></li> 
 									<?php }else{?>
 										<!--<li><a href="#" title="transfer money" id="member-transfer"><i class="fa fa-exchange"></i>Register</a></li> -->
-										<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="สมัครตัวแทน" id="member-transfer">Apply for Agent</a></li> 
+										<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="สมัครตัวแทน" id="member-transfer"><b style="font-size: 13px;font-weight: normal;">Apply for Agent</b></a></li> 
 										<?php
 									}
 								} ?>
@@ -260,7 +260,7 @@
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="ก้าวสู่ความสำเร็จ">ก้าวสู่ความสำเร็จ</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="อีเว้นท์และข่าวสาร">อีเว้นท์และข่าวสาร</a></li>
 									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="สมัครตัวแทน">สมัครตัวแทน</a></li>
+									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="สมัครตัวแทน"><b style="font-weight:1000">สมัครตัวแทน</b></a></li>
 		
 			<!--<li><a href="#">สมัครสมาชิก</a></li>-->
 			<!--
@@ -294,7 +294,7 @@
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="How to order payment">Step towards Success</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="Promotion/Event">Events/News</a></li>
 									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Contact Us</a></li>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Apply for Agent</a></li>
+									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us"><b style="font-weight:1000">Apply for Agent</b></a></li>
 									<!--<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="Confrim Payment">Confrim Payment/Track Order</a></li>-->
 			<!--
 			<li> <?php
