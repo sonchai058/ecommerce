@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Control_salepage extends MX_Controller {
+class Control_review extends MX_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -54,19 +54,19 @@ class Control_salepage extends MX_Controller {
 	}
 
 	public function index() {
-		redirect('salepage/control_salepage/salepage_management', 'refresh');
+		redirect('review/control_review/review_management', 'refresh');
 	}
 
-	public function salepage_management() {
+	public function review_management() {
         $this->crud_level_model->crudStateEnabled(/*add*/true,/*view*/false,/*edit*/true,/*del*/true,/*export*/true,/*print*/true);
         $this->delete_action_model->del_action('selepage', 'user_update', 'datetime_update', 'allow', 'id');
 
-        $title = 'อีเว้นท์และข่าวสาร';
+        $title = 'รีวิว (Review)';
         $crud = new grocery_CRUD();
         $crud->set_language('thai');
         $crud->set_subject($title);
-        $crud->set_table('salepage');
-        $crud->where("salepage.allow != ", "3");
+        $crud->set_table('review');
+        $crud->where("review.allow != ", "3");
         //$crud->order_by("B_Order", "asc");
 
         $crud->display_as('id',               'ไอดี');
@@ -101,7 +101,7 @@ class Control_salepage extends MX_Controller {
             $crud->field_type('datetime_update',   'hidden', date("Y-m-d H:i:s"));
         }
 
-        $crud->add_action('ลบ '.$title, base_url('assets/admin/images/tools/delete-icon.png'), 'selepage/control_selepage/salepage_management/del', 'del-row');
+        $crud->add_action('ลบ '.$title, base_url('assets/admin/images/tools/delete-icon.png'), 'selepage/control_selepage/review_management/del', 'del-row');
 
         // $crud->unset_add();
         // $crud->unset_back_to_list();

@@ -5,12 +5,12 @@
             $image_slider = $this->common_model->get_where_custom_order('image_slider', 'IS_Allow', '1', 'IS_Order', 'ASC');
             if (count($image_slider) > 0) {
                 foreach ($image_slider as $key => $value) { ?>
-                    <li><a href="#"><img src="<?php echo base_url('assets/images/newslide/'.$value['IS_Img']); ?>"></a></li>
+                    <li><a href="#"><img src="<?php echo base_url('assets/images/slide/'.$value['IS_Img']); ?>"></a></li>
                     <?php
                 }
             }
             else { ?>
-                <li><a href="#"><img src="<?php echo base_url('assets/images/newslide/1.jpg'); ?>"></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/slide/1.jpg'); ?>"></a></li>
                 <?php
             } ?>
             <!-- <li><a href="#"><img src="<?php echo base_url('assets/images/slide/slide-2.jpg'); ?>" height="450"></a></li>
@@ -37,34 +37,74 @@
 
     <section class="wrap-vision">
         <div class="row row-vision">
-               <div class="small-12 medium-5 columns">
+               <div class="small-12 medium-12 columns">
                    <div class="slide-left">
-                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/vision/new.JPG'); ?>">
+                       <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                       <a href="<?php echo site_url('aboutus?language='.@$_GET['language']);?>"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_2_th.jpg'); ?>"></a>
+                       <?php }else{?>
+                        <a href="<?php echo site_url('aboutus?language='.@$_GET['language']);?>"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_2_en.jpg'); ?>"></a>
+                        <?php }?>
                    </div>
                </div>
-               <div class="small-12 medium-7 columns">
+               <div class="small-12 medium-12 columns">
                    <div class="slide-right">
-                       <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                       <div class="vision-text _dotranslate" style="font-weight:bold">
-                            <h2>ทำไมต้องเป็น <span class="green">TANISHA</span></h2>
-                            <p>การดำเนินชีวิตที่รีบเร่ง เคร่งเครียด แข่งขันท่ามกลางสภาพภูมิอากาศ เทคโนโลยีที่เปลี่ยนไปอย่างรวดเร็ว รวมถึงเวลาที่มีอยู่อย่างจำกัดในแต่ละวัน ด้วยภาระทั้งหน้าที่การงาน ครอบครัวและชีวิตส่วนตัว ส่งผลให้ผู้บริโภคส่วนใหญ่นิยมหันมา บริโภคผลิตภัณฑ์เสริมอาหารมากขึ้น </p>
-                            <p>เนื่องจากการบริโภคอาหารไม่ครบตามหลักโภชนาการหรือการรับประทานอาหารที่ผิดวิธี ผลิตภัณฑ์อาหารเสริมจึงเข้ามามีบทบาทในชีวิตประจำวันของผู้บริโภคมากขึ้น โดยเฉพาะเพศหญิงที่ให้ความสำคัญในการดูแลรูปร่าง ผิวพรรณ รวมทั้งการชะลอวัย  อีกทั้งฮอร์โมนที่มีการเปลี่ยนแปลง</p>
-                            <p>ด้วยประสบการณ์ที่ยาวนานของผู้บริหาร และเป็นผู้โลดแล่นอยู่ในวงการขายอาหารเสริมมากกว่า 10 ปีขึ้นไป จึงมองเห็นถึงโอกาสที่ช่วยแก้ปัญหาให้แก่ผู้หญิงที่ประสบพบเจอปัญหาเหล่านี้ อีกทั้งเพื่อเพิ่มความมั่นใจให้แก่ผู้บริโภค ทางบริษัททำการศึกษาและวิจัยทางผลิตภัณฑ์ จึงได้ผลิตอาหารเสริมชื่อ ESTHER ภายใต้แบรนด์ของบริษัทฯ​</p>
-                        </div>
-                        <?php }else{?>
-                        <div class="vision-text _notranslate notranslate" style="font-weight:bold">
-                            <h2>Why is it <span class="green">Tanisha?</span></h2>
-                            <p>A fast-paced, stressful lifestyle, competing in the midst of the climate fast changing technology including limited time each day with the burden of work family and personal life As a result, most consumers turned to consume more dietary supplements</p>
-                            <p>due to inadequate food intake or eating the wrong way Dietary supplements therefore play a greater role in the daily lives of consumers. Especially females who pay attention to body shape, skin care, including anti-aging. The hormones that have changed</p>
-                            <p>with long experience of executives And who has been in the food supplement industry for more than 10 years, he sees an opportunity to help solve the problems for women who are experiencing these problems. as well as to increase consumer confidence The company has studied and researched the product. therefore produced a dietary supplement called ESTHER under the company's brand​</p>
-                        </div>
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                            <a href="<?php echo site_url('product?language='.@$_GET['language']);?>"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_3_th.jpg'); ?>"></a>
+                       <?php }else{?>
+                        <a href="<?php echo site_url('product?language='.@$_GET['language']);?>"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_3_en.jpg'); ?>"></a>
                         <?php }?>
-
                     </div>
                 </div>
             </div>
     </section>
 
+    <section class="wrap-vision">
+        <div class="row row-vision">
+               <div class="small-12 medium-12 columns">
+                   <div class="slide-left">
+                       <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_41_th.jpg'); ?>">
+                       <?php }else{?>
+                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_41_en.jpg'); ?>">
+                        <?php }?>
+                   </div>
+               </div>
+               <div class="small-12 medium-12 columns">
+                   <div class="slide-right">
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_42_th.jpg'); ?>">
+                       <?php }else{?>
+                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_42_en.jpg'); ?>">
+                        <?php }?>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="wrap-vision">
+        <div class="row row-vision">
+               <div class="small-12 medium-12 columns">
+                   <div class="slide-left">
+                       <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_th.jpg'); ?>">
+                       <?php }else{?>
+                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_en.jpg'); ?>">
+                        <?php }?>
+                   </div>
+               </div>
+               <div class="small-12 medium-12 columns">
+                   <div class="slide-right">
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                        <a href="#"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_5_th.jpg'); ?>"></a>
+                       <?php }else{?>
+                        <a href="#"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_5_en.jpg'); ?>"></a>
+                        <?php }?>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--
     <section class="wrap-vision">
         <div class="row row-vision">
                <div class="small-6 medium-6 columns">
@@ -110,7 +150,7 @@ to shine bright to the outer skin
                </div>
             </div>
     </section>
-
+                        -->
     
     <section>
 <!--

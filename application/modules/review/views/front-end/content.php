@@ -2,7 +2,7 @@
 <main>
 	<?php $this->template->load('header/breadcrumb'); ?>
 <?php
-	$rows = $this->common_model->custom_query("select * from salepage where allow=1");
+	$rows = $this->common_model->custom_query("select * from review where allow=1");
 ?>
 	<section>
 
@@ -25,15 +25,14 @@ if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
 		}
 		if(@$_GET['language']=='thai' || @$_GET['language']==''){
 ?>
-	<li><a href="<?php echo base_url('salepage'."?language=".@$_GET['language']);?>&id=<?php echo $data['id']?>" 	class="categoires-title <?php if (@$_GET['id']== $data['id']){ echo 'active'; }?>"><?php echo $data['name_th']?></a></li>
+	<li><a href="<?php echo base_url('review'."?language=".@$_GET['language']);?>&id=<?php echo $data['id']?>" 	class="categoires-title <?php if (@$_GET['id']== $data['id']){ echo 'active'; }?>"><?php echo $data['name_th']?></a></li>
 <?php
 		}else {
 ?>
-	<li><a href="<?php echo base_url('salepage'."?language=".@$_GET['language']);?>&id=<?php echo $data['id']?>" 	class="categoires-title <?php if (@$_GET['id']== $data['id']){ echo 'active'; }?>"><?php echo $data['name_en']?></a></li>
+	<li><a href="<?php echo base_url('review'."?language=".@$_GET['language']);?>&id=<?php echo $data['id']?>" 	class="categoires-title <?php if (@$_GET['id']== $data['id']){ echo 'active'; }?>"><?php echo $data['name_en']?></a></li>
 <?php
 		}
 	}
-	//die(print_r($data_echo));
 ?>
 				</ul>
 			</div>

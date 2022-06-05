@@ -104,18 +104,22 @@
 									</a>
 								</li>
 								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+									<li><a href="<?php echo base_url(''.'?language='.@$_GET['language']); ?>" title="Tanisha">Tanisha</a></li>
 									<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="ผลิตภัณฑ์">ผลิตภัณฑ์</a></li>
 									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="เกี่ยวกับธนิชา">เกี่ยวกับธนิชา</a></li>
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="ก้าวสู่ความสำเร็จ">ก้าวสู่ความสำเร็จ</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="อีเว้นท์และข่าวสาร">อีเว้นท์และข่าวสาร</a></li>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>
+									<!-- <li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>-->
 									<!--<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="แจ้งโอนเงิน">ติดตามสินค้า</a></li>-->
+									<li><a href="#" title="สมัครคัวแทน">สมัครตัวแทน</a></li>
 								<?php }else{?>
+									<li><a href="<?php echo base_url(''.'?language='.@$_GET['language']); ?>" title="Tanisha">Tanisha</a></li>
 									<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="Home">Products</a></li>
 									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="About US">About Tanisha</a></li>
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="How to order payment">Step towards Success</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="Promotion/Event">Events/News</a></li>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Contact Us</a></li>
+									<li><a href="#" title="Apply for Agent">Apply for Agent</a></li>
+									<!-- <li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Contact Us</a></li>-->
 									<!--<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="Confrim Payment">Confrim Payment/Track Order</a></li>-->
 								<?php }?>
 							</ul>
@@ -131,18 +135,18 @@
 									}
 									else { ?>
 										<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-										<li><a href="#" title="สถานะการสั่งซื้อ" id="member-history"><i class="fa fa-truck"></i>สถานะการสั่งซื้อ</a></li> 
+										<!--<li><a href="#" title="สถานะการสั่งซื้อ" id="member-history"><i class="fa fa-truck"></i>สถานะการสั่งซื้อ</a></li> -->
 										<?php }else{?>
-											<li><a href="#" title="Order" id="member-history"><i class="fa fa-truck"></i>Track Order</a></li> 
+											<!--<li><a href="#" title="Order" id="member-history"><i class="fa fa-truck"></i>Track Order</a></li> -->
 										<?php }
 									}
 								}
 								else { ?>
 									<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="สมัครตัวแทน" id="member-transfer"><b style="font-size: 13px;font-weight: normal;">สมัครตัวแทน</b></a></li> 
+										<li><a href="#" title="เข้าสู่ระบบสมาชิก" id=""><b style="font-size: 13px;font-weight: normal;">เข้าสู่ระบบสมาชิก</b></a></li> 
 									<?php }else{?>
 										<!--<li><a href="#" title="transfer money" id="member-transfer"><i class="fa fa-exchange"></i>Register</a></li> -->
-										<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="สมัครตัวแทน" id="member-transfer"><b style="font-size: 13px;font-weight: normal;">Apply for Agent</b></a></li> 
+										<li><a href="#" title="Member Login" id=""><b style="font-size: 13px;font-weight: normal;">Member Login</b></a></li> 
 										<?php
 									}
 								} ?>
@@ -166,9 +170,9 @@
 								<!--</li>-->
 								<li>
 								<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>	
-									<a href="#" title="รถเข็น" id="shopping_cart"><i style="font-size:20px" class="fa fa-shopping-cart"></i><?php if ($this->cart->contents()) echo '<span style="color:#fff !important" class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
+									<!--<a href="#" title="รถเข็น" id="shopping_cart"><i style="font-size:20px" class="fa fa-shopping-cart"></i><?php if ($this->cart->contents()) echo '<span style="color:#fff !important" class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>-->
 								<?php }else{?>
-									<a href="#" title="รถเข็น" id="shopping_cart"><i style="font-size:20px" class="fa fa-shopping-cart"></i><?php if ($this->cart->contents()) echo '<span style="color:#fff !important"  class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>
+									<!--<a href="#" title="รถเข็น" id="shopping_cart"><i style="font-size:20px" class="fa fa-shopping-cart"></i><?php if ($this->cart->contents()) echo '<span style="color:#fff !important"  class="shopping-noti hvr-bob">'.trim($gq).'</span>'; ?> </a></li>-->
 									<?php }?>
 								<!-- <li> <?php
 									echo form_open('product', array('id' => 'form-productsearch')); ?>
@@ -255,12 +259,14 @@
 
 			<li><a href="<?php echo base_url('cart'.'?language='.@$_GET['language']); ?>">ตะกร้าสินค้า</a></li>
 		-->
-		<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="ผลิตภัณฑ์">ผลิตภัณฑ์</a></li>
+									<li><a href="<?php echo base_url(''.'?language='.@$_GET['language']); ?>" title="Tanisha">Tanisha</a></li>
+									<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="ผลิตภัณฑ์">ผลิตภัณฑ์</a></li>
 									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="เกี่ยวกับธนิชา">เกี่ยวกับธนิชา</a></li>
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="ก้าวสู่ความสำเร็จ">ก้าวสู่ความสำเร็จ</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="อีเว้นท์และข่าวสาร">อีเว้นท์และข่าวสาร</a></li>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="สมัครตัวแทน"><b style="font-weight:1000">สมัครตัวแทน</b></a></li>
+									<!-- li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>-->
+									<li><a href="" title="สมัครตัวแทน"><b style="font-weight:1000">สมัครตัวแทน</b></a></li>
+									<li><a href="" title="เข้าสู่ระบบสมาชิก"><b style="font-weight:1000">เข้าสู่ระบบสมาชิก</b></a></li>
 		
 			<!--<li><a href="#">สมัครสมาชิก</a></li>-->
 			<!--
@@ -289,12 +295,14 @@
 
 									<li><a href="<?php echo base_url('cart'.'?language='.@$_GET['language']); ?>">Cart</a></li>
 		-->
-		<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="Home">Products</a></li>
+									<li><a href="<?php echo base_url(''.'?language='.@$_GET['language']); ?>" title="Tanisha">Tanisha</a></li>
+									<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="Home">Products</a></li>
 									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="About US">About Tanisha</a></li>
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="How to order payment">Step towards Success</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="Promotion/Event">Events/News</a></li>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Contact Us</a></li>
-									<li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us"><b style="font-weight:1000">Apply for Agent</b></a></li>
+									<!-- <li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Contact Us</a></li>-->
+									<li><a href="#" title="Apply for Agent"><b style="font-weight:1000">Apply for Agent</b></a></li>
+									<li><a href="#" title="Member Login"><b style="font-weight:1000">Member Login</b></a></li>
 									<!--<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="Confrim Payment">Confrim Payment/Track Order</a></li>-->
 			<!--
 			<li> <?php

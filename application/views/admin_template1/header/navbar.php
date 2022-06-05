@@ -32,7 +32,11 @@
             </li>
             <li <?php if (uri_seg(1) == 'salepage') { ?>        class="active" <?php } ?>>
                 <a href="<?php echo base_url('salepage/control_salepage/salepage_management'); ?>"          title="Salepage"><div class="nav-menu-icon4"></div></a>
-                <a href="<?php echo base_url('salepage/control_salepage/salepage_management'); ?>"          title="Salepage">Salepage</a>
+                <a href="<?php echo base_url('salepage/control_salepage/salepage_management'); ?>"          title="Salepage">อีเว้นท์และข่าวสาร</a>
+            </li>
+            <li <?php if (uri_seg(1) == 'review') { ?>        class="active" <?php } ?>>
+                <a href="<?php echo base_url('review/control_review/reviewmanagement'); ?>"          title="Review"><div class="nav-menu-icon4"></div></a>
+                <a href="<?php echo base_url('review/control_review/review_management'); ?>"          title="Review">รีวิว (Review)</a>
             </li>
             <li <?php if (uri_seg(1) == 'webconfig') { ?>   class="active" <?php } ?>>
                 <a href="<?php echo base_url('webconfig/index/edit'); ?>" title="ตั้งค่าระบบ"><div class="nav-menu-icon7"></div></a>

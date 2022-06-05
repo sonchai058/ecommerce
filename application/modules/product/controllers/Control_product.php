@@ -249,7 +249,8 @@ class Control_product extends MX_Controller {
         $crud->set_relation('PU_ID',	'product_unit', 'PU_Name');
 
         $crud->display_as('P_ID',           	'ไอดี');
-        $crud->display_as('P_Img',          	'รูปภาพขนาดจริง');
+        $crud->display_as('P_Img',          	'รูปภาพขนาดจริง TH');
+        $crud->display_as('P_Img_EN',          	'รูปภาพขนาดจริง EN');
         $crud->display_as('P_Name',     		'ชื่อสินค้า');
         $crud->display_as('P_IDCode',        	'รหัสสินค้า');
         $crud->display_as('C_ID',       		'หมวดหมู่หลัก');
@@ -276,7 +277,7 @@ class Control_product extends MX_Controller {
         $crud->set_rules('C_ID',        'หมวดหมู่หลัก', 'required');
         $crud->set_rules('P_Weight',    'น้ำหนัก (กก.)', 'required|numeric');
 
-        $crud->columns('P_Img', 'P_IDCode', 'P_Name', 'PS_Price', 'PP_Price', 'PS_Amount', 'C_ID', 'PT_ID');
+        $crud->columns('P_Img','P_Img_EN', 'P_IDCode', 'P_Name', 'PS_Price', 'PP_Price', 'PS_Amount', 'C_ID', 'PT_ID');
         // $crud->columns('P_Img', 'P_IDCode', 'P_Name', 'PS_Price', 'PS_Amount', 'C_ID', 'PT_ID');
 
         $crud->callback_column('PS_Price',  array($this, '_callback_PS_Price'));
@@ -285,8 +286,8 @@ class Control_product extends MX_Controller {
         $crud->callback_column('PT_ID',     array($this, '_callback_PT_ID'));
         // $crud->callback_after_insert(array($this, 'sendNewProductToEmail'));
 
-        $crud->add_fields('P_Img', 'P_Name', 'P_IDCode', 'C_ID', 'P_Weight', 'P_Color', 'PT_ID', 'PU_ID', 'P_Size', 'P_Title', 'P_Detail', 'P_UserAdd', 'P_DateTimeAdd', 'P_UserUpdate', 'P_DateTimeUpdate', 'P_Allow');
-        $crud->edit_fields('P_Img', 'P_Name', 'P_IDCode', 'C_ID', 'P_Weight', 'P_Color', 'PT_ID', 'PU_ID', 'P_Size', 'P_Title', 'P_Detail', 'P_UserUpdate', 'P_DateTimeUpdate', 'P_Allow');
+        $crud->add_fields('P_Img','P_Img_EN', 'P_Name', 'P_IDCode', 'C_ID', 'P_Weight', 'P_Color', 'PT_ID', 'PU_ID', 'P_Size', 'P_Title', 'P_Detail', 'P_UserAdd', 'P_DateTimeAdd', 'P_UserUpdate', 'P_DateTimeUpdate', 'P_Allow');
+        $crud->edit_fields('P_Img','P_Img_EN', 'P_Name', 'P_IDCode', 'C_ID', 'P_Weight', 'P_Color', 'PT_ID', 'PU_ID', 'P_Size', 'P_Title', 'P_Detail', 'P_UserUpdate', 'P_DateTimeUpdate', 'P_Allow');
 
         $crud->field_type('P_Allow', 'dropdown', array('1' => 'ปกติ', '2' => 'ระงับ', '3' => 'ลบ / บล็อค'));
         $crud->field_type('PT_ID', 'multiselect', $this->fill_dropdown_model->getOnceWebMain('product_type', 'PT_ID', 'PT_Name'));
@@ -303,9 +304,10 @@ class Control_product extends MX_Controller {
             $crud->field_type('P_UserUpdate',       'hidden', get_session('M_ID'));
             $crud->field_type('P_DateTimeUpdate',	'hidden', date("Y-m-d H:i:s"));
         }
-        if ($crud->getState() == 'print' || $crud->getState() == 'export') $crud->unset_columns('P_Img');
+        if ($crud->getState() == 'print' || $crud->getState() == 'export') {$crud->unset_columns('P_Img');$crud->unset_columns('P_Img_EN');}
 
         $crud->set_field_upload('P_Img', 'assets/uploads/user_uploads_img');
+        $crud->set_field_upload('P_Img_EN', 'assets/uploads/user_uploads_img');
 
         $crud->add_action('ข้อมูล', base_url('assets/admin/images/tools/magnifier.png'), 'product/control_product/product_management/view');
         $crud->add_action('ลบ', base_url('assets/admin/images/tools/delete-icon.png'), 'product/control_product/product_management/del', 'del-row');

@@ -1,3 +1,8 @@
+<style type="text/css">
+    .product img ,.product-img-2 img {
+        height: 500px !important;
+    }
+</style>   
 <main>
     <?php $this->template->load('header/breadcrumb'); ?>
 
@@ -8,13 +13,13 @@
             <!-- Product -->
             <div class="columns">
                 <div class="wrapper-product-title">
-                <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                <!--<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                     <h2>สินค้าของ Tanisha</h2>
                     <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ</p>
                 <?php }else{?>
                     <h2>Tanisha's products</h2>
                     <p>Dietary supplement ESTHER (drinking) meets the needs of women with health problems.</p>
-                <?php }?>
+                <?php }?>-->
                 </div>
                 <div class="row row-product" style="width:100%">
                     <div class="small-10 medium-10 large-10 columns">
@@ -48,13 +53,17 @@
                             $product_promotion_query = rowArray($this->common_model->custom_query(
                                 " SELECT * FROM `product_price` WHERE `P_ID` = '$P_ID' AND `PP_Special` = '1' AND `PP_Allow` = '1' AND (NOW() BETWEEN PP_StartDate AND PP_EndDate ) ORDER BY `PP_ID` DESC LIMIT 1 "
                             )); ?>
-                            <div class="small-12 medium-6 large-3 columns">
+                            <div class="small-12 medium-12 large-12 columns">
                                 <div class="product">
                                     <div class="product-wrapper">
                                         <div class="product-img-2"> <?php
                                             if ($value['P_Img'] !== '') { ?>
                                                 <!-- <img src="<?php echo base_url('assets/images/products/outdoor/CF-0002.5.png'); ?>" alt="IMG_0354"> -->
-                                                <img src="<?php echo base_url('assets/uploads/user_uploads_img/'.$value['P_Img']); ?>" alt="<?php echo $value['P_Img']; ?>">
+                                                <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                                                    <img src="<?php echo base_url('assets/uploads/user_uploads_img/'.$value['P_Img']); ?>" alt="<?php echo $value['P_Img']; ?>">
+                                                <?php }else{?>
+                                                    <img src="<?php echo base_url('assets/uploads/user_uploads_img/'.$value['P_Img_EN']); ?>" alt="<?php echo $value['P_Img_EN']; ?>">
+                                                <?php }?>
                                                 <?php
                                             }
                                             else { ?>
