@@ -70,7 +70,8 @@
 }
 
 .categories li .active {
-    color: #f36f25;
+    color: #f36f25 !important;
+    font-weight: bold !important;
 }
 
 .categories li:not(.sub-menu) {
@@ -880,7 +881,7 @@ small {
 }
 
 .wrapper-about-title {
-    background-image: url("../images/promotion/promotion.png");
+    background-image: url("../images/aboutus/about_us_head.jpg");
 }
 
 .wrapper-contact-title {
@@ -888,7 +889,7 @@ small {
 }
 
 .wrapper-orderstatus-title {
-    background-image: url("../images/promotion/promotion.png");
+    background-image: url("../images/aboutus/about_us_head.jpg");
 }
 
 .wrapper-wishlist-title {

@@ -98,7 +98,7 @@
 						<div class="top-bar-left">
 							<ul class="dropdown menu">
 								<li class="menu-text" style="font-size:20px">
-									<a href="<?php echo base_url(''); ?>?language=<?php echo @$_GET['language'];?>" class="brand" style="font-size: 30px !important;">
+									<a href="<?php echo base_url(''); ?>?language=<?php echo @$_GET['language'];?>" class="brand" style="font-size: 30px !important; padding:0; margin:0;">
 										<!--<img style="border-radius:50%" src="<?php echo base_url('assets/images/logo.jpeg'); ?>" alt="<?php echo $site['WD_Name']; ?>">--> <!-- <?php echo $site['WD_Name']; ?>-->
 										<img style="width:110px" src="<?php echo base_url('assets/images/logo111.png'); ?>" alt="<?php echo $site['WD_Name']; ?>">
 									</a>
