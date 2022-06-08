@@ -36,13 +36,13 @@
 			<!--<hr class="hr-title-2">-->
 			<ul class="footer-widget">
 			<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-				<li><a href="<?php echo base_url('aboutus'); ?>" 			title="เกี่ยวกับ">เกี่ยวกับ</a></li>
+				<li><a href="<?php echo base_url('aboutus'); ?>" 			title="เกี่ยวกับธนิชา">เกี่ยวกับธนิชา</a></li>
 				<li><a href="<?php echo base_url('aboutus/terms'); ?>" 		title="ข้อตกลงและเงืื่อนไข">ข้อตกลงและเงื่อนไข</a></li>
 				<li><a href="<?php echo base_url('aboutus/privacy'); ?>" 	title="นโยบายความเป็น่สวนตัว">นโยบายความเป็นส่วนตัว</a></li>
 				<li><a href="<?php echo base_url('control'); ?>" 			title="สำหรับเจ้าหน้าที่" target="_blank">สำหรับเจ้าหน้าที่</a></li>
 				<!-- <li><a href="<?php echo base_url('aboutus/storelist'); ?>" 	title="รายชื่อร้านค้า">รายชื่อร้านค้า</a></li> -->
 			<?php }else{?>
-				<li><a href="<?php echo base_url('aboutus'); ?>" 			title="About Us">About Us</a></li>
+				<li><a href="<?php echo base_url('aboutus'); ?>" 			title="About Tanisha">About Tanisha</a></li>
 				<li><a href="<?php echo base_url('aboutus/terms'); ?>" 		title="Privacy & Terms">Privacy & Terms</a></li>
 				<li><a href="<?php echo base_url('aboutus/privacy'); ?>" 	title="นโยบายความเป็น่สวนตัว">Personal Data Protection</a></li>
 				<li><a href="<?php echo base_url('control'); ?>" 			title="สำหรับเจ้าหน้าที่" target="_blank">Staff</a></li>
@@ -60,10 +60,10 @@
 			<ul class="footer-widget">
 			<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
 				<li><a href="<?php echo base_url('service'); ?>" 			title="ศูนย์ให้ความช่วยเหลือ">ศูนย์ให้ความช่วยเหลือ</a></li>
-				<li><a href="<?php echo base_url('service/transports'); ?>" title="การขนส่ง และการจัดส่ง">การขนส่ง และการจัดส่ง</a></li>
+				<!--<li><a href="<?php echo base_url('service/transports'); ?>" title="การขนส่ง และการจัดส่ง">การขนส่ง และการจัดส่ง</a></li>-->
 			<?php }else{?>
-				<li><a href="<?php echo base_url('service'); ?>" 			title="ศูนย์ให้ความช่วยเหลือ">help center</a></li>
-				<li><a href="<?php echo base_url('service/transports'); ?>" title="การขนส่ง และการจัดส่ง">transportation and delivery</a></li>
+				<li><a href="<?php echo base_url('service'); ?>" 			title="ศูนย์ให้ความช่วยเหลือ">Help center</a></li>
+				<!--<li><a href="<?php echo base_url('service/transports'); ?>" title="การขนส่ง และการจัดส่ง">transportation and delivery</a></li>-->
 			<?php }?>
 				<!-- <li><a href="<?php echo base_url('service/refunds'); ?>" 	title="การคืนสินค้า และการคืนเงิน">การคืนสินค้า และการคืนเงิน</a></li> -->
 				<!-- <li><a href="<?php echo base_url('service/returns'); ?>" 	title="วิธีการคืนสินค้า">วิธีการคืนสินค้า</a></li> -->

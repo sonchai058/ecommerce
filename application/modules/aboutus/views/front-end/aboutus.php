@@ -1,28 +1,43 @@
+<?php if(@$_GET['id']=="vision"){
+?>
+<style type="text/css">
+	.wrapper-about-title {
+		background-image: url("../assets/modules/aboutus/images/vision_head.jpg") !important; 
+	}
+	.wrapper-orderstatus-title {
+		background-image: url("../assets/modules/aboutus/images/vision_head.jpg") !important;
+	}
+</style>
+<?php
+}
+?>
 <main>
 	<?php $this->template->load('header/breadcrumb'); ?>
 	
 	<section>
         <div class="row">
         <?php
-        if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
-            <div class="wrapper-about-title">
-			<!--
-				<h1>เกี่ยวกับเรา</h1>
-				<div class="about-desc">
-					<h4>ยินดีต้อนรับสู่เว็บไซต์ Tanisha</h4>
-				</div>
-		-->
-			</div>
-        <?php }else{?>
-			<div class="wrapper-about-title">
+		if(@$_GET['id']!="mission"){
+			if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
+				<div class="wrapper-about-title">
 				<!--
-				<h1>about us</h1>
-				<div class="about-desc">
-					<h4>Welcome to the Tanisha website.</h4>
+					<h1>เกี่ยวกับเรา</h1>
+					<div class="about-desc">
+						<h4>ยินดีต้อนรับสู่เว็บไซต์ Tanisha</h4>
+					</div>
+			-->
 				</div>
-		-->
-			</div>
-        <?php }?>
+			<?php }else{?>
+				<div class="wrapper-about-title">
+					<!--
+					<h1>about us</h1>
+					<div class="about-desc">
+						<h4>Welcome to the Tanisha website.</h4>
+					</div>
+			-->
+				</div>
+			<?php }
+		}?>
         </div>
 		<div class="row">
 			<div class="small-12 medium-3 columns">
@@ -65,13 +80,13 @@ if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
 		if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
 			<div class="small-12 medium-9 large-7 columns">
 				<div class="transport-wrapper">
-						<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/aboutus_th.jpg')?>">
+						<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/ceo_th.jpg')?>">
 				</div>
 			</div>
 	<?php }else{?>
 			<div class="small-12 medium-9 large-7 columns">
 				<div class="transport-wrapper">
-					<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/aboutus_en.jpg')?>">
+					<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/ceo_en.jpg')?>">
 				</div>
 			</div>
 	<?php }?>
@@ -81,32 +96,34 @@ if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
 		if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
 			<div class="small-12 medium-9 large-7 columns">
 				<div class="transport-wrapper">
-						<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/aboutus_th.jpg')?>">
+						<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/vision_th.jpg')?>">
 				</div>
 			</div>
 	<?php }else{?>
 			<div class="small-12 medium-9 large-7 columns">
 				<div class="transport-wrapper">
-					<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/aboutus_en.jpg')?>">
+					<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/vision_en.jpg')?>">
 				</div>
 			</div>
 	<?php }?>
 <?php }?>
 
 <?php if(@$_GET['id']=="mission"){
-		if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
+?>
 			<div class="small-12 medium-9 large-7 columns">
 				<div class="transport-wrapper">
-						<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/aboutus_th.jpg')?>">
+						<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/mission_th_en1.jpg')?>">
 				</div>
-			</div>
-	<?php }else{?>
-			<div class="small-12 medium-9 large-7 columns">
 				<div class="transport-wrapper">
-					<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/aboutus_en.jpg')?>">
+						<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/mission_th_en2.jpg')?>">
+				</div>
+				<div class="transport-wrapper">
+						<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/mission_2_th.jpg')?>">
+				</div>
+				<div class="transport-wrapper">
+					<img width="100%" src="<?php echo base_url('assets/modules/aboutus/images/mission_2_en.jpg')?>">
 				</div>
 			</div>
-	<?php }?>
 <?php }?>
 
 		</div>

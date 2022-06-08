@@ -1,87 +1,122 @@
 <main>
 	<?php $this->template->load('header/breadcrumb'); ?>
-
+	
 	<section>
+
 		<div class="row">
-			<?php $this->load->view('front-end/sidebar'); ?>
+			<div class="small-12 medium-3 columns">
+				<ul class="menu vertical categories">
+<?php
+if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
+					<li class="categoires-head"><h3>ก้าวสู่ความสำเร็จ</h3></li>
+                    <!--
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=tanisha');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && (@$_GET['id']=="tanisha" || @$_GET['id']=="")){ echo 'active'; }?>">เกี่ยวกับธนิชา</a></li>
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=ceo');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && @$_GET['id']=="ceo"){ echo 'active'; }?>">ผู้บริหาร</a></li>
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=vision');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && @$_GET['id']=="vision"){ echo 'active'; }?>">วิศัยทัศน์</a></li>
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=mission');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && @$_GET['id']=="mission"){ echo 'active'; }?>">พันธกิจ</a></li>
+                    -->
+<?php }else {?>
+                    <li class="categoires-head"><h3>Step towards Success</h3></li>
+                    <!--
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=tanisha');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && (@$_GET['id']=="tanisha" || @$_GET['id']=="")){ echo 'active'; }?>">About Tanisha</a></li>
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=ceo');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && @$_GET['id']=="ceo"){ echo 'active'; }?>">CEO</a></li>
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=vision');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && @$_GET['id']=="vision"){ echo 'active'; }?>">Vision</a></li>
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=mission');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && @$_GET['id']=="mission"){ echo 'active'; }?>">Mission</a></li>
+                    -->
+<?php }?>
+                    <li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=distributor_partner');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && (@$_GET['id']=="distributor_partner" || @$_GET['id']=="")){ echo 'active'; }?>">Distributor Partner</a></li>
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=dealer');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && @$_GET['id']=="dealer"){ echo 'active'; }?>">Dealer</a></li>
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=svip');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && @$_GET['id']=="svip"){ echo 'active'; }?>">SVIP</a></li>
+					<li><a href="<?php echo base_url('howto'."?language=".@$_GET['language'].'&id=vip');?>" class="categoires-title <?php if (uri_seg(1)== 'howto' && @$_GET['id']=="vip"){ echo 'active'; }?>">VIP</a></li>
 
-			<div class="small-12 medium-expand columns">
-				<!--
-				<div class="wrapper-h2p-title">
-					<h2 class="text-title">วิธีการชำระเงิน</h2>
-					<h4>Tanisha มีวิธีการชำระเงินแบบใดบ้าง</h4>
-				</div>
-				<h4><i class="fa fa-angle-double-right"></i> บริการรับชำระด้วยบัตรเครดิตออนไลน์ (PAYSBUY Direct)</h4>
-				<ol class="h2p-list">
-					<li><a  target="_blank" href="https://www.paysbuy.com/help-detail-40.aspx"><i class="fa fa-dot-circle-o"></i> ตัวอย่างการชำระเงินผ่านบัตรเครดิต</a></li>
-				</ol>
-				<br>
--->
-
-<!-- 				<h4><i class="fa fa-angle-double-right"></i> บริการรับชำระด้วยเงินสดที่เคาน์เตอร์ / ตู้ ATM</h4>
-					<ol class="h2p-list">
-						<li><i class="fa fa-dot-circle-o"></i> <a href="#!">ตัวอย่างการชำระเงินผ่าน / บิ๊กซี / เทสโก้ โลตัส / Cen Pay / จัสท์เพย์ / เอ็มเปย์ / กรุงศรี ATM / ไทยพาณิชย์ / กรุงไทย</a></li>
-						<li><a href="#!"><i class="fa fa-dot-circle-o"></i> ตัวอย่างการชำระเงินผ่านตู้เอทีเอ็ม ธนาคารกรุงศรีอยุธยา</a></li>
-					</ol>
-				<br> -->
-
-				<h4><i class="fa fa-angle-double-right"></i> 
-				<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-					บริการรับชำระด้วยบัญชีธนาคารออนไลน์
-				<?php }else{?>
-					Online bank account payment service
-				<?php }?>
-				</h4>
-				<ol class="h2p-list">
-					<!-- <li><a target="_blank" href="http://www.scb.co.th/th/personal-banking/bill-payment-top-up/bill-payment"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/SCB-2.png');?>" alt="SCB"> ตัวอย่างการชำระเงินผ่านบัญชีธนาคารไทยพาณิชย์</a></li> -->
-					<li><a href="#bill-scb" class="myModal"><img width="128" class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/kbank-icon-png-2-Transparent-Images.png');?>" alt="SCB"> 
-					<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-					การชำระเงินผ่านบัญชีธนาคารกสิกรไทย
-					<?php }else{?>
-						Payment via Kasikorn Bank account
-				<?php }?>
-				</a></li>
-					<!-- <li><a target="_blank" href="https://www.tmbbank.com/howto/e-banking/pay-bill.php"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/TMB.png');?>" alt="TMB"> ตัวอย่างการชำระเงินผ่านบัญชีธนาคารทหารไทย</a></li> -->
-					<!--<li><a href="#bill-tmb" class="myModal"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/TMB.png');?>" alt="TMB"> การชำระเงินผ่านบัญชีธนาคารทหารไทย</a></li>-->
-					<!-- <li><a href="#!"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/KRUNGSRI-2.png');?>" alt="KRUNGSRI"> ตัวอย่างการชำระเงินผ่านบัญชีธนาคารกรุงศรีฯ</a></li> -->
-					<!-- <li><a href="#!"><img class="img-middle" src="<?php echo base_url('assets/images/bank/32x32/BANGKOK-2.png');?>" alt="BANGKOK"> ตัวอย่างการชำระเงินผ่านบัญชีธนาคารกรุงเทพ</a></li> -->
-				</ol>		
-				<!-- <a href="#bill-scb" class="myModal">Click Me For A Modal</a> -->
-				<!-- <a href="#bill-tmb" class="myModal">Click Me For A Modal</a> -->
-
-				<div style="display:none">
-					<div id="bill-scb" style="font-weight: bold;font-size: 19px;">
-					<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-						<h3>การชำระเงินผ่านบัญชีธนาคารกสิกรไทย</h3>
-						<hr>
-						<span>ธนาคาร : </span>กสิกรไทย<br>
-						<span>ชื่อบัญชี : </span>บจก.ธนิชา อินเตอร์เนชั่นแนล<br>
-						<span>เลขที่บัญชี : </span>107-3-97034-9<br>
-					<?php }else{?>
-						<h3>Payment via Kasikorn Bank account</h3>
-						<hr>
-						<span>Bank : </span>Kasikorn Thai<br>
-						<span>Account name : </span>Thanicha International Co., Ltd.<br>
-						<span>Account number : </span>107-3-97034-9<br>
-					<?php }?>
-					</div>
-				</div>
-				
+				</ul>
 			</div>
+
+<?php if(@$_GET['id']=="distributor_partner" || @$_GET['id']==""){
+		if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
+			Distributor Partner
+        <!--
+			<div class="small-12 medium-9 large-7 columns">
+				<div class="transport-wrapper">
+						<img width="100%" src="<?php echo base_url('assets/modules/howto/images/howto_th.jpg')?>">
+				</div>
+			</div>
+        -->
+	<?php }else{?>
+        <!--
+			<div class="small-12 medium-9 large-7 columns">
+				<div class="transport-wrapper">
+					<img width="100%" src="<?php echo base_url('assets/modules/howto/images/howto_en.jpg')?>">
+				</div>
+			</div>
+        -->
+	<?php }?>
+<?php }?>
+
+<?php if(@$_GET['id']=="dealer"){
+		if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
+			Dealer
+    <!--
+			<div class="small-12 medium-9 large-7 columns">
+				<div class="transport-wrapper">
+						<img width="100%" src="<?php echo base_url('assets/modules/howto/images/ceo_th.jpg')?>">
+				</div>
+			</div>
+    -->
+	<?php }else{?>
+    <!--
+			<div class="small-12 medium-9 large-7 columns">
+				<div class="transport-wrapper">
+					<img width="100%" src="<?php echo base_url('assets/modules/howto/images/ceo_en.jpg')?>">
+				</div>
+			</div>
+    -->
+	<?php }?>
+<?php }?>
+
+<?php if(@$_GET['id']=="svip"){
+		if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
+			SVIP
+        <!--
+			<div class="small-12 medium-9 large-7 columns">
+				<div class="transport-wrapper">
+						<img width="100%" src="<?php echo base_url('assets/modules/howto/images/vision_th.jpg')?>">
+				</div>
+			</div>
+        -->
+	<?php }else{?>
+        <!--
+			<div class="small-12 medium-9 large-7 columns">
+				<div class="transport-wrapper">
+					<img width="100%" src="<?php echo base_url('assets/modules/howto/images/vision_en.jpg')?>">
+				</div>
+			</div>
+        -->
+	<?php }?>
+<?php }?>
+
+<?php if(@$_GET['id']=="vip"){
+?>
+	VIP
+<!--
+			<div class="small-12 medium-9 large-7 columns">
+				<div class="transport-wrapper">
+						<img width="100%" src="<?php echo base_url('assets/modules/howto/images/mission_th_en1.jpg')?>">
+				</div>
+				<div class="transport-wrapper">
+						<img width="100%" src="<?php echo base_url('assets/modules/howto/images/mission_th_en2.jpg')?>">
+				</div>
+				<div class="transport-wrapper">
+						<img width="100%" src="<?php echo base_url('assets/modules/howto/images/mission_2_th.jpg')?>">
+				</div>
+				<div class="transport-wrapper">
+					<img width="100%" src="<?php echo base_url('assets/modules/howto/images/mission_2_en.jpg')?>">
+				</div>
+			</div>
+-->
+<?php }?>
+
 		</div>
+
 	</section>
-	<link rel="stylesheet" href="<?php echo base_url('assets/plugin/fancybox/source/jquery.fancybox.css'); ?>">
-	<script src="<?php echo base_url('assets/plugin/fancybox/source/jquery.fancybox.js'); ?>"></script>
-	<script type="text/javascript">
-		$("a.myModal").fancybox({
-			// modal: true,
-			minWidth: 400,
-			minHeight: 200,
-			// 'transitionIn'	:	'elastic',
-			// 'transitionOut'	:	'elastic',
-			// 'speedIn'		:	600, 
-			// 'speedOut'		:	200, 
-			// 'overlayShow'	:	false,
-		});
-	</script>
 </main>
