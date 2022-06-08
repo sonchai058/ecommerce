@@ -74,7 +74,7 @@
                         <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_42_th.jpg'); ?>">
                        <?php }else{?>
-                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_42_en.jpg'); ?>">
+                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_42_en.jpeg'); ?>">
                         <?php }?>
                     </div>
                 </div>
@@ -86,9 +86,9 @@
                <div class="small-12 medium-12 columns">
                    <div class="slide-left">
                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_th.jpg'); ?>">
+                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_th.jpeg'); ?>">
                        <?php }else{?>
-                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_en.jpg'); ?>">
+                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_en.jpeg'); ?>">
                         <?php }?>
                    </div>
                </div>
@@ -361,7 +361,7 @@ to shine bright to the outer skin
             </div>
                         -->
             <!-- Collection 3 -->
-            <section>
+            <section style="display:none;">
             <div class="row row-collection">
                 <div class="small-12 medium-expand columns">
                     <div class="collection-list">
