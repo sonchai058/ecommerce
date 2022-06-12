@@ -111,14 +111,14 @@
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="อีเว้นท์และข่าวสาร">อีเว้นท์และข่าวสาร</a></li>
 									<!-- <li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>-->
 									<!--<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="แจ้งโอนเงิน">ติดตามสินค้า</a></li>-->
-									<li><a href="https://lin.ee/ hbIO1BG" title="สมัครคัวแทน">สมัครตัวแทน</a></li>
+									<li><a href="https://lin.ee/hbIO1BG" title="สมัครคัวแทน">สมัครตัวแทน</a></li>
 								<?php }else{?>
 									<li><a href="<?php echo base_url(''.'?language='.@$_GET['language']); ?>" title="Tanisha">Tanisha</a></li>
 									<li><a href="<?php echo base_url('product'.'?language='.@$_GET['language']); ?>" title="Home">Products</a></li>
 									<li><a href="<?php echo base_url('aboutus'.'?language='.@$_GET['language']); ?>" title="About US">About Tanisha</a></li>
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="How to order payment">Step towards Success</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="Promotion/Event">Events/News</a></li>
-									<li><a href="https://lin.ee/ hbIO1BG" title="Apply for Agent">Apply for Agent</a></li>
+									<li><a href="https://lin.ee/hbIO1BG" title="Apply for Agent">Apply for Agent</a></li>
 									<!-- <li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Contact Us</a></li>-->
 									<!--<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="Confrim Payment">Confrim Payment/Track Order</a></li>-->
 								<?php }?>
@@ -143,10 +143,10 @@
 								}
 								else { ?>
 									<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-										<li><a href="https://www.smithdemo.xyz/uat/tanisha/admin/auth/login" title="เข้าสู่ระบบสมาชิก" id=""><b style="font-size: 13px;font-weight: normal;">เข้าสู่ระบบสมาชิก</b></a></li> 
+										<li><a href="http://www.tanishainter.com/admin/login" title="เข้าสู่ระบบสมาชิก" id=""><b style="font-size: 13px;font-weight: normal;">เข้าสู่ระบบสมาชิก</b></a></li> 
 									<?php }else{?>
 										<!--<li><a href="#" title="transfer money" id="member-transfer"><i class="fa fa-exchange"></i>Register</a></li> -->
-										<li><a href="https://www.smithdemo.xyz/uat/tanisha/admin/auth/login" title="Member Login" id=""><b style="font-size: 13px;font-weight: normal;">Member Login</b></a></li> 
+										<li><a href="http://www.tanishainter.com/admin/login" title="Member Login" id=""><b style="font-size: 13px;font-weight: normal;">Member Login</b></a></li> 
 										<?php
 									}
 								} ?>
@@ -265,7 +265,7 @@
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="ก้าวสู่ความสำเร็จ">ก้าวสู่ความสำเร็จ</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="อีเว้นท์และข่าวสาร">อีเว้นท์และข่าวสาร</a></li>
 									<!-- li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="ติดต่อเรา">ติดต่อเรา</a></li>-->
-									<li><a href="https://lin.ee/ hbIO1BG" title="สมัครตัวแทน"><b style="font-weight:1000">สมัครตัวแทน</b></a></li>
+									<li><a href="https://lin.ee/hbIO1BG" title="สมัครตัวแทน"><b style="font-weight:1000">สมัครตัวแทน</b></a></li>
 									<li><a href="http://www.tanishainter.com/admin/login" title="เข้าสู่ระบบสมาชิก"><b style="font-weight:1000">เข้าสู่ระบบสมาชิก</b></a></li>
 		
 			<!--<li><a href="#">สมัครสมาชิก</a></li>-->
@@ -301,7 +301,7 @@
 									<li><a href="<?php echo base_url('howto'.'?language='.@$_GET['language']); ?>" title="How to order payment">Step towards Success</a></li>
 									<li><a href="<?php echo base_url('salepage'.'?language='.@$_GET['language']); ?>" title="Promotion/Event">Events/News</a></li>
 									<!-- <li><a href="<?php echo base_url('contactus'.'?language='.@$_GET['language']); ?>" title="Contact Us">Contact Us</a></li>-->
-									<li><a href="https://lin.ee/ hbIO1BG" title="Apply for Agent"><b style="font-weight:1000">Apply for Agent</b></a></li>
+									<li><a href="https://lin.ee/hbIO1BG" title="Apply for Agent"><b style="font-weight:1000">Apply for Agent</b></a></li>
 									<li><a href="http://www.tanishainter.com/admin/login" title="Member Login"><b style="font-weight:1000">Member Login</b></a></li>
 									<!--<li><a href="<?php echo base_url('member/transfercustom'.'?language='.@$_GET['language']); ?>" title="Confrim Payment">Confrim Payment/Track Order</a></li>-->
 			<!--

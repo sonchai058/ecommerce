@@ -104,7 +104,7 @@
         <div class="row row-vision">
                <div class="small-12 medium-12 columns">
                    <div class="slide-right">
-                        <a href="https://lin.ee/%20hbIO1BG">
+                        <a href="https://lin.ee/hbIO1BG">
                         <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                         <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_5_th.jpg'); ?>">
                        <?php }else{?>

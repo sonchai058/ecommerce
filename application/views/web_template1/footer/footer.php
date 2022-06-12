@@ -81,9 +81,9 @@
 				<div class="small-6 medium-12 large-12 columns">
 					<ul class="pay-icon">
 					<li><a href="https://www.facebook.com/thanishaofficial/"><img width="40px" src="<?php echo base_url('assets/images/facebook.png'); ?>" alt=""></a></li>
-					<li><a href="https://instagram.com/tanisha.thailand?utm_medium=copy_link"><img width="40px" src="<?php echo base_url('assets/images/instragram.png'); ?>" alt=""></a></li>
+					<li><a href="https://www.instagram.com/tanisha_thailand/?igshid=YmMyMTA2M2Y="><img width="40px" src="<?php echo base_url('assets/images/instragram.png'); ?>" alt=""></a></li>
 					<li><a href="https://youtube.com/channel/UC2Ih0xjIfUTHN2xb6cBPp2Q"><img width="40px" src="<?php echo base_url('assets/images/youtube.png'); ?>" alt=""></a></li>
-					<li><a href="https://lin.ee/ZSlO3GH"><img width="40px" src="<?php echo base_url('assets/images/line.png'); ?>" alt=""></a></li>
+					<li><a href="https://lin.ee/hbIO1BG"><img width="40px" src="<?php echo base_url('assets/images/line.png'); ?>" alt=""></a></li>
 					</ul>
 				</div>
 				<!--

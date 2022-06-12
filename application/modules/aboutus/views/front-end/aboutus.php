@@ -47,7 +47,7 @@ if(@$_GET['language']=='thai' || @$_GET['language']==''){?>
 					<li class="categoires-head"><h3>หัวข้อ</h3></li>
 					<li><a href="<?php echo base_url('aboutus'."?language=".@$_GET['language'].'&id=tanisha');?>" class="categoires-title <?php if (uri_seg(1)== 'aboutus' && (@$_GET['id']=="tanisha" || @$_GET['id']=="")){ echo 'active'; }?>">เกี่ยวกับธนิชา</a></li>
 					<li><a href="<?php echo base_url('aboutus'."?language=".@$_GET['language'].'&id=ceo');?>" class="categoires-title <?php if (uri_seg(1)== 'aboutus' && @$_GET['id']=="ceo"){ echo 'active'; }?>">ผู้บริหาร</a></li>
-					<li><a href="<?php echo base_url('aboutus'."?language=".@$_GET['language'].'&id=vision');?>" class="categoires-title <?php if (uri_seg(1)== 'aboutus' && @$_GET['id']=="vision"){ echo 'active'; }?>">วิศัยทัศน์</a></li>
+					<li><a href="<?php echo base_url('aboutus'."?language=".@$_GET['language'].'&id=vision');?>" class="categoires-title <?php if (uri_seg(1)== 'aboutus' && @$_GET['id']=="vision"){ echo 'active'; }?>">วิสัยทัศน์</a></li>
 					<li><a href="<?php echo base_url('aboutus'."?language=".@$_GET['language'].'&id=mission');?>" class="categoires-title <?php if (uri_seg(1)== 'aboutus' && @$_GET['id']=="mission"){ echo 'active'; }?>">พันธกิจ</a></li>
 <?php }else {?>
 					<li class="categoires-head"><h3>Topic</h3></li>
