@@ -39,11 +39,13 @@
         <div class="row row-vision">
                <div class="small-12 medium-12 columns">
                    <div class="slide-left">
+                        <a href="<?php echo site_url('salepage?'.@$_GET['language']);?>">
                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                        <a href="<?php echo site_url('aboutus?language='.@$_GET['language']);?>"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_2_th.jpg'); ?>"></a>
                        <?php }else{?>
                         <a href="<?php echo site_url('aboutus?language='.@$_GET['language']);?>"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_2_en.jpg'); ?>"></a>
                         <?php }?>
+                       </a>
                    </div>
                </div>
                <div class="small-12 medium-12 columns">
@@ -60,45 +62,55 @@
 
     <section class="wrap-vision">
         <div class="row row-vision">
-               <div class="small-12 medium-12 columns">
+
+               <div class="small-12 medium-4 columns">
                    <div class="slide-left">
+                       <a href="<?php echo site_url('salepage?'.@$_GET['language']);?>">
                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_41_th.jpg'); ?>">
                        <?php }else{?>
                         <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_41_en.jpg'); ?>">
                         <?php }?>
+                       </a>
                    </div>
                </div>
-               <div class="small-12 medium-12 columns">
+               <div class="small-12 medium-4 columns">
                    <div class="slide-right">
+                    <a href="<?php echo site_url('salepage?'.@$_GET['language']);?>">
                         <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_42_th.jpg'); ?>">
                        <?php }else{?>
                         <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_42_en.jpeg'); ?>">
                         <?php }?>
+                    </a>
                     </div>
                 </div>
+                <div class="small-12 medium-4 columns">
+                   <div class="slide-left">
+                        <a href="<?php echo site_url('salepage?'.@$_GET['language']);?>">
+                       <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_th.jpg'); ?>">
+                       <?php }else{?>
+                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_en.jpeg'); ?>">
+                        <?php }?>
+                       </a>
+                   </div>
+               </div>
+
             </div>
     </section>
 
     <section class="wrap-vision">
         <div class="row row-vision">
                <div class="small-12 medium-12 columns">
-                   <div class="slide-left">
-                       <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_th.jpeg'); ?>">
-                       <?php }else{?>
-                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_en.jpeg'); ?>">
-                        <?php }?>
-                   </div>
-               </div>
-               <div class="small-12 medium-12 columns">
                    <div class="slide-right">
+                        <a href="https://lin.ee/%20hbIO1BG">
                         <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                        <a href="#"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_5_th.jpg'); ?>"></a>
+                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_5_th.jpg'); ?>">
                        <?php }else{?>
-                        <a href="#"><img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_5_en.jpg'); ?>"></a>
+                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_5_en.jpg'); ?>">
                         <?php }?>
+                       </a>
                     </div>
                 </div>
             </div>
