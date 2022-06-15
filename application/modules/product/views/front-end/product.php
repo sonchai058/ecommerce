@@ -11,16 +11,19 @@
             <?php $this->load->view('front-end/category'); ?>
 
             <!-- Product -->
-            <div class="columns">
+            <!--<div class="columns">-->
+                <!--
                 <div class="wrapper-product-title">
-                <!--<?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                     <h2>สินค้าของ Tanisha</h2>
                     <p>ผลิตภัณฑ์เสริมอาหาร ESTHER (ชงดื่ม) ตอบโจทย์ผู้ที่หญิงที่ปัญหาสุขภาพ</p>
                 <?php }else{?>
                     <h2>Tanisha's products</h2>
                     <p>Dietary supplement ESTHER (drinking) meets the needs of women with health problems.</p>
                 <?php }?>-->
-                </div>
+                <!--</div>-->
+                
+                <!--
                 <div class="row row-product" style="width:100%">
                     <div class="small-10 medium-10 large-10 columns">
                         <input id="search" type="text" placeholder="
@@ -39,6 +42,7 @@
                         <?php }?>
                     </div>
                 </div>
+                        -->
                 <?php
                 echo form_input(array('type' => 'hidden', 'id' => 'current_page'));
                 echo form_input(array('type' => 'hidden', 'id' => 'show_per_page')); ?>

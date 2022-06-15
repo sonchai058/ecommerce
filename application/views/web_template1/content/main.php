@@ -67,9 +67,9 @@
                    <div class="slide-left">
                        <a href="<?php echo site_url('salepage?'.@$_GET['language']);?>">
                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_41_th.jpg'); ?>">
+                       <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfIY5z.jpg">
                        <?php }else{?>
-                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_41_en.jpg'); ?>">
+                        <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfIBi0.jpg">
                         <?php }?>
                        </a>
                    </div>
@@ -78,9 +78,9 @@
                    <div class="slide-right">
                     <a href="<?php echo site_url('salepage?'.@$_GET['language']);?>">
                         <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_42_th.jpg'); ?>">
+                       <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMtK9.jpg">
                        <?php }else{?>
-                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_42_en.jpeg'); ?>">
+                        <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMR4z.jpg">
                         <?php }?>
                     </a>
                     </div>
@@ -89,9 +89,9 @@
                    <div class="slide-left">
                         <a href="<?php echo site_url('salepage?'.@$_GET['language']);?>">
                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                       <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_th.jpg'); ?>">
+                       <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMgaq.jpg">
                        <?php }else{?>
-                        <img style="" class="image-center vision-image" src="<?php echo base_url('assets/images/main_43_en.jpeg'); ?>">
+                        <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMuZN.jpg">
                         <?php }?>
                        </a>
                    </div>
