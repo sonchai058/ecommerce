@@ -77,10 +77,10 @@
                <div class="small-12 medium-4 columns">
                    <div class="slide-right">
                     <a href="<?php echo site_url('salepage?'.@$_GET['language']);?>">
-                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                       <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMtK9.jpg">
+                    <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                        <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMtK9.jpg">
                        <?php }else{?>
-                        <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMR4z.jpg">
+                        <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMgaq.jpg">
                         <?php }?>
                     </a>
                     </div>
@@ -88,8 +88,8 @@
                 <div class="small-12 medium-4 columns">
                    <div class="slide-left">
                         <a href="<?php echo site_url('salepage?'.@$_GET['language']);?>">
-                       <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
-                       <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMgaq.jpg">
+                        <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
+                        <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMR4z.jpg">
                        <?php }else{?>
                         <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMuZN.jpg">
                         <?php }?>
