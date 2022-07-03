@@ -91,7 +91,7 @@
                         <?php if(@$_GET['language']==''|| @$_GET['language']=='thai'){?>
                         <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMR4z.jpg">
                        <?php }else{?>
-                        <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/15/VfMuZN.jpg">
+                        <img style="" class="image-center vision-image" src="https://sv1.picz.in.th/images/2022/06/18/V9lIx1.jpg">
                         <?php }?>
                        </a>
                    </div>
